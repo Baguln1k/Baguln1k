@@ -310,9 +310,12 @@ $(".scrollmain").css("background", " rgba(33, 190, 177, 0)");
                 load: {
                     filter: '.category-ortodont'
                 },
-                animation: {
-     enabled:false
- }
+   "animation": {
+           "duration": 250,
+        "nudge": false,
+        "reverseOut": false,
+        "effects": "fade translateY(20%)"
+    }
             });
 
 
