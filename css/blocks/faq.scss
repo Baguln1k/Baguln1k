@@ -1,0 +1,130 @@
+.site_pagination{
+	ul{
+		margin:0;
+		padding:0;
+		list-style: none;
+		text-align: center;
+		li{
+			display: inline-block;
+			vertical-align: top;
+			margin:0 4px;
+			a , span{
+				display: block;
+				padding:6px 14px;
+				font-size:15px;
+				color:#666666; 
+				line-height: 24px;
+				border-radius:8px;
+				&:hover{
+					background:#032a4b;
+					color:#d6d9dc;
+					text-decoration: none;
+				}
+			}
+			span{
+				background:#032a4b;
+				color:#d6d9dc;	
+			}
+		}
+	}
+}
+
+.bodyfaq{
+	font-size:15px;
+	line-height: 30px;
+	font-family:$r;
+	padding-bottom:20px;
+}
+
+
+.faq_block{
+	padding-top:30px;
+	ul{
+		margin:0;
+		padding:0;
+		list-style: none;
+		text-align: center;
+		li{
+			display: inline-block;
+			vertical-align: top;
+			margin:0 30px;
+			a{
+				font-size:13px;
+				color:#032a4b;
+			}
+		}
+	}
+}
+
+.faq_wrap{
+	padding:50px 20px;
+	background:#f8f8f8;
+	.info_blocks{
+		display: -webkit-flex;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-flex-wrap: wrap;
+		-ms-flex-wrap: wrap;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		max-width:1090px;
+		margin:0 auto;
+		.block{
+			width:30%;
+			background:#fff;
+			margin-bottom:30px;
+			border:1px solid #e5e5e5;
+			border-top:0;
+			img{
+				width:100%;
+			}
+			.b_wrap{
+				text-align: center;
+				padding:30px 25px;
+			}
+			.title{
+				font-size:22px;
+				color:#333333;
+				line-height: 27px;
+			}
+			.text{
+				margin:20px 0;
+			}
+			a{
+				display: inline-block;
+				max-width:235px;
+				text-align: center;
+				width:100%;
+				line-height: 55px;
+				font-size:13px;
+				color:#e5e7e9;
+				background:#032a4b;
+				border-radius:30px;
+				border:1px solid #032a4b;
+				&:hover{
+					background: none;
+					color:#032a4b;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.faq_wrap .info_blocks .block{
+		width:48%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.faq_block ul li{
+		margin:0 5px;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.faq_wrap .info_blocks .block{
+		width:100%;
+	}
+}

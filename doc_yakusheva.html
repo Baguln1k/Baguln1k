@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Доктор Якушева - Центр дентальной имплантации</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/styles71.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script>
+		$(document).ready(function(){
+			$(".thanks_slider").owlCarousel({
+				items:1,
+				margin:40,
+				nav:true,
+				loop:true,
+			});
+			$(".data_slider").owlCarousel({
+				items:3,
+				margin:50,
+				nav:true,
+				loop:true,
+				responsive:{
+					0:{
+						items:1,
+						autoHeight:true
+					},
+					767:{
+						items:2,
+						autoHeight:true
+					},
+					1024:{
+						items:3,
+					}
+				}
+			});
+			owlcount = function(){
+				$('.data_slider .owl-item .item').removeClass('style1');
+				$('.data_slider .owl-item .item').removeClass('style3');
+				$('.data_slider .owl-item.active').first().find('.item').addClass('style1');
+				$('.data_slider .owl-item.active').last().find('.item').addClass('style3');
+			}
+			$(document).ready(function(){
+				owlcount();
+			});
+			$(window).on('resize' , function(){
+				setTimeout(function(){
+					owlcount();
+				},500);
+			});
+			$('.data_slider').on('changed.owl.carousel', function(e) {
+				setTimeout(function(){
+					owlcount();
+				});
+			});
+		});
+	</script>
+</head>
+<body class="fix_scroll">
+
+
+	<div class="wrapper">
+		<header class="header">
+			<div class="blockin">
+				<a href="index.html" class="logo"><img src="images/logocdi.png" alt=""></a>
+				<a href="tel:+83822257033" class="phone_top">
+					<p class="address_top">Томск, ул. Говорова, д. 19 "В", ст. 1</p>
+					8 3822 <span>25-70-33</span>
+				</a>
+				<div class="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="top_menu">
+					<ul>
+						<li>
+							<a href="index.html" class="">
+								<img src="images/logocdi.png" alt="">
+							</a>
+						</li>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="implantation.html" class="openmodal">Услуги</a></li>
+						<li><a href="about.html">О центре</a></li>
+						<li class="active"><a href="doctors.html">Врачи</a></li>
+						<li><a href="faq.html">Советы</a></li>
+						<li><a href="price.html">Цены</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="path">
+			<a href="index.html">Главная</a>  <a href="doctors.html">Наши врачи</a> Якушева Елена Александровна
+		</div>
+		<div class="doctor_page_top">
+			<div class="left wow fadeInUp" style="padding: 30px 15px;">
+				<img src="images/doc-yakusheva-2.png" alt="" style=" width: 75%; ">
+				<div class="siteubutton">
+					<a href="contacts.html" class="site_but">Задать вопрос врачу</a>
+				</div>
+			</div>
+			<div class="right">
+				<div class="top_block wow fadeInUp" data-wow-delay="0.2s" style="padding-left: 50px;">
+					<div class="b_title" style="color: #333;font-size: 35px;font-weight: 300;padding-top: 10px;padding-bottom: 15px;">Якушева Елена Александровна</div>
+					<div class="info" style=" font-size: 14px; line-height: 27px; ">
+						Врач-стоматолог-терапевт, детский стоматолог</div>
+						<div class="anonce" style=" font-size: 14px; color: #032A4B; ">
+							<span>Образование:</span> Кемеровская государственная медицинская академия
+						</div>
+					</div>
+					<div class="doc_info wow fadeInUp" data-wow-delay="0.4s" style="padding-left: 50px;">
+						<div class="block" style="color: #333;font-weight: 400;font-size: 15px;max-width: 200px;margin-top: 30px;padding-right: 40px;">
+							<img src="images/doci1.png" alt="" style=" width: 26px; ">
+							7 лет <br>стаж работы
+						</div>
+						
+					</div>
+					<div class="text_block wow fadeInUp" data-wow-delay="0.6s" style="color: #666666;font-size: 14px;padding-left: 50px;line-height: 24px;padding: 30px 50px;padding-top: 25px;visibility: visible;animation-delay: 0.6s;animation-name: fadeInUp;">
+						Всегда в курсе всех стоматологических новинок и успешно применяет их на практике. Успешно совмещает работу, семинары по стоматологии и мастер-классы по терапевтическому лечению. Занимается профессиональной гигиеной, клиническим и домашним отбеливанием, установкой скайсов (кристаллы Swarovski). Находит к каждому пациенту индивидуальный подход – внимательна и заботлива как к персоналу, так и к пациентам!
+					</div>
+					<div class="bottom_block wow fadeInUp" data-wow-delay="0.8s" style="padding-left: 50px; visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+						<div class="b_title" style=" font-size: 22px; color: #333333; font-weight: 500; text-transform: uppercase; margin: 10px 0; padding-bottom: 10px; ">Оказываемые услуги</div>
+						<ul>
+							<li style=" padding-right: 45px; ">
+								<img src="images/botdoc1.png" alt="">
+								<a href="services.html" style=" font-size: 14px; color: #21beb2; border-bottom: 1px solid rgba(33, 190, 178, 0.50); text-decoration: none; ">Детская стоматология</a>
+							</li>
+							<li>
+								<img src="images/botdoc2.png" alt="">
+								<a href="hygiene.html" style=" font-size: 14px; color: #21beb2; border-bottom: 1px solid rgba(33, 190, 178, 0.50); text-decoration: none; ">Гигиена и профилактика</a>
+							</li>				
+							<li>
+								<img src="images/botdoc3.png" alt="">
+								<a href="hygiene.html" style=" font-size: 14px; color: #21beb2; border-bottom: 1px solid rgba(33, 190, 178, 0.50); text-decoration: none; ">Терапия</a>
+							</li>
+							
+							
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="data_slider_wrap wow fadeInUp">
+				<div class="site_title">Профессиональная активность</div>
+				<div class="blockin">
+					<div class="data_slider owl-carousel">
+						
+						<!-- 2011 -->
+						<div class="item">
+							<div class="data">2011</div>
+							<div class="text">
+								Участник международного семинара и мастер-класса по теме:”Innovative techniques in endodontic treatment” Лео Сатановский (Германия).
+								<span>г.Кемерово, 2011</span>
+							</div>
+						</div>
+						<!-- 2012 -->
+						<div class="item">
+							<div class="data">2012</div>
+							<div class="text">
+								Приняла участие в учебном курсе: “Эндодонтия от А до Я”.
+								<span>г.Новосибирск 2012</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="data">2012</div>
+							<div class="text">
+								Приняла участие в учебном курсе: “Методы обтурации системы корневых каналов  термопластифицированными материалами”.
+								<span>г.Новосибирск, «Новодент», 2012</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="data">2012</div>
+							<div class="text">
+								Прошла кур по теме: ”Технологии и тенденции реставрационной стоматологии 2012 ” Мельник А.
+								<span>г. Кемерово, 2012</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="data">2012</div>
+							<div class="text">
+								Прошла кур по теме: ”Система Opalescence, как сделать отбеливание доступным, безопасным и эффективным ” Мельник А.
+								<span>г. Кемерово, 2012</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="data">2012</div>
+							<div class="text">
+								Приняла участие в обучающем курсе: “Повышение качества лечения заболеваний пародонта  использованием современных технолоий” Рогулева С.С.
+								<span>г. Кемерово, 2012</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="data">2012</div>
+							<div class="text">
+								Приняла участие в обучающем курсе: “Принципы профилактики периимплантита с использование современных технолоий” Рогулева С.С.
+								<span>г.Кемерово, 2012</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="data">2012</div>
+							<div class="text">
+								Прошла краткосрочное повышении квалификации по теме: “Актуальные вопросы неотложных состояний в стоматологической практике".
+								<span>г.Кемерово, 2012</span>
+							</div>
+						</div>
+						<!-- 2014 -->
+						<div class="item">
+							<div class="data">2014</div>
+							<div class="text">
+								Прошла семинар по детской стоматологии: “Детская стоматология на взрослом приеме” Мельникова О.А.
+								<span>г. Кемерово, 2014 г.</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="data">2014</div>
+							<div class="text">
+								Участник международного семинара и мастер-класса по теме:”Cure can not ve pardoned prioritize repeated endodotic treatment” Лео Сатановский (Германия).
+								<span>г. Кемерово, 2014 г.</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="data">2014</div>
+							<div class="text">
+								Участник семинара по теме:«COMPONEER-прямые композитные реставрации. Инновационная реставрация передней группы зубов».
+								<span>г. Новосибирск «Новодент» 2014 г.</span>
+							</div>
+						</div>
+						<!-- 2015 -->
+						<div class="item">
+							<div class="data">2015</div>
+							<div class="text">
+								Прошла курс: “Кариозные поражения твердых тканей молочных и постоянных несформированных зубов” ” Гецман А.В.
+								<span>г. Кемерово, 2015 г.</span>
+							</div>
+						</div>
+						
+						<!-- 2016 -->
+						<div class="item">
+							<div class="data">2016</div>
+							<div class="text">
+								Участник семинара по теме: “Сложная анатомия корневых каналов и эндодонтический доступ” Болячин А.В.
+								<span>г. Томск, 2016 г.</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="data">2016</div>
+							<div class="text">
+								Участник семинара и мастер-класса по теме: “Оптимизированные алгоритмы прямого восстановления сквозных дефектов фронтальных зубов и объемных полостей жевательных зубов” Мендоса Е.Ю.
+								<span>г. Кемерово, 2016 г.</span>
+							</div>
+						</div>
+						<div class="item">
+							<div class="data">2016</div>
+							<div class="text">
+								Прошла курс: “Лечение пульпитов и периодонтитов в детской стоматологии” Гецман А.В.
+								<span>г. Кемерово, 2016 г.</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div class="thanks_block doctor_thanks wow fadeInUp">
+				<div class="site_title"><span>Дипломы и сертификаты</span></div>
+				<div class="body">
+					<div class="owl-carousel thanks_slider">
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-1.jpg" alt="" style="border-radius: 0;">
+							
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-2.jpg" alt="" style="border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-3.jpg" alt="" style="border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-4.jpg" alt="" style="border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-5.jpg" alt="" style="border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-6.jpg" alt="" style="border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-7.jpg" alt="" style="border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-8.jpg" alt="" style="border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-9.jpg" alt="" style="width: 350px;border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-10.jpg" alt="" style="border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-11.jpg" alt="" style="border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-12.jpg" alt="" style="border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-13.jpg" alt="" style="border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-14.jpg" alt="" style="border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-15.jpg" alt="" style="border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-16.jpg" alt="" style="border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-17.jpg" alt="" style="border-radius: 0;">
+						</div>
+						<div class="item">
+							<img src="images/diplomy/yakusheva/dip-18.jpg" alt="" style="border-radius: 0;">
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="thanks_block doctor_thanks wow fadeInUp">
+				<div class="site_title"><span>Отзывы</span></div>
+				<div class="body">
+					<div class="owl-carousel thanks_slider">
+						
+						<div class="item">
+							<img src="images/otzivy/otz-1.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+						</div>
+
+			<!-- 		<div class="item">
+						<img src="images/otzivy/otz-2.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div>
+				-->
+		<!-- 			<div class="item">
+						<img src="images/otzivy/otz-3.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+			<!-- 		<div class="item">
+						<img src="images/otzivy/otz-4.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+		<!-- 			<div class="item">
+						<img src="images/otzivy/otz-5.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+	<!-- 				<div class="item">
+						<img src="images/otzivy/otz-6.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+		<!-- 			<div class="item">
+						<img src="images/otzivy/otz-7.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+				<!-- 	<div class="item">
+						<img src="images/otzivy/otz-8.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+			<!-- 		<div class="item">
+						<img src="images/otzivy/otz-9.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+			<!-- 		<div class="item">
+						<img src="images/otzivy/otz-10.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+					<div class="item">
+						<img src="images/otzivy/otz-11.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div>
+
+				<!-- 	<div class="item">
+						<img src="images/otzivy/otz-12.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+				<!-- 	<div class="item">
+						<img src="images/otzivy/otz-13.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+			<!-- 		<div class="item">
+						<img src="images/otzivy/otz-14.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+				<!-- 	<div class="item">
+						<img src="images/otzivy/otz-15.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+				<!-- 	<div class="item">
+						<img src="images/otzivy/otz-16.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+					<div class="item">
+						<img src="images/otzivy/otz-17.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div>
+
+					
+					<!-- <div class="item">
+						<img src="images/otzivy/otz-18.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+				<!-- 	<div class="item">
+						<img src="images/otzivy/otz-19.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+			<!-- 		<div class="item">
+						<img src="images/otzivy/otz-20.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div> -->
+					<div class="item">
+						<img src="images/otzivy/otz-21.jpg" alt="" style="width: 450px;border-radius: 0;" ">
+					</div>
+					
+
+					
+
+
+
+				</div>
+			</div>
+		</div>
+		<div class="siteinfoblock doc_page_infobot wow fadeInUp">
+			<div class="title">Запись на прием</div>
+			<div class="text">
+				<p>Запишитесь на прием к этому врачу</p>
+			</div>
+			<a href="contacts.html">Записаться на прием</a>
+		</div>
+		<footer class="footer">
+			<div class="blockin">
+				<div class="footer_wrap">
+					<div class="logo_bot">
+						<a href="#"><img src="images/logobot.png" alt=""></a>
+					</div>
+					<ul>
+						<li><a href="implantation.html">Имплантация</a></li>
+						<li><a href="services.html">Детская стоматология</a></li>
+						<li><a href="terapia.html">Терапия</a></li>
+					</ul>
+					<ul>
+						<li><a href="hygiene.html">Гигиена и профилактика</a></li>
+						<li><a href="proteth.html">Протезирование</a></li>
+						<li><a href="#">Диагностика</a></li>
+					</ul>
+					<ul class="address">
+						<li><strong>Пн-Пт: </strong> 8:30-20:00</li>
+						<li><strong>Сб: </strong> 8:30-14:00</li>
+						<li><strong>Вс: </strong>  выходной</li>
+					</ul>
+					<ul class="address">
+						<li><strong>Телефон: </strong> 25-70-33</li>
+						<li><strong>E-mail: </strong> <a href="mailto:cdistom@mail.ru"> cdistom@mail.ru</a></li>
+						<li><strong>Адрес: </strong> 634057, Томск,<br>  ул. Говорова, д. 19 "В", ст. 1</li>
+					</ul>
+					<div class="copyright">
+						<a href="policy.pdf" target="__blank">Политика конфиденциальности</a>
+						<ul class="address social_footer">
+							<li><a href="https://vk.com/cdistom"></a></li>
+							<li><a href="https://www.facebook.com/tomskimplant/?modal=composer"></a></li>
+							<li><a href="https://www.instagram.com/tomstom_implant/?hl=ru"></a></li>					
+						</ul>
+						<a href="#" class="fresco">FRESCO —  поддержка и разработка</a>
+
+					</div>
+				</div>
+			</div>
+
+		</footer>
+		<div class="services_popup_block">
+			<div class="blockwrap">
+				<header class="header">
+					<div class="blockin">
+						<a href="#" class="logo"><img src="images/logocdi.png" alt=""></a>
+						<div class="closeservice"></div>
+					</div>
+				</header>
+				<div class="blockin">
+					<div class="services_wrap_popup">
+						<div class="leftblock">
+							<div class="title">
+								услуги
+								<br>центра
+							</div>
+						</div>
+						
+						<div class="rightblock" style=" max-width: 590px; ">
+							<ul>
+								<li><a href="implantation.html"><img src="images/sm1.png" alt=""><span>Имплантация</span></a></li>
+								<!--<li><a href="#"><img src="images/sm2.png" alt=""><span>Терапия</span></a></li>-->
+								<!-- <li><a href="#" style=" color: #aaa; "><img src="images/sm3.png" alt=""><span>Ортопедия</span></a></li> -->
+								<li><a href="terapia.html"><img src="images/sm4.png" alt=""><span>Терапия</span></a></li>
+								<li><a href="proteth.html"><img src="images/sm5.png" alt=""><span>Протезирование</span></a></li>
+								<li><a href="hygiene.html"><img src="images/sm6.png" alt=""><span>Гигиена и профилактика</span></a></li>
+								<li><a href="services.html"><img src="images/sm7.png" alt=""><span>Детская стоматология</span></a></li>
+								<li><a href="#" style=" "><img src="images/sm8.png" alt=""><span>Диагностика</span></a></li>
+							</ul>
+							<a href="contacts.html" class="site_but">Записаться на консультацию</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+	(function (d, w, c) {
+		(w[c] = w[c] || []).push(function() {
+			try {
+				w.yaCounter45262389 = new Ya.Metrika({
+					id:45262389,
+					clickmap:true,
+					trackLinks:true,
+					accurateTrackBounce:true,
+					webvisor:true
+				});
+			} catch(e) { }
+		});
+
+		var n = d.getElementsByTagName("script")[0],
+		s = d.createElement("script"),
+		f = function () { n.parentNode.insertBefore(s, n); };
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/45262389" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Контакты - Центр Дентальной Имплантации</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	
+
+
+	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<link rel="stylesheet" href="css/jquery-ui.min.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/styles71.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<script src="js/jquery-ui.min.js"></script>
+	<script src="js/scripts.js"></script>
+	<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBMDwSywCPHHL3ysbGiJ8AWPSfpkJaz1OM"></script>
+	<script src="js/jquery.inputmask.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script type="text/javascript">
+		google.maps.event.addDomListener(window, 'load', init);
+		function init() {
+			var mapOptions = {
+				zoom: 11,
+				center: new google.maps.LatLng(56.509553, 84.984578), 
+				styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"simplified"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#fcfcfc"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#eeeeee"}]},{"featureType":"water","elementType":"geometry","stylers":[{"visibility":"simplified"},{"color":"#dddddd"}]}]
+			};
+			var mapElement = document.getElementById('map');
+			var map = new google.maps.Map(mapElement, mapOptions);
+		}
+	</script>
+	<script src='https://www.google.com/recaptcha/api.js'></script>
+</head>
+<body class="fix_scroll">
+
+
+	<div class="wrapper contactswrapper">
+		<div class="map">
+			<div id="map"></div>
+		</div>
+		<header class="header">
+			<div class="blockin">
+				<a href="index.html" class="logo"><img src="images/logocdi.png" alt=""></a>
+				<a href="tel:+83822257033" class="phone_top">
+					<p class="address_top">Томск, ул. Говорова, д. 19 "В", ст. 1</p>
+					8 3822 <span>25-70-33</span>
+				</a>
+				<div class="burger">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+				<div class="top_menu">
+					<ul>
+						<li>
+							<a href="index.html" class="">
+								<img src="images/logocdi.png" alt="">
+							</a>
+						</li>
+						<li><a href="index.html">Главная</a></li>
+						<li><a href="implantation.html" class="openmodal">Услуги</a></li>
+						<li><a href="about.html">О центре</a></li>
+						<li><a href="doctors.html">Врачи</a></li>
+						<li><a href="faq.html">Советы</a></li>
+						<li><a href="price.html">Цены</a></li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<div class="contacts_page_block main_page_contacts">
+			<div class="blockin">
+				<div class="contacts_content wow fadeInLeft">
+					<div class="title"><span>Контакты</span></div>
+					<div class="body clearafter">
+						<div class="big_info">
+							<div class="block">
+								<div class="inlineblock">
+									
+									<p style=" font-size: 15px; "><strong>Телефон:</strong> 25-70-33</p>
+									<p style=" font-size: 15px; "><strong>E-mail:</strong> <a href="mailto:cdistom@mail.ru">cdistom@mail.ru</a></p>
+								</div>
+							</div>
+							<div class="block">
+								<div class="inlineblock">
+									<div class="m_title">Режим работы</div>
+									<p style=" font-size: 15px; "><strong>Пн-Пт:</strong> 8:30-20:00</p>
+									<p style=" font-size: 15px; "><strong>Сб:</strong> 8:30-14:00</p>
+									<p style=" font-size: 15px; "><strong>Воскресенье</strong> – выходной</p>
+								</div>
+							</div>
+							<div class="block">
+								<div class="inlineblock">
+									<div class="copyright">
+										<ul class="address social_footer">
+											<li><a href="https://vk.com/cdistom"></a></li>
+											<li><a href="https://www.facebook.com/tomskimplant/?modal=composer"></a></li>
+											<li><a href="https://www.instagram.com/tomstom_implant/?hl=ru"></a></li>					
+										</ul>
+
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="addressblock">
+							634057, Томск, ул. Говорова, д. 19 "В", строение 1
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="rightblock wow fadeInRight">
+				<div class="title">Записаться на прием</div>
+				<div class="body">
+					<form action="" class="ajaxform">
+						<input type="text" name="name" required placeholder="Имя">
+						<input type="text" name="phone" required id="phone" placeholder="Телефон">
+						<textarea name="text"  placeholder="Сообщение" required></textarea>
+						<div class="calendarblock">
+							<input name="data" type="text" id="calendar" placeholder="Выберите удобное время">
+						</div>
+						<script>
+							jQuery(function() {
+								jQuery( "#calendar" ).datepicker({ dateFormat: 'dd.mm.yy' });
+								jQuery("#phone").inputmask("+7 (999) 999-99-99");
+							});
+						</script>
+
+
+
+						<input type="checkbox" name="chekok" id="chekok" required>
+						<label for="chekok" class="readme-ok" id="readme-ok" >
+
+
+
+							Cогласен на обработку <a href="policy.pdf" target="__blank"> персональных данных</a>
+
+
+						</label>
+						<div class="recap">
+
+
+
+
+							<div class="g-recaptcha" data-sitekey="6LdGQygUAAAAALvc1N5k__tThQJ_yzxMP77afnOM"></div>
+
+
+						</div>
+						<button class="site_but">Записаться на прием</button>
+					</form>
+				</div>
+				<div class="textsuccess">Спасибо, Ваша заявка принята. Ожидайте звонка от нашего менеджера.</div>
+			</div>
+		</div>
+		<div class="services_popup_block">
+			<div class="blockwrap">
+				<header class="header">
+					<div class="blockin">
+						<a href="index.html" class="logo"><img src="images/logocdi.png" alt=""></a>
+						<div class="closeservice"></div>
+					</div>
+				</header>
+				<div class="blockin">
+					<div class="services_wrap_popup">
+						<div class="leftblock">
+							<div class="title">
+								услуги
+								<br>центра
+							</div>
+						</div>
+						<div class="rightblock" style=" max-width: 590px; ">
+							<ul>
+								<li><a href="implantation.html"><img src="images/sm1.png" alt=""><span>Имплантация</span></a></li>
+								<!--<li><a href="#"><img src="images/sm2.png" alt=""><span>Терапия</span></a></li>-->
+								<!-- <li><a href="#" style=" color: #aaa; "><img src="images/sm3.png" alt=""><span>Ортопедия</span></a></li> -->
+								<li><a href="terapia.html"><img src="images/sm4.png" alt=""><span>Терапия</span></a></li>
+								<li><a href="proteth.html"><img src="images/sm5.png" alt=""><span>Протезирование</span></a></li>
+								<li><a href="hygiene.html"><img src="images/sm6.png" alt=""><span>Гигиена и профилактика</span></a></li>
+								<li><a href="services.html"><img src="images/sm7.png" alt=""><span>Детская стоматология</span></a></li>
+								<li><a href="#" style=" color: #aaa; "><img src="images/sm8.png" alt=""><span>Диагностика</span></a></li>
+							</ul>
+							<a href="contacts.html" class="site_but">Записаться на консультацию</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Yandex.Metrika counter -->
+	<script type="text/javascript">
+		(function (d, w, c) {
+			(w[c] = w[c] || []).push(function() {
+				try {
+					w.yaCounter45262389 = new Ya.Metrika({
+						id:45262389,
+						clickmap:true,
+						trackLinks:true,
+						accurateTrackBounce:true,
+						webvisor:true
+					});
+				} catch(e) { }
+			});
+
+			var n = d.getElementsByTagName("script")[0],
+			s = d.createElement("script"),
+			f = function () { n.parentNode.insertBefore(s, n); };
+			s.type = "text/javascript";
+			s.async = true;
+			s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+			if (w.opera == "[object Opera]") {
+				d.addEventListener("DOMContentLoaded", f, false);
+			} else { f(); }
+		})(document, window, "yandex_metrika_callbacks");
+	</script>
+	<noscript><div><img src="https://mc.yandex.ru/watch/45262389" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+	<!-- /Yandex.Metrika counter -->
+
+
+</body>
+</html>

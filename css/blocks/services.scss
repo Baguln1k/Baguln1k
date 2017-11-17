@@ -1,0 +1,301 @@
+.section.servicesslider{
+	background:#eeae42 url(../images/servicesliderbg.png) 0 0 repeat;
+	.owlmain .item{
+		.wraslider  .s_title{
+			font-weight: $l;
+			span{
+				font-weight: $m;
+			}
+		}
+		.wraslider a.all{
+			background-color: #fff;
+			color:#eeae42;
+			&:hover{
+				color:#fff;
+				border-color:#fff;
+			}
+		}
+	}
+}
+
+.finishblock{
+	.s_text{
+		.js-block{
+			display: flex;
+			.block{
+				display: flex;
+				align-items: center;
+				width:170px;
+				font-size:13px;
+				margin-left:20px;
+				line-height: 1;
+				&:first-child{
+					margin:0;
+				}
+				img{
+					width:41px;
+					max-width:41px;
+					height:42px;
+					margin-right:10px;
+				}
+			}
+		}
+	}
+}
+
+.servicesinfo{
+	background:none;
+	.site_title{
+		span{
+			color:#28415c;
+			span{
+				color:#666666;
+			}
+		}
+	}
+	.body{
+		max-width:840px;
+		margin:0 auto;
+		counter-reset: heading;
+		.block{
+			width:33%;
+			max-width:195px;
+			counter-increment: heading;
+			text-align: center;
+			position: relative;
+			&:before{
+				content:'';
+				position: absolute;
+				top:40px;
+				left:-45%;
+				width:46px;
+				height:34px;
+				background:url(../images/arrowserbot.png) 0 0 no-repeat;
+			}
+			&:first-child:before{
+				display: none;
+			}
+			.imgblock{
+				position: relative;
+				display: inline-block;
+				&:before{
+					content:'0'counter(heading);
+					position: absolute;
+					top:50%;
+					line-height: 27px;
+					left:-9px;
+					width:27px;
+					border-radius: 50%;
+					background:#032a4b;
+					border-radius:50%;
+					color:#fff;
+					margin-top:-15px;
+				}
+				img{
+					margin:0;
+				}
+			}
+			.text{
+				margin-top:13px;
+				font-size:16px;
+			}
+		}
+	}
+}
+
+.servicestop{
+	.textblock{
+		padding-right:520px;
+		background:url(../images/servicestop.png) 100% 50% no-repeat;
+		min-height:220px;
+	}
+}
+
+.serviceyellow{
+	background:#eeae42;
+	padding-top:35px;
+	position: relative;
+	padding-bottom:35px;
+	&:before{
+		content:'';
+		position: absolute;
+		top:-15px;
+		width:30px;
+		height:15px;
+		left:385px;
+		background:url(../images/yellowtop.png) 0 0 no-repeat;
+	}
+	.textblock{
+		background:url(../images/servicesyellow.png) 100% 0 no-repeat;
+		min-height:190px;
+		padding-right:520px;
+		.title{
+			padding-top:40px;
+		}
+		.text{
+			max-width:570px;
+		}
+	}
+}
+
+.serviceblock{
+	align-items: flex-end;
+	padding-top:65px;
+	position: relative;
+	&:after{
+		content:'';
+		position: absolute;
+		bottom:0;
+		left:0;
+		right:0;
+		height:112px; 
+		background:url(../images/servicesbotbg.png) 50% 0 repeat;
+	}
+	.left_info{
+		padding-bottom:105px;
+		.title{
+			span{
+				display: block;
+			}
+		}
+		.m_title{
+			font-size:27px;
+			line-height: 1;
+			font-weight: $r;
+			margin-top:25px;
+			color:#333333;
+		}
+	}
+	.rightimg{
+		max-width:650px;
+		min-width:650px;
+		width:650px;
+		position: relative;
+		&:before{
+			content:'';
+			position: absolute;
+			top:-125px;
+			left:-20px;
+			width:631px;
+			height:434px;
+			background:url(../images/serviceafterbg.png) 0 0 no-repeat;
+		}
+	}
+}
+
+@media screen and (max-width: 990px) {
+	.serviceblock{
+		padding-top:20px;
+		.left_info{
+			padding-bottom:120px;
+		}
+		.rightimg{
+			display: none;
+			&:before{
+				display: none;
+			}
+		}
+	}
+	.js_pic_block.greybg{
+		.rightimg{
+			display: none;
+		}
+	}
+}
+
+@media screen and (max-width: 950px) {
+	.serviceyellow , .servicestop{
+		&:before{
+			left:50%;
+			margin-left:-15px;
+		}
+		.textblock{
+			padding:0 0 200px;
+			background-position: 50% 100%;
+			text-align: center;
+			.title{
+				padding-top:0;
+			}
+			.text{
+				max-width:100%;
+			}
+		}
+	}
+	.servicestop .textblock{
+		padding-bottom:230px;
+	}
+}
+
+@media screen and (max-width: 850px) {
+	.servicesinfo .body .block:before{
+		left:-35%;
+	}
+}
+
+@media screen and (max-width: 767px) {
+	.section.servicesslider{
+		padding-top:180px;
+		.coutbloc{
+			top:125px;
+		}
+		.owlmain .item .wraslider{
+			font-size:13px;
+			.s_title{
+				font-size:30px;
+			}
+		}
+		.js-block{
+			justify-content: center;
+			.block{
+				text-align: left;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.servicesinfo .body{
+		display: block;
+		padding:0 15px;
+		.block{
+			margin:20px auto 0;
+			width:100%;
+			max-width:100%;
+			&:before{
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 480px) {
+	.serviceyellow , .servicestop{ 
+		padding-top:20px;
+		padding-bottom:20px;
+		.textblock{
+			background-size: 100% auto;
+			min-height:0;
+		}
+	}
+}
+
+@media screen and (max-width: 440px) {
+	.section.servicesslider .js-block{
+		display: block;
+		.block{
+			margin:20px auto 0;
+			&:first-child{
+				margin:0 auto;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 390px) {
+	.serviceyellow .textblock{
+		padding-bottom:140px;
+	}
+	.servicestop .textblock{
+		padding-bottom:160px;
+	}
+}
