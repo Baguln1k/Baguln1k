@@ -5858,6 +5858,7 @@ input[type="search"]::-webkit-search-cancel-button {
     font-weight: 500;
     vertical-align: middle;
     display: inherit;
+    pointer-events:auto;
 }
 
 .price-table__item label:nth-child(2) {
@@ -6118,6 +6119,12 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 @media (max-width:568px) {
+    .price-table__item:hover {
+    background-color: white;
+}
+    .price-table .price-table__item:hover label{
+        color: #032a4b;
+    }
     .price-calculator span {
         font-size: 15px;
         font-weight: ;
