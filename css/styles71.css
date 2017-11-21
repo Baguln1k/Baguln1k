@@ -5967,10 +5967,10 @@ input[type="search"]::-webkit-search-cancel-button {
     -webkit-box-shadow: 0px 1px 6px 0px;
     box-shadow: 0px 0px 20px 0px;
     position: fixed;
-    top: 88%;
+    top: 86%;
     right: 2%;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 .nav-select>option {
@@ -5985,13 +5985,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 @-webkit-keyframes bounce {
     25% {
-        background-position: 113px 10px;
-    }
-}
-
-@keyframes bounce {
-    25% {
-        background-position: 113px 10px;
+        background-position: 119px 10px;
     }
 }
 
@@ -6023,7 +6017,7 @@ input[type="search"]::-webkit-search-cancel-button {
         -webkit-box-pack: center;
         -ms-flex-pack: center;
         justify-content: center;
-        width: 130px;
+        width: 135px;
         padding-bottom: 6px;
         border: none;
         border-bottom: 1px solid #a7a6a6;
@@ -6037,7 +6031,7 @@ input[type="search"]::-webkit-search-cancel-button {
         -ms-appearance: none;
         -o-text-overflow: "";
         background: url(../images/icon%20aarow.png) no-repeat;
-        background-position: 113px 4px;
+        background-position: 119px 4px;
         font-weight: 600;
     }
     .bread-crumps form {
@@ -6052,7 +6046,8 @@ input[type="search"]::-webkit-search-cancel-button {
                 justify-content: center;
     }
     .bread-crumps input {
-        background-position: right 2px, 0;
+        background-position: right 2px, 0px;
+        width: 145px;
     }
     .bread-crumps {
         display: -webkit-box;
@@ -6127,6 +6122,9 @@ input[type="search"]::-webkit-search-cancel-button {
         font-size: 15px;
         font-weight: ;
     }
+    .price-calculator{
+        top:91%;
+    }
     .checkbox-place {
         display: none;
     }
@@ -6184,6 +6182,9 @@ input[type="search"]::-webkit-search-cancel-button {
     .table-faq {
         border-top: 1px solid #dcdcdc;
         margin-bottom: 0;
+        padding: 0;
+        padding-left: 10px;
+        padding-right: 37px;
         padding-top: 7px;
         padding-bottom: 7px;
     }
@@ -6196,16 +6197,21 @@ input[type="search"]::-webkit-search-cancel-button {
     .price-calculator span {
         font-size: 15px;
         width: auto;
-        line-height: 29px;
+        line-height: 56px;
     }
     .table-faq th:last-child {
         padding-right: 3%;
     }
     .table-faq th:first-child {
-        width: 39%;
+        width: 48%;
+        padding: 0;
     }
 }
-
+@media (max-width:390px){
+    .price-calculator{
+       top: 91%;
+    }
+}
 @media (max-width:360px) {
     .price-table__item label:nth-child(2) {
         width: 60%;
