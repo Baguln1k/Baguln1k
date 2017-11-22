@@ -5667,8 +5667,8 @@ ul.address li a:before {
 
 .bread-crumps li a {
     cursor: pointer;
-    font-size: 22.49px;
-    color: #97a6b3;
+    font-size: 22.73px;
+    color: #96a6b3;
     text-decoration: none;
     font-weight: 400;
 }
@@ -5727,7 +5727,7 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: 30px;
     margin-top: 110px;
     color: #032a4b;
-    line-height: 30px;
+    line-height: 18px;
     margin-bottom: 71px;
 }
 
@@ -5747,6 +5747,8 @@ input[type="search"]::-webkit-search-cancel-button {
     line-height: 20px;
     font-weight: 500;
     color: #032a4b;
+    /* padding: 0; */
+    /* margin: 0; */
     display: none;
     margin-top: 40px;
 }
@@ -5760,7 +5762,7 @@ input[type="search"]::-webkit-search-cancel-button {
     font-weight: inherit;
     margin-top: 25px;
     margin-bottom: 72px;
-    color: black;
+    color: #232121;
     text-align: left;
 }
 
@@ -5792,7 +5794,7 @@ input[type="search"]::-webkit-search-cancel-button {
 .price-table__item:hover {
     background-color: #3cc5ad;
 }
-
+/*
 .grow {
     -webkit-transition-duration: 0.3s;
     -o-transition-duration: 0.3s;
@@ -5817,7 +5819,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 
-
+*/
 .price-table__item:last-child {
     border-bottom: 1px solid #dcdcdc;
     margin-bottom: 0px;
@@ -5861,7 +5863,7 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .price-table__item label {
     font-size: 16px;
-    color: #032a4b;
+    color: #3c3c3c;
     line-height: 44px;
     font-weight: 500;
     vertical-align: middle;
@@ -5904,7 +5906,8 @@ input[type="search"]::-webkit-search-cancel-button {
     text-transform: uppercase;
     border-bottom: 1px solid #797979;
     font-weight: normal;
-    color: #797979;
+    line-height: 17.97px;
+    color: #393a3d;
     letter-spacing: 0.5px;
 }
 
@@ -5987,8 +5990,11 @@ input[type="search"]::-webkit-search-cancel-button {
     font-size: 16px;
     font-weight: 600;
 }
+.mobile-pharagraph p{
+    margin: 0;
+}
 
-.bread-crumps .nav-select {
+/*.bread-crumps .nav-select {
     -webkit-animation: bounce 2s infinite;
             animation: bounce 2s infinite;
 }
@@ -5998,7 +6004,7 @@ input[type="search"]::-webkit-search-cancel-button {
         background-position: 119px 10px;
     }
 }
-
+*/
 @media (max-width:1152px) {
     .table-faq th:last-child {
         width: 19%;
@@ -6066,10 +6072,11 @@ input[type="search"]::-webkit-search-cancel-button {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
         -ms-flex-direction: column;
-        flex-direction: column;
+        /* flex-direction: column; */
         -webkit-box-align: center;
         -ms-flex-align: center;
         align-items: center;
+        margin-top: 0px;
     }
     .table-faq th:last-child {
         text-align: left;
