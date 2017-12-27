@@ -1,0 +1,89 @@
+<div class="modal fade" id="bookModal"  tabindex="-1">
+	<div class="modal-wrap">
+		<div class="close-area" data-dismiss="modal"></div>
+		<div class="modal-inner">
+			<div class="modal-frame">
+				<div class="order-modal-box">
+					<button class="close" type="button" data-dismiss="modal">x</button>
+					<form action="#" class="order-modal-form">
+						<fieldset class="fields">
+							<strong class="form-title">Форма бронирования</strong>
+							<div class="form-group">
+								<input type="text" class="form-control user" placeholder="Имя и фамилия">
+							</div>
+							<div class="form-group">
+								<div class="input-col">
+									<input type="tel" class="js_maskInputPhone form-control tel" placeholder="+7 (___) ___-__-__">
+								</div>
+								<div class="input-col">
+									<input type="email" class="form-control email" placeholder="E-mail">
+								</div>
+							</div>
+							<div class="form-group date-group">
+								<span class="label label-from">c</span>
+								<div class="date-box">
+									<input type="text" class="form-control date-from" value="10.08.2016">
+								</div>
+								<span class="label label-to">по</span>
+								<div class="date-box date-box-to">
+									<input type="text" class="form-control date-to" value="10.08.2016">
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="dropdown dropdown-spec">
+									<select name="sel1" id="">
+										<option selected>Количество человек</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="4">5</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="dropdown dropdown-spec">
+									<select name="sel1" id="">
+										<option selected>Количество кроватей</option>
+										<option value="1">1</option>
+										<option value="2">2</option>
+										<option value="3">3</option>
+										<option value="4">4</option>
+										<option value="4">5</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<div class="dropdown dropdown-spec">
+									<select name="sel1" id="">
+										<option selected>Тип ванной</option>
+										<option value="1">Душ</option>
+										<option value="2">Ванная</option>
+									</select>
+								</div>
+							</div>
+							<div class="form-group">
+								<textarea class="form-control" name="ttx2" id="" cols="30" rows="2" placeholder="Комментарий"></textarea>
+							</div>
+						</fieldset>
+						<button type="button" class="btn-submit js_successBtn">Забронировать</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="modal fade" id="bookModalSuccess"  tabindex="-1">
+	<div class="modal-wrap">
+		<div class="close-area" data-dismiss="modal"></div>
+		<div class="modal-inner">
+			<div class="modal-frame">
+				<div class="order-modal-box order-success-modal-box">
+					<button class="close" type="button" data-dismiss="modal">x</button>
+					<strong class="form-title">Заявка отправлена</strong>
+					<p>Спасибо, ваше письмо было отправлено, наши менеджеры свяжутся с вами в ближайшее время</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

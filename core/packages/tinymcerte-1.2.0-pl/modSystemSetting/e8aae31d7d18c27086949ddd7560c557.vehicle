@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'tinymcerte',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'ed9fd8d24020fea5c1ff675a60b0c889',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'e8aae31d7d18c27086949ddd7560c557',
+  'native_key' => 'tinymcerte.toolbar1',
+  'object' => '{"key":"tinymcerte.toolbar1","value":"undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image","xtype":"textfield","namespace":"tinymcerte","area":"tinymcerte.toolbar","editedon":null}',
+);

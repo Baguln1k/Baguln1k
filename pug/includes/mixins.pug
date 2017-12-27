@@ -1,0 +1,23 @@
+include menu
+
+//-Главное меню (навигация)
+mixin list(current)
+	each val, key in menu
+		if current === key
+			li.active
+				a(href=val, title=key)= key
+		else
+			li
+				a(href=val, title=key)= key
+
+//-Главное меню (навигация)
+mixin listSpan(current)
+	each val, key in menu
+		if current === key
+			li.active
+				a(href=val, title=key)
+					span= key
+		else
+			li
+				a(href=val, title=key)
+					span= key

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+		<meta content="telephone=no" name="format-detection">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<link rel="icon" href="favicon.png" type="image/x-icon" />
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+		<title>Первый Апарт-отель в Томске</title>
+		<meta name="description" content="Апарт-отель - это комплекс современных апартаментов с услугами гостиничного сервиса. Здесь вы можете снять квартиру на несколько дней и провести их в комфорте и уюте."> 
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/all.css?v=007" rel="stylesheet">
+		<link href="js/layerslider/css/layerslider.css" rel="stylesheet">
+		<link href="css/swiper.min.css" rel="stylesheet">
+		<link href="js/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+		<link href="css/jquery.mCustomScrollbar.css" rel="stylesheet">
+
+		<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+		<!--[if IE 9]>
+		<link rel="stylesheet" href="css/ie.css" >
+		<![endif]-->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108633973-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108633973-1');
+</script>
+<style>
+
+	.ymaps-2-1-56-inner-panes, iframe.map{
+			  filter: grayscale(30%) ;
+			  filter: url(/img/filters.svg#grayscale); /* Firefox 3.5+ */
+			  -webkit-filter: grayscale(0.5); /* Google Chrome & Safari 6+ */
+			  
+			  }
+		 #map {
+           
+        }	  
+	</style>
+
+
+
+
+
+<!-- колендать -->
+	<script type = "text/javascript" src = "dist/jquery-3.2.1.min.js"> </script>
+	<script src="js/bootstrap.min.js"></script> 
+	<script type = "text/javascript" src = "dist/moment.js"> </script>
+	<link rel="stylesheet" href="dist/daterangepicker.css" />
+	<!-- <link rel = "stylesheet" href = "dist/daterangepicker.min.css"> -->
+	<script type = "text/javascript" src = "dist/jquery.daterangepicker.js"> </script>
+	<script type = "text/javascript" src = "dist/demo.js"> </script>
+	<script type = "text/javascript" src = "dist/form.js"> </script>
+	
+
+
+
+
+</head>
+<body class="form-mobile">
+
+
+<button class="closeform" data-dismiss="modal" type="button"></button>
+
+
+
+
+	<form method="post" class="order-modal-form" id="form" >
+		<fieldset class="fields">
+			<strong class="form-title">Форма бронирования</strong>
+			<div class="form-group">
+				<div class="input-col">
+					<input name="name"  required class="form-control user" placeholder="Имя и фамилия" type="text">
+				</div>
+				<div class="input-col">
+					<input name="location"  required class="form-control loc" placeholder="Город" type="text">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="input-col">
+					<input name="phone" required class="js_maskInputPhone form-control tel" placeholder="+7 (___) ___-__-__" type="tel">
+				</div>
+				<div class="input-col">
+					<input name="email" required class="form-control email" placeholder="E-mail" type="email">
+				</div>
+			</div>
+
+<script>
+$(function(){
+  $(".js_maskInputPhone").mask("+7 999 999-99-99");
+});
+</script>
+
+			<script>
+
+					$('.closeform').click(function(event) {
+						window.location.href = document.referrer;
+					});
+
+					jQuery(document).ready(function($) {
+					var d = new Date();
+					var curr_date = d.getDate();
+					var curr_month = d.getMonth() + 1;
+					var curr_year = d.getFullYear();
+					var newDat = curr_year + "-" + curr_month + "-" + curr_date;
+					$('.date-box-data1').attr('value', newDat);
+					$('.date-box-data2').attr('value', newDat);
+				});
+			</script>
+
+			<!--<script src="dist/jquery.maskedinput.min.js"></script>-->
+
+
+
+									<div class="date_click form-group date-group ">
+										<span class="label label-from">c</span>
+										<div class="date-box">
+											<input style="cursor: pointer" name="date_before" required class="form-control date-from date-box-data1"  type="text"   readonly>
+										</div>
+										<span class="label label-to">по</span>
+										<div class="date-box date-box-to">
+											<input style="cursor: pointer" name="date_after" required class="form-control date-to date-box-data2"  type="text" readonly>
+										</div>
+									</div>
+
+
+									<input id="date-range0" size="40" value="" style="display:none;">
+
+									<div style="margin: 0 auto; display: none; text-align: center; width:100%; margin-bottom: 20px;" id="date-range12-container"></div>
+
+
+									<div class="form-group">
+										<div class="dropdown dropdown-spec">
+											<select id="" name="people" required>
+												<option selected>
+													Количество человек
+												</option>
+												<option value="1">
+													1
+												</option>
+												<option value="2">
+													2
+												</option>
+												<option value="3">
+													3
+												</option>
+												<option value="4">
+													4
+												</option>
+												<option value="5">
+													5
+												</option>
+												<option value="6">
+													6
+												</option>
+											</select>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<div class="dropdown dropdown-spec">
+											<select id="" name="type" required>
+												<option selected>
+													Тип ванной
+												</option>
+												<option value="Душевая">
+													Душевая
+												</option>
+												<option value="Ванная">
+													Ванная
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<textarea class="form-control" cols="30" id="" name="message" placeholder="Комментарий" rows="2"></textarea>
+									</div>
+								</fieldset>
+								<input type="hidden" name="fromSite" value="Заявка с сайта - Аппарт отель" />
+								<button class="btn-submit" type="submit">Забронировать</button>
+							</form>
+							
+								<div class="modal fade" id="bookModalSuccess" tabindex="-1">
+			<div class="modal-wrap">
+				<div class="close-area" data-dismiss="modal"></div>
+				<div class="modal-inner">
+					<div class="modal-frame">
+						<div class="order-modal-box order-success-modal-box">
+							<button class="close" data-dismiss="modal" type="button">x</button> <strong class="form-title">Заявка отправлена</strong>
+							<p>Спасибо, ваше письмо было отправлено, наши менеджеры свяжутся с вами в ближайшее время</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+							<script src="js/jquery.maskedinput.min.js"></script> 
+						</body>

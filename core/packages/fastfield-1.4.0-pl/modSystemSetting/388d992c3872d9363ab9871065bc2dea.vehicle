@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'fastfield',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'b0ddd5aba963c48fe142087825e3bc25',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '388d992c3872d9363ab9871065bc2dea',
+  'native_key' => 'parser_class_path',
+  'object' => '{"key":"parser_class_path","value":"{core_path}components\\/fastfield\\/model\\/fastfield\\/","xtype":"textfield","namespace":"core","area":"system","editedon":null}',
+);

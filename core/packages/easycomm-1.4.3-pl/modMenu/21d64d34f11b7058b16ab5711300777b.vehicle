@@ -1,0 +1,50 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'unique_key' => 'text',
+  'related_objects' => 
+  array (
+    'Action' => 
+    array (
+      '7f88bb23342d47b81b9038cc0fdc44b3' => 
+      array (
+        'preserve_keys' => false,
+        'update_object' => true,
+        'unique_key' => 
+        array (
+          0 => 'namespace',
+          1 => 'controller',
+        ),
+        'class' => 'modAction',
+        'object' => '{"id":0,"namespace":"easycomm","controller":"index","haslayout":1,"lang_topics":"easycomm:default","assets":"","help_url":"","parent":0}',
+        'guid' => 'bd7462f2cf5dc2ffce300cc88dc625b4',
+        'native_key' => 0,
+        'signature' => '3a99af2fa1996d7a3a31538a568c0ebe',
+      ),
+    ),
+  ),
+  'related_object_attributes' => 
+  array (
+    'Action' => 
+    array (
+      'preserve_keys' => false,
+      'update_object' => true,
+      'unique_key' => 
+      array (
+        0 => 'namespace',
+        1 => 'controller',
+      ),
+    ),
+  ),
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f4c39f64c2da840baaba4da43b885251',
+  'package' => 'modx',
+  'class' => 'modMenu',
+  'signature' => '21d64d34f11b7058b16ab5711300777b',
+  'native_key' => 'easyComm',
+  'object' => '{"text":"easyComm","parent":"components","action":0,"description":"ec_menu_desc","icon":"images\\/icons\\/plugin.gif","menuindex":0,"params":"","handler":"","permissions":"","namespace":"core"}',
+);

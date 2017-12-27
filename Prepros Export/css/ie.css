@@ -1,0 +1,15 @@
+.index-top-screen {
+  position: relative;
+}
+
+.full-screen-fake {
+  display: none;
+}
+
+.special-promo-box {
+  display: none;
+}
+
+.index-white-box .text-table {
+  padding-bottom: 50px;
+}

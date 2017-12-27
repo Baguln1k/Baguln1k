@@ -1,0 +1,18 @@
+/*START OF BOOTSTRAP*/
+@import "settings";
+@import "bootstrap-components/normalize";
+@import "bootstrap-components/grid";
+@import "bootstrap-components/media-query";
+@import "bootstrap-components/forms";
+@import "bootstrap-components/modal";
+@import "bootstrap-components/tables";
+
+//@import "bootstrap-components/global-styles"; //MEDIUM BOOTSTRAP
+@import "bootstrap-components/global-styles-minimal"; //MINIMAL BOOTSTRAP 
+
+//@import "bootstrap-components/responsive-utilites";   //MEDIUM BOOTSTRAP
+@import "bootstrap-components/responsive-utilites-minimal"; //MINIMAL BOOTSTRAP 
+/*END OF BOOTSTRAP*/
+
+
+

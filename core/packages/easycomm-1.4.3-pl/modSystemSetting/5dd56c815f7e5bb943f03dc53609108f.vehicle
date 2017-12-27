@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => false,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'cfe66d18acea45872ffd8a9cd82427a3',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => '5dd56c815f7e5bb943f03dc53609108f',
+  'native_key' => 'ec_captcha_enable',
+  'object' => '{"key":"ec_captcha_enable","value":false,"xtype":"combo-boolean","namespace":"easycomm","area":"ec_antispam","editedon":null}',
+);

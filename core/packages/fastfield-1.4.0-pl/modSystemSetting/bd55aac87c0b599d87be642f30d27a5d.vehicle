@@ -1,0 +1,16 @@
+<?php return array (
+  'unique_key' => 'key',
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'fastfield',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '83b31100965915184d96679e70b1095f',
+  'package' => 'modx',
+  'class' => 'modSystemSetting',
+  'signature' => 'bd55aac87c0b599d87be642f30d27a5d',
+  'native_key' => 'parser_class',
+  'object' => '{"key":"parser_class","value":"fastFieldParser","xtype":"textfield","namespace":"core","area":"system","editedon":null}',
+);

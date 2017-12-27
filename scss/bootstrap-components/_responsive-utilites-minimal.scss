@@ -1,0 +1,100 @@
+@media (max-width: ($sm - 1)) {
+  .visible-xs {
+    display: block !important;
+  }
+}
+@media (max-width: ($sm - 1)) {
+  .visible-xs-block {
+    display: block !important;
+  }
+}
+@media (max-width: ($sm - 1)) {
+  .visible-xs-inline {
+    display: inline !important;
+  }
+}
+@media (max-width: ($sm - 1)) {
+  .visible-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: $sm) and (max-width: ($md - 1)) {
+  .visible-sm {
+    display: block !important;
+  }
+}
+@media (min-width: $sm) and (max-width: ($md - 1)) {
+  .visible-sm-block {
+    display: block !important;
+  }
+}
+@media (min-width: $sm) and (max-width: ($md - 1)) {
+  .visible-sm-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: $sm) and (max-width: ($md - 1)) {
+  .visible-sm-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: $md) and (max-width: ($lg - 1)) {
+  .visible-md {
+    display: block !important;
+  }
+}
+@media (min-width: $md) and (max-width: ($lg - 1)) {
+  .visible-md-block {
+    display: block !important;
+  }
+}
+@media (min-width: $md) and (max-width: ($lg - 1)) {
+  .visible-md-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: $md) and (max-width: ($lg - 1)) {
+  .visible-md-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (min-width: $lg) {
+  .visible-lg {
+    display: block !important;
+  }
+}
+@media (min-width: $lg) {
+  .visible-lg-block {
+    display: block !important;
+  }
+}
+@media (min-width: $lg) {
+  .visible-lg-inline {
+    display: inline !important;
+  }
+}
+@media (min-width: $lg) {
+  .visible-lg-inline-block {
+    display: inline-block !important;
+  }
+}
+@media (max-width: ($sm - 1)) {
+  .hidden-xs {
+    display: none !important;
+  }
+}
+@media (min-width: $sm) and (max-width: ($md - 1)) {
+  .hidden-sm {
+    display: none !important;
+  }
+}
+@media (min-width: $md) and (max-width: ($lg - 1)) {
+  .hidden-md {
+    display: none !important;
+  }
+}
+@media (min-width: $lg) {
+  .hidden-lg {
+    display: none !important;
+  }
+}

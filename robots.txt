@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+Host: 1apart.ru
+Sitemap : http://1apart.ru/sitemap.xml

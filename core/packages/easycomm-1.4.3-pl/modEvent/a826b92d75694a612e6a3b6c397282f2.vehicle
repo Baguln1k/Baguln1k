@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => 'f0e6b78171e9abe4c97c9acad406adf8',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => 'a826b92d75694a612e6a3b6c397282f2',
+  'native_key' => 'OnEcMessageUndelete',
+  'object' => '{"name":"OnEcMessageUndelete","service":6,"groupname":"easyComm"}',
+);

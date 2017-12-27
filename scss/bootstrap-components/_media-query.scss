@@ -1,0 +1,17 @@
+// Media Queries
+$media-xs: "(max-width : " + ($sm - 1) + ")";
+$media-sm: "(min-width:" + $sm +") and (max-width:" + ($md - 1) + ")";
+$media-md: "(min-width:" + $md +") and (max-width:" + ($lg - 1) + ")";
+$media-lg: "(min-width:" + $lg +")";
+$media-xlg: "(min-width:" + $xlg +")";
+
+
+$iphone3:  "only screen and (max-height:380px)";
+$iphone4:  "only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 2/3) and (orientation:portrait)";
+$iphone5:  "only screen and (device-aspect-ratio: 40/71)";
+$iphone6:  "only screen and (min-device-width : 375px) and (max-device-width : 667px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2)";
+
+//Обязательно сначала xs потом самый старый iphone затем в порядке возрастания до 6
+
+
+

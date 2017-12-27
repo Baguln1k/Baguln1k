@@ -1,0 +1,459 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<link rel="icon" href="favicon.png" type="image/x-icon" />
+		<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+		<title>Отзывы</title>
+		<link rel="stylesheet" href="css/bootstrap.css" >
+		<link rel="stylesheet" href="css/all.css" >
+		<link rel="stylesheet" href="js/layerslider/css/layerslider.css" >
+		<link rel="stylesheet" href="css/swiper.min.css" >
+		<link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css" >
+		<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+		<!--[if lt IE 9]><script src="js/html5.js"></script><![endif]-->
+		<!--[if IE 9]>
+		<link rel="stylesheet" href="css/ie.css" >
+		<![endif]-->
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-108633973-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-108633973-1');
+</script>
+	</head>
+	<body>
+		<header class="header-inner">
+			<div class="container-fluid">
+				<div class="logo-box">
+					<a href="index.html" class="logo">
+					<img src="images/logo.png" alt="" class="img-responsive hidden-xs">
+					<img src="images/mobile-logo.png" alt="" class="img-responsive visible-xs">
+					</a>
+				</div>
+				<div class="contacts-box">
+					<span class="address">г. Томск, ул. Яковлева, 15</span>
+					<a href="tel:8-800-222-22-33" class="phone">8 800 222 22 33</a>
+					<button class="btn-order btn-brow-border hidden-xs" data-toggle="modal" data-target="#bookModal" type="button">Забронировать</button>
+				</div>
+				<nav class="navigation">
+					<ul>
+						<li><a href="about.html" title="о комплексе">о комплексе</a></li>
+						<li><a href="rooms-choice.html" title="апартаменты">апартаменты</a></li>
+						<li><a href="photos.html" title="фотогалерея">фотогалерея</a></li>
+						<li class="active"><a href="reviews.html" title="отзывы">отзывы</a></li>
+						<li><a href="faq.html" title="faq">faq</a></li>
+						<li><a href="contacts.html" title="расположение">расположение</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		</header>
+		<div class="mobile-header">
+			<div class="logo-box">
+				<a href="index.html" class="logo">
+				<img src="images/mobile-logo.png" alt="" class="img-responsive">
+				</a>
+			</div>
+			<div class="nav-box">
+				<nav class="navigation">
+					<ul>
+						<li><a href="about.html" title="о комплексе">о комплексе</a></li>
+						<li><a href="rooms-choice.html" title="апартаменты">апартаменты</a></li>
+						<li><a href="photos.html" title="фотогалерея">фотогалерея</a></li>
+						<li class="active"><a href="reviews.html" title="отзывы">отзывы</a></li>
+						<li><a href="faq.html" title="faq">faq</a></li>
+						<li><a href="contacts.html" title="расположение">расположение</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="contacts-box">
+				<div class="soc-box">
+					<a href="#"><img src="images/soc-icon01.png" class="img-responsive" alt=""></a>
+					<a href="#"><img src="images/soc-icon02.png" class="img-responsive" alt=""></a>
+					<a href="#"><img src="images/soc-icon03.png" class="img-responsive" alt=""></a>
+					<a href="#"><img src="images/soc-icon04.png" class="img-responsive" alt=""></a>
+				</div>
+				<div class="adr-box">
+					<a href="tel:8-800-222-22-33" class="phone">8 800 222 22 33</a>
+					<span class="address">г. Томск, ул Яковлева 15</span>
+				</div>
+				<button class="btn-order" data-toggle="modal" data-target="#bookModal" type="button"><span>Забронировать</span></button>
+			</div>
+		</div>
+		<div class="inner-top-sect">
+			<div class="sect-bg" style="background: url(images/top-bg-galery.jpg) no-repeat 50% 100%;"></div>
+			<div class="sect-holder">
+				<div class="sect-frame">
+					<div class="container-fluid">
+						<div class="centered-box">
+							<div class="title-left">
+								<h1>ОТЗЫВЫ</h1>
+								<span class="subtitle">реальные отзывы наших гостей</span>
+							</div>
+							<div class="button-wrap">
+								<a href="#reviewAdd" class="btn-brow-filled js_scrollToLink jsMakeReview"><span>Оставить отзыв</span></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="inner-white-sect">
+			<div class="container-fluid">
+				<div class="reviews-container">
+					<aside class="rev-rating-sidebar">
+						<div class="rating-count">
+							<div class="rating-stars">
+								<span class="progress" style="width:93%"></span>
+							</div>
+							<span class="rating-number">4,6</span>
+							<span class="number-subtitle">общая оценка</span>
+						</div>
+						<div class="rating-info-box">
+							<a href="#">
+							<img src="images/bg-rev-info.jpg" alt="" class="img-responsive">
+							</a>
+						</div>
+					</aside>
+					<section class="reviews-body-sect">
+						<ul class="all-reviews-list">
+							<li class="review-item">
+								<div class="review-header">
+									<div class="head-right-side">
+										<span class="rate-title">Общая оценка</span>
+										<div class="rating-stars">
+											<span class="progress" style="width:100%"></span>
+										</div>
+									</div>
+									<div class="head-left-side">
+										<span class="author">Екатерина Иванова</span>
+										<span class="date">21 ноября 2016</span>
+									</div>
+								</div>
+								<div class="review-body">
+									<p>Очень любезный и вежливый персонал. Достойное обслуживание. Не включили оплату за раннее заселение(с восьми утра). Завтрак порадовал разнообразием и выбором. Все очень вкусно. Буду рекомендовать всем знакомым, особенно тем, кто любит высокий европейский уровень и качество сервиса. Очень порадовала скидка.</p>
+									<div class="collapse" id="collapseExample">
+										<p>Очень любезный и вежливый персонал. Достойное обслуживание. Не включили оплату за раннее заселение(с восьми утра). Завтрак порадовал разнообразием и выбором. Все очень вкусно. Буду рекомендовать всем знакомым, особенно тем, кто любит высокий европейский уровень и качество сервиса. Очень порадовала скидка.</p>
+										<p>Очень любезный и вежливый персонал. Достойное обслуживание. Не включили оплату за раннее заселение(с восьми утра). Завтрак порадовал разнообразием и выбором. Все очень вкусно. Буду рекомендовать всем знакомым, особенно тем, кто любит высокий европейский уровень и качество сервиса. Очень порадовала скидка.</p>
+									</div>
+									<a class="more-btn collapsed" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample"><span>Подробнее</span></a>
+								</div>
+							</li>
+							<li class="review-item">
+								<div class="review-header">
+									<div class="head-right-side">
+										<span class="rate-title">Общая оценка</span>
+										<div class="rating-stars">
+											<span class="progress" style="width:60%"></span>
+										</div>
+									</div>
+									<div class="head-left-side">
+										<span class="author">Светлана Еремина</span>
+										<span class="date">5 июля 2016</span>
+									</div>
+								</div>
+								<div class="review-body">
+									<p>Понравился номер, в котором мы жили. Дизайн шикарный. Общая концепция отеля очень понравилась, для Томска это что-то новенькое. Рядом есть где погулять, есть супермаркеты. Рекомендую!</p>
+									<a href="#" class="more-btn collapsed"><span>Подробнее</span></a>
+								</div>
+							</li>
+							<li class="review-item">
+								<div class="review-header">
+									<div class="head-right-side">
+										<span class="rate-title">Общая оценка</span>
+										<div class="rating-stars">
+											<span class="progress" style="width:80%"></span>
+										</div>
+									</div>
+									<div class="head-left-side">
+										<span class="author">Ирина Меньшикова</span>
+										<span class="date">5 июля 2016</span>
+									</div>
+								</div>
+								<div class="review-body">
+									<p>Понравился номер, в котором мы жили. Дизайн шикарный. Общая концепция отеля очень понравилась, для Томска это что-то новенькое. Рядом есть где погулять, есть супермаркеты. Рекомендую!</p>
+									<a href="#" class="more-btn collapsed"><span>Подробнее</span></a>
+								</div>
+							</li>
+							<li class="review-item">
+								<div class="review-header">
+									<div class="head-right-side">
+										<span class="rate-title">Общая оценка</span>
+										<div class="rating-stars">
+											<span class="progress" style="width:43%"></span>
+										</div>
+									</div>
+									<div class="head-left-side">
+										<span class="author">Светлана Еремина</span>
+										<span class="date">5 июля 2016</span>
+									</div>
+								</div>
+								<div class="review-body">
+									<p>Очень любезный и вежливый персонал. Достойное обслуживание. Не включили оплату за раннее заселение(с восьми утра). Завтрак порадовал разнообразием и выбором. Все очень вкусно. Буду рекомендовать всем знакомым, особенно тем, кто любит высокий европейский уровень и качество сервиса. Очень порадовала скидка.</p>
+									<p>Понравился номер, в котором мы жили. Дизайн шикарный. Общая концепция отеля очень понравилась, для Томска это что-то новенькое. Рядом есть где погулять, есть супермаркеты. Рекомендую!</p>
+									<a href="#" class="more-btn collapsed"><span>Подробнее</span></a>
+								</div>
+							</li>
+						</ul>
+						<div class="more-revs-btn-wrap">
+							<button class="brow-collapse-btn">еще отзывы</button>
+						</div>
+						<form action="#" id="reviewAdd" class="review-form">
+							<span class="form-title">Оставить отзыв</span>
+							<div class="form-row">
+								<div class="form-inputs">
+									<div class="form-group">
+										<input type="text" class="form-control name" placeholder="Имя">
+									</div>
+									<div class="form-group">
+										<input type="tel" class="form-control tel js_maskInputPhone" placeholder="Телефон">
+									</div>
+								</div>
+								<div class="form-textarea">
+									<textarea name="ttx" id="" cols="30" rows="4" class="form-control message" placeholder="Ваше сообщение"></textarea>
+								</div>
+							</div>
+							<div class="form-row">
+								<div class="review-rating">
+									<span class="rating-title">Ваша оценка:</span>
+									<ul class="unit-rating big-rating">
+										<li class="current-rating"></li>
+										<li><a href="#" class="r1-unit" data-rate="1" title="Плохо">1</a> </li>
+										<li><a href="#" class="r2-unit" data-rate="2" title="Приемлемо">2</a> </li>
+										<li><a href="#" class="r3-unit" data-rate="3" title="Средне">3</a> </li>
+										<li><a href="#" class="r4-unit" data-rate="4" title="Хорошо">4</a> </li>
+										<li><a href="#" class="r5-unit" data-rate="5" title="Отлично">5</a> </li>
+									</ul>
+								</div>
+								<div class="button-wrap">
+									<button class="btn-brow-filled">Добавить отзыв</button>
+								</div>
+							</div>
+						</form>
+					</section>
+				</div>
+			</div>
+		</div>
+		<footer class="inner-footer">
+			<div class="container-fluid">
+				<div class="footer-bottom">
+					<div class="footer-navs">
+						<div class="button-wrap visible-xs">
+							<button class="btn-send" data-toggle="modal" data-target="#bookModal" type="button">напишите нам</button>
+						</div>
+						<ul class="footer-nav">
+							<li><a href="about.html">О комплексе</a></li>
+							<li><a href="rooms-choice.html">Апартаменты</a></li>
+							<li><a href="reviews.html">Отзывы</a></li>
+							<li><a href="faq.html">FAQ</a></li>
+							<li><a href="contacts.html">Расположение</a></li>
+						</ul>
+
+						<ul class="footer-nav footer-nav2">
+							<li style="float: none;"><a class="conapart" href="tel:83822906066" class="phone">+7 (3822) 906-066</a></li>
+							<li><a class="conapart" href="mailto:info@1apart.ru" class="mail-link">info@1apart.ru</a></li>
+						</ul> 
+
+
+						<div class="soc-box">
+							<!--<a href="#"><img alt="" class="img-responsive" src="images/soc-icon01.png"></a>-->
+							<a href="https://www.facebook.com/%D0%9F%D0%B5%D1%80%D0%B2%D1%8B%D0%B9-%D0%90%D0%BF%D0%B0%D1%80%D1%82-%D0%9E%D1%82%D0%B5%D0%BB%D1%8C-1929049927417735/" rel="nofollow" target="blanck"><img alt="" class="img-responsive" src="images/soc-icon02.png"></a>
+							<a href="https://www.instagram.com/1apart.ru/" rel="nofollow" target="blanck"><img alt="" class="img-responsive" src="images/soc-icon04.png"></a>
+
+
+						</div>
+						<div class="copy" style="">ООО «Первый Апарт-отель», 2017</div>
+
+					</div>
+				<form  class="footer-contact-form hidden-xs" id="form3">
+						<span class="form-title">Есть вопросы? Пишите нам!</span>
+						<div class="form-row">
+							<div class="form-inputs">
+								<div class="form-group">
+									<input name="name" required class="form-control name" placeholder="Имя" type="text">
+								</div>
+								<div class="form-group">
+									<input name="phone" required class="js_maskInputPhone form-control tel" placeholder="Телефон" type="tel">
+								</div>
+							</div>
+							<div class="form-textarea">
+								<textarea name="message" class="form-control message" cols="30" placeholder="Ваше сообщение" rows="4"></textarea>
+							</div>
+						</div>
+						<div class="button-wrap">
+							<button class="btn-send">Отправить</button>
+						</div>
+					</form>
+								<a class="fresco" target="_blank" href="http://fresco.bz/"> Студия FRESCO</a>
+
+				</div>
+			</div>
+		</footer>
+		<button class="mobile-menu-btn">
+		<span>toggle menu</span>
+		</button>
+		<div class="modal fade" id="bookModal" tabindex="-1">
+			<div class="modal-wrap">
+				<div class="close-area" data-dismiss="modal"></div>
+				<div class="modal-inner">
+					<div class="modal-frame">
+						<div class="order-modal-box">
+							<button class="close" data-dismiss="modal" type="button">x</button>
+							<form method="post" class="order-modal-form" id="form">
+								<fieldset class="fields">
+									<strong class="form-title">Форма бронирования</strong>
+									<div class="form-group">
+										
+										<div class="input-col">
+											<input name="name"  required class="form-control user" placeholder="Имя и фамилия" type="text">
+										</div>
+										<div class="input-col">
+											<input name="location"  required class="form-control loc" placeholder="Город" type="text">
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="input-col">
+											<input name="phone" required class="js_maskInputPhone form-control tel" placeholder="+7 (___) ___-__-__" type="tel">
+										</div>
+										<div class="input-col">
+											<input name="email" required class="form-control email" placeholder="E-mail" type="email">
+										</div>
+									</div>
+									<div class="form-group date-group">
+										<span class="label label-from">c</span>
+										<div class="date-box">
+											<input name="date_before" required class="form-control date-from" type="text" value="10.08.2016">
+										</div>
+										<span class="label label-to">по</span>
+										<div class="date-box date-box-to">
+											<input name="date_after" required class="form-control date-to" type="text" value="10.08.2016">
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="dropdown dropdown-spec">
+											<select id="" name="people" required>
+												<option selected>
+													Количество человек
+												</option>
+												<option value="1">
+													1
+												</option>
+												<option value="2">
+													2
+												</option>
+												<option value="3">
+													3
+												</option>
+												<option value="4">
+													4
+												</option>
+												<option value="4">
+													5
+												</option>
+											</select>
+										</div>
+									</div>
+									
+									<div class="form-group">
+										<div class="dropdown dropdown-spec">
+											<select id="" name="type" required>
+												<option selected>
+													Тип ванной
+												</option>
+												<option value="Душевая">
+													Душевая
+												</option>
+												<option value="Ванная">
+													Ванная
+												</option>
+											</select>
+										</div>
+									</div>
+									<div class="form-group">
+										<textarea class="form-control" cols="30" id="" name="message" placeholder="Комментарий" rows="2"></textarea>
+									</div>
+								</fieldset>
+								<input type="hidden" name="fromSite" value="Заявка с сайта - Аппарт отель" />
+								<button class="btn-submit" type="submit">Забронировать</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="bookModalSuccess"  tabindex="-1">
+			<div class="modal-wrap">
+				<div class="close-area" data-dismiss="modal"></div>
+				<div class="modal-inner">
+					<div class="modal-frame">
+						<div class="order-modal-box order-success-modal-box">
+							<button class="close" type="button" data-dismiss="modal">x</button>
+							<strong class="form-title">Заявка отправлена</strong>
+							<p>Спасибо, ваше письмо было отправлено, наши менеджеры свяжутся с вами в ближайшее время</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/modernizr.js"></script>
+		<script src="js/jquery-1.9.1.min.js"></script>
+		<script src="js/bootstrap.min.js" ></script>
+		<script src="js/layerslider/js/greensock.js" ></script>
+		<script src="js/layerslider/js/layerslider.transitions.js" ></script>
+		<script src="js/layerslider/js/layerslider.kreaturamedia.jquery.js" ></script>
+		<script src="js/ScrollToPlugin.js" ></script>
+		<script src="js/ScrollMagic.min.js" ></script>
+		<script src="js/animation.gsap.min.js" ></script>
+		<script src="js/swiper.jquery.min.js" ></script>
+		<script src="js/myMap.js"></script>
+		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA3M1rIN8e8jm8YXg2gdueDYTcckjoiWNQ&callback=initWhereMap" ></script>
+		<script src="js/moment.min.js" ></script>
+		<script src="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.js" ></script>
+		<link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/bootstrap.daterangepicker/2/daterangepicker.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css" />
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.js"></script>
+		<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+		<script src="js/jquery.mousewheel.min.js"></script>
+		<script src="js/jquery.maskedinput.min.js"></script>
+		<script src="js/animations.js"></script>
+		<script src="js/main.js"></script>
+				<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter46335156 = new Ya.Metrika({
+                    id:46335156,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true,
+                    webvisor:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/46335156" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+	</body>
+</html>

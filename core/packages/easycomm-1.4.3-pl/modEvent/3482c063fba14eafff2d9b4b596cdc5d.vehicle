@@ -1,0 +1,15 @@
+<?php return array (
+  'preserve_keys' => true,
+  'update_object' => true,
+  'namespace' => 'easycomm',
+  'resolve' => NULL,
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9842950d80112d64bf35ebe537bf9267',
+  'package' => 'modx',
+  'class' => 'modEvent',
+  'signature' => '3482c063fba14eafff2d9b4b596cdc5d',
+  'native_key' => 'OnEcThreadRemove',
+  'object' => '{"name":"OnEcThreadRemove","service":6,"groupname":"easyComm"}',
+);

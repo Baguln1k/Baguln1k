@@ -1,0 +1,29 @@
+<?php return array (
+  'unique_key' => 'category',
+  'preserve_keys' => false,
+  'update_object' => true,
+  'related_objects' => true,
+  'namespace' => 'fastfield',
+  'resolve' => 
+  array (
+    0 => 
+    array (
+      'type' => 'php',
+      'body' => '{"source":"fastfield-1.4.0-pl\\/modCategory\\/e0d4c84fd86442a6bedf6b992d85fda8.install.script.resolver","type":"php","name":"install.script"}',
+    ),
+    1 => 
+    array (
+      'type' => 'file',
+      'body' => '{"source":"fastfield-1.4.0-pl\\/modCategory\\/e0d4c84fd86442a6bedf6b992d85fda8\\/1\\/","target":"return MODX_CORE_PATH . \'components\\/\';","name":"fastfield"}',
+    ),
+  ),
+  'validate' => NULL,
+  'vehicle_package' => 'transport',
+  'vehicle_class' => 'xPDOObjectVehicle',
+  'guid' => '9bfb7a3d60c8a9b0bd78e01dfdef8337',
+  'package' => 'modx',
+  'class' => 'modCategory',
+  'signature' => 'e0d4c84fd86442a6bedf6b992d85fda8',
+  'native_key' => 1,
+  'object' => '{"id":1,"parent":0,"category":"fastField"}',
+);

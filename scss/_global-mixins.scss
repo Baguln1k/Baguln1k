@@ -1,0 +1,159 @@
+//Мои снипеты (вообще желательно не трогать)
+@mixin border-radius($radius: 50%) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+@mixin box-shadow($hoff, $voff, $blur, $color) {
+	-webkit-box-shadow: $hoff $voff $blur $color;
+	-moz-box-shadow: $hoff $voff $blur $color;
+	box-shadow: $hoff $voff $blur $color;
+}
+@mixin box-sizing (){
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+@mixin ease($type: all, $time: 0.3s) {
+	-webkit-transition: $type $time ease;
+	-moz-transition: $type $time ease;
+	-ms-transition: $type $time ease;
+	-o-transition: $type $time ease;
+	transition: $type $time ease;
+}
+@mixin full-height-abs (){
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+}
+@mixin full-height-rel (){
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+@mixin inline-block (){
+	display: inline;
+	display: inline-block;
+	vertical-align: top;
+	zoom: 1;
+}
+@mixin after-fix{
+	&:after{
+		content:"";
+		display:block;
+		clear:both;
+	}
+}
+@mixin after-box{
+	content:"";
+	display:block;
+	clear:both;
+}
+@mixin transform($trans...) {
+	-webkit-transform: $trans;
+	-moz-transform: $trans;
+	-ms-transform: $trans;
+	-o-transform: $trans;
+	transform: $trans;
+}
+@mixin scale($scale) {
+	-webkit-transform: scale($scale);
+	-moz-transform: scale($scale);
+	-ms-transform: scale($scale);
+	-o-transform: scale($scale);
+	transition: scale($scale);
+}
+@mixin vertical-center{
+	position: relative;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+@mixin vertical-center-absolute{
+	position: absolute;
+	top: 50%;
+	left: 0;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+@mixin translateX($amount: -50%) {
+	-webkit-transform: translateX($amount);
+	-moz-transform: translateX($amount);
+	-ms-transform: translateX($amount);
+	-o-transform: translateX($amount);
+	transform: translateX($amount);
+}
+@mixin translateY($amount: -50%) {
+	-webkit-transform: translateY($amount);
+	-moz-transform: translateY($amount);
+	-ms-transform: translateY($amount);
+	-o-transform: translateY($amount);
+	transform: translateY($amount);
+}
+@mixin translate($amount1: -50%, $amount2: -50%) {
+	-webkit-transform: translate($amount1, $amount2);
+	-moz-transform:translate($amount1, $amount2);
+	-ms-transform:translate($amount1, $amount2);
+	-o-transform: translate($amount1, $amount2);
+	transform: translate($amount1, $amount2);
+}
+@mixin gradientY($colorStart: #fff, $colorEnd: #000) {
+	background: $colorStart;
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $colorStart), color-stop(1, $colorEnd));
+	background-image: -o-linear-gradient(bottom, $colorStart 0%, $colorEnd 100%);
+	background-image: -moz-linear-gradient(bottom, $colorStart 0%, $colorEnd 100%);
+	background-image: -webkit-linear-gradient(bottom, $colorStart 0%, $colorEnd 100%);
+	background-image: -ms-linear-gradient(bottom, $colorStart 0%, $colorEnd 100%);
+	background-image: linear-gradient(to bottom, $colorStart 0%, $colorEnd 100%);
+}
+@mixin gradientX($colorStart: #fff, $colorEnd: #000) {
+	background: $colorStart;
+	background-image: -webkit-gradient(linear, left top, right top, color-stop(0, $colorStart), color-stop(1, $colorEnd));
+	background-image: -o-linear-gradient(right, $colorStart 0%, $colorEnd 100%);
+	background-image: -moz-linear-gradient(right, $colorStart 0%, $colorEnd 100%);
+	background-image: -webkit-linear-gradient(right, $colorStart 0%, $colorEnd 100%);
+	background-image: -ms-linear-gradient(right, $colorStart 0%, $colorEnd 100%);
+	background-image: linear-gradient(to right, $colorStart 0%, $colorEnd 100%);
+}
+@mixin flexbox() {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+}
+
+@mixin flex($values) {
+	-webkit-box-flex: $values;
+	-moz-box-flex:  $values;
+	-webkit-flex:  $values;
+	-ms-flex:  $values;
+	flex:  $values;
+}
+
+@mixin order($val) {
+	-webkit-box-ordinal-group: $val;  
+	-moz-box-ordinal-group: $val;     
+	-ms-flex-order: $val;     
+	-webkit-order: $val;  
+	order: $val; 
+}
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}
