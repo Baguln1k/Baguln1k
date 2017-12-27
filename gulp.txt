@@ -1,0 +1,32 @@
+
+cd путь к проэкту
+npm i -g gulp - установить глобально
+npm init
+gulp-project
+npm i gulp --save-dev - установить локально
+
+gulp - выполнение всего документа
+
+запуск таска gulp mytask
+
+плагины
+css
+npm install --save-dev gulp-concat-css - сборка всех css в 1 файл
+npm install gulp-clean-css --save-dev - минификаор css
+npm install gulp-rename - переименовывает файлы
+
+js
+npm install gulp-concat - объединяет все js файлы
+npm install gulp-uglify - минификатор js
+
+npm install gulp-sass - sass
+npm i gulp-autoprefixer - автопрефиксер
+
+npm install gulp-watch - слежение за файлами
+npm install del --save-dev - удаление
+
+
+npm install browser-sync gulp --save-dev
+
+npm install --save-dev gulp-js-obfuscator
+

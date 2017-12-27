@@ -1,0 +1,217 @@
+// стандартный
+$col_grid: 12;
+
+// xs очень маленькие <544px
+$xs: false;
+$media_xs: 544px;
+$col_xs: 2;
+
+// sm маленькие ≥544px
+$sm: false;
+$col_sm: 4;
+
+// md средние ≥768px
+$md: true;
+$media_md: 768px;
+$col_md: $col_grid;
+
+// lg большие ≥992px
+$lg: true;
+$media_lg: 992px;
+$col_lg: 12;
+
+// xl очень большие ≥1200px
+$xl: true;
+$media_xl: 1200px;
+$col_xl: 12;
+
+// отступы
+$pr: true;
+$size_pr: 5px; // кратность каждого увилечения
+$col_pr: 20; // сколько раз увеличиваем
+
+@mixin flexgr() {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.flex {
+	@include flexgr;
+}
+
+.flex-ai-fs {
+	@include flexgr;
+	flex-wrap: wrap;
+	align-content: flex-start;
+}
+
+// создание отступов
+@if ($pr) {
+	@for $i from 0 through $col_pr {
+
+		.p-#{$i} {
+			padding: $i * $size_pr;
+			box-sizing: border-box;
+		}
+
+		.ph-#{$i} {
+			padding-top: $i * $size_pr;
+			padding-bottom: $i * $size_pr;
+			box-sizing: border-box;
+		}
+
+		.pw-#{$i} {
+			padding-left: $i * $size_pr;
+			padding-right: $i * $size_pr;
+			box-sizing: border-box;
+		}
+
+		.pl-#{$i} {
+			padding-left: $i * $size_pr;
+			box-sizing: border-box;
+		}
+
+		.pr-#{$i} {
+			padding-right: $i * $size_pr;
+			box-sizing: border-box;
+		}
+
+		.pt-#{$i} {
+			padding-top: $i * $size_pr;
+			box-sizing: border-box;
+		}
+
+		.pb-#{$i} {
+			padding-bottom: $i * $size_pr;
+			box-sizing: border-box;
+		}
+	}
+}
+
+
+
+
+@mixin flexOptionPadding($name , $col) {
+	@for $i from 0 through $col {
+
+		.p-#{$name}-#{$i} {
+			padding: $i * $size_pr;
+			box-sizing: border-box;
+		}
+
+
+		.ph-#{$name}-#{$i} {
+			padding-top: $i * $size_pr;
+			padding-bottom: $i * $size_pr;
+			box-sizing: border-box;
+		}
+
+		.pw-#{$name}-#{$i} {
+			padding-left: $i * $size_pr;
+			padding-right: $i * $size_pr;
+			box-sizing: border-box;
+		}
+
+		.pl-#{$name}-#{$i} {
+			padding-left: $i * $size_pr;
+			box-sizing: border-box;
+		}
+
+		.pr-#{$name}-#{$i} {
+			padding-right: $i * $size_pr;
+			box-sizing: border-box;
+		}
+
+		.pt-#{$name}-#{$i} {
+			padding-top: $i * $size_pr;
+			box-sizing: border-box;
+		}
+
+		.pb-#{$name}-#{$i} {
+			padding-bottom: $i * $size_pr;
+			box-sizing: border-box;
+		}
+	}
+}
+
+
+
+
+
+
+
+// создание колонок имя и колличество
+@for $i from 0 through $col_grid {	
+	.col-#{($col_grid ) - $i} {
+		// flex-grow: $i;
+		flex-basis: (100 - (100 * ($i) ) / $col_grid) + %;
+		max-width: (100 - (100 * ($i) ) / $col_grid) + %;
+	}
+
+	// .col-#{($col_grid + 1) - $i}--m-#{2} {
+	// 	$f: (100 - (100 * ($i - 1) ) / $col_grid) + %;
+	// 	flex-basis: $f;
+	// 	flex-basis:  calc( #{$f} - 10px);
+	// 	margin: 5px;
+	// }
+
+}
+
+
+@mixin flexOptionGrid($name , $col) {
+	@for $i from 0 through $col {	
+		.col-#{$name}-#{($col) - $i} {
+			// flex-grow: $i;
+			flex-basis: (100 - (100 * ($i) ) / $col) + %;
+			max-width: (100 - (100 * ($i) ) / $col) + %;
+		}
+	}
+}
+
+
+
+// xl очень большие
+@if ($xl) {
+	@media (max-width: $media_xl) { 
+		@include flexOptionGrid('xl' , $col_xl);
+		@include flexOptionPadding('xl' , $col_pr);
+
+	}
+}
+
+// lg большие
+@if ($lg) {
+	@media (max-width: $media_lg) { 
+		@include flexOptionGrid('lg' , $col_lg);
+		@include flexOptionPadding('lg' , $col_pr);
+	}
+}
+
+// md средние
+@if ($md) {
+	@media (max-width: $media_md) { 
+		@include flexOptionGrid('md' , $col_md);
+		@include flexOptionPadding('md' , $col_pr);
+	}
+}
+
+// sm маленькие
+@if ($sm) {
+	@media (max-width: $media_md) and (max-width: $media_xs) { 
+		@include flexOptionGrid('sm' , $col_sm);
+		@include flexOptionPadding('sm' , $col_pr);
+	}
+}
+
+
+// xs очень маленькие
+@if ($xs) {
+	@media (max-width: $media_xs) { 
+		@include flexOptionGrid('xs' , $col_xs);
+		@include flexOptionPadding('xs' , $col_pr);
+	}
+}
+
+
+
+
