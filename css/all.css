@@ -8419,11 +8419,14 @@ display: none;
 }
 .foodItem1__foodText{
      opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);
+    color: #808080;
 }
+
 
 .food-bg{
     background-position-y: -98px!important;
 }
+
 .mainBody{
        font-family: 'Open Sans', sans-serif;
     width: 100%;
@@ -8438,7 +8441,7 @@ display: none;
 }
 .mainBody__foodItem h2{
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 46px;
     line-height: 57px;
     text-align: right;
 }
@@ -8446,6 +8449,19 @@ display: none;
     font-size: 29px;
     line-height: 35px;
     text-align: right;
+}
+
+.foodItem2__foodHeading{
+    max-width: 592px;
+}
+.foodItem3__foodHeading{
+    max-width: 592px;
+}
+.foodItem4__foodHeading{
+    max-width: 592px;
+}
+.foodItem5__foodHeading{
+    max-width: 592px;
 }
 .foodText p{
    font-size: 16px;
@@ -8471,6 +8487,10 @@ display: none;
 }
 .foodgallery img{
     box-shadow:0px 0px 40px 10px #d8d8d8;
+   
+}
+.foodgallery img:hover{
+    cursor: url(../images/zoomin.cur), pointer;
 }
 .foodItem1__foodHeading{
         padding-right: 86px;
@@ -8482,7 +8502,7 @@ display: none;
     padding-right: 30px;
 }
 .foodItem2{
-    margin-bottom: 30px;
+        margin-bottom: 74px;
 }
 .foodItem2__foodHeading{
     padding-right: 40px;
@@ -8559,6 +8579,7 @@ display: none;
         width: 100%;
         padding: 0;
         margin: 0;
+      
     }
      .foodItem5__foodHeading{
         width: 100%;
@@ -8581,4 +8602,25 @@ display: none;
         flex-direction: column;
             width: 100%;
     }
+    .foodHeading p{
+        text-align: left;
+    }
+    .foodHeading h2{
+        text-align: center;
+        font-size: 41px;
+    }
+    .foodItem1__foodText{
+             padding-left: 6%;
+    padding-right: 6%;
+    }
+    .foodItem1{
+        margin: 0;
+    }
+    .foodItem1__foodHeading p{
+             padding-left: 6%;
+    padding-right: 6%;
+    }
+    .food-bg{
+    background-position-y: 0px!important;
+}
 }
