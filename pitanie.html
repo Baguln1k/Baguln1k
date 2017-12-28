@@ -133,18 +133,19 @@ sflakeHeight = 15;
 		<section class="mainBody">
 		    <div class="mainBody__foodItem foodItem1">
 		        <div class="foodItem1__foodHeading foodHeading jsTitleAnime2">
-		            <h2>Вкусные завтраки для наших гостей</h2>
-		            <p>На территории Апарт-отеля вы можете позавтракать у наших друзей – в кофейне PRADO </p>
+		            <h2> Вкусные завтраки<br>для наших гостей<br> от кофейни «Prado»</h2>
+<!--		            <p>На территории Апарт-отеля вы можете позавтракать у наших друзей – в кофейне PRADO </p>-->
 		        </div>
 		        <div class="foodItem1__foodText foodText jsTitleAnime2">
-               <p>Дорогие гости, специально для вашего удобства на территории комплекса мы открыли кофейню, где вы можете вкусно и полезно позавтракать. </p>
+               <p>Мы заботимся о комфорте наших гостей и понимаем, что в командировке или путешествии не всегда достаточно времени, чтобы приготовить вкусный и полезный завтрак самостоятельно.</p>
                <p>Стоимость завтрака составляет 250 рублей на человека и не включена в стоимость проживания.</p>
+               <p>Стоимость завтрака дополнительно к проживанию составляет 300 рублей.</p>
                 </div>
 		    </div>
 		    
 		    <div class="mainBody__foodItem foodItem2 ">
 		        <div class="foodItem2__foodHeading foodHeading jsTitleAnimeLeft ">
-		            <h2>Сеты<br>на ваш выбор</h2>
+		            <h2>Один из сетов<br>на ваш выбор</h2>
 		            <p>В каждый сет входит основное блюдо, закуска и напиток.</p>
 		        </div>
 		        <div class="foodItem2__foodgallery foodgallery jsTitleAnimeRight ">
@@ -326,6 +327,50 @@ sflakeHeight = 15;
 											</select>
 										</div>
 									</div>
+											<div class="form-group ">
+									        <input type="checkbox"  value="Питание" name="features" id="checkbox-1">
+                        <label class="active-foodModal1" data-target="1" for="checkbox-1">Питание</label>
+                        <input type="checkbox" value="Наличие детей" name="features" id="checkbox-2">
+                        <label class="active-foodModal2" data-target="1" for="checkbox-2" tabindex="-1">Наличие детей</label>
+									</div>
+									<span data-target="1" class="hidden-block1 foodModalTExt checkbox-disabled">+ 300 рублей в сутки на человека</span>
+									<div data-target="1" class="dropdown dropdown-spec fooddropdown checkbox-disabled hidden-block2">
+											<select id="" name="type" required>
+												<option selected>
+													До 3-х лет
+												</option>
+												<option value="Душевая">
+													До 7-х лет
+												</option>
+												<option value="Ванная">
+													До 14-х лет
+												</option>
+											</select>
+										</div>
+										<script>
+                                    $('.active-foodModal1').click(function() {
+                var data = $(this).attr('data-target');
+                if($(this).hasClass('check')) {   
+                     $(this).removeClass('check');
+                     $('.hidden-block1[data-target="' + data +'"]').css('display' , 'none');
+
+                } else {
+                    $(this).addClass('check');
+                    $('.hidden-block1[data-target="' + data +'"]').css('display' , 'block');
+                }
+            });
+                                            $('.active-foodModal2').click(function() {
+                var data = $(this).attr('data-target');
+                if($(this).hasClass('check')) {   
+                     $(this).removeClass('check');
+                     $('.hidden-block2[data-target="' + data +'"]').css('display' , 'none');
+
+                } else {
+                    $(this).addClass('check');
+                    $('.hidden-block2[data-target="' + data +'"]').css('display' , 'block');
+                }
+            });
+                                    </script>
 									<div class="form-group">
 										<textarea class="form-control" cols="30" id="" name="message" placeholder="Комментарий" rows="2"></textarea>
 									</div>
