@@ -8459,9 +8459,11 @@ display: none;
     display: block;
     padding-left: 2%;
 }
+
 .checkbox-disabled{
     display: none;
 }
+
 input[type="checkbox"]:checked+label+.checkbox-disabled{
     display: block;
 }

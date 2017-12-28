@@ -15,7 +15,28 @@ jQuery(document).ready(function($) {
     });
 
 });
+$('.active-foodModal1').click(function() {
+                var data = $(this).attr('data-target');
+                if($(this).hasClass('check')) {   
+                     $(this).removeClass('check');
+                     $('.hidden-block1[data-target="' + data +'"]').css('display' , 'none');
 
+                } else {
+                    $(this).addClass('check');
+                    $('.hidden-block1[data-target="' + data +'"]').css('display' , 'block');
+                }
+            });
+                                            $('.active-foodModal2').click(function() {
+                var data = $(this).attr('data-target');
+                if($(this).hasClass('check')) {   
+                     $(this).removeClass('check');
+                     $('.hidden-block2[data-target="' + data +'"]').css('display' , 'none');
+
+                } else {
+                    $(this).addClass('check');
+                    $('.hidden-block2[data-target="' + data +'"]').css('display' , 'block');
+                }
+            });
 
 
 
