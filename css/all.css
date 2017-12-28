@@ -8674,6 +8674,7 @@ input[type="checkbox"]:checked+label+.checkbox-disabled{
     .foodItem1__foodHeading p{
      padding-left: 3%;
     padding-right: 3%;
+            font-size: 26px;
     }
     .food-bg{
     background-position-y: 0px!important;
