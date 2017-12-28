@@ -8414,6 +8414,61 @@ display: none;
 
 }
 /*Питание*/
+/*Форма для питания*/
+.fooddropdown{
+    margin-bottom: 25px;
+}
+.form-group input[type="checkbox"]{
+    display: none;
+}
+.form-group input[type="checkbox"]+label {
+    position: relative;
+    margin-right: 10%;
+    cursor: pointer;
+    outline: none;
+    font-size: 16px;
+        color: #6e6e6e;
+    font-weight: normal;
+    margin-left: 60px;
+}
+.form-group input[type="checkbox"]+label::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url("../images/checkbox-box.png") no-repeat;
+    left: -38px;
+    top: -4px;
+    cursor: pointer;
+}
+
+.form-group input[type="checkbox"]:checked+label::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: url("../images/checkbox-checked.png") no-repeat;
+    left: -38px;
+    top: -4px;
+    cursor: pointer;
+}
+.foodModalTExt{
+    font-size: 16px;
+        color: #6e6e6e;
+    padding-bottom: 20px;
+    display: block;
+    padding-left: 2%;
+}
+.checkbox-disabled{
+    display: none;
+}
+input[type="checkbox"]:checked+label+.checkbox-disabled{
+    display: block;
+}
+/*Форма для питания*/
+.foodgallery a:active, .foodgallery a:focus { 
+    outline: none;
+}
 .foodItem1__foodHeading{
     opacity: 1; transform: matrix(1, 0, 0, 1, 0, 0);
 }
@@ -8424,7 +8479,7 @@ display: none;
 
 
 .food-bg{
-    background-position-y: -98px!important;
+    background-position-x: -2px!important;
 }
 
 .mainBody{
