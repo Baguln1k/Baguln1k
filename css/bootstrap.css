@@ -2143,7 +2143,7 @@ button.close {
 .modal-open .modal {
   /*overflow-x: hidden;*/
   /*overflow-y: auto;*/
-      overflow: inherit;
+/*      overflow: inherit;*/
 }
 
 .modal-dialog {
