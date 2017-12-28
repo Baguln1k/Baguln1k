@@ -3829,7 +3829,7 @@ footer.inner-footer .footer-bottom .footer-navs {
 @media (max-width: 767px) {
   .order-modal-box {
     width: 100%;
-    padding-top: 10px;
+    padding-top: 0px;
   }
 }
 
@@ -8551,7 +8551,7 @@ input[type="checkbox"]:checked+label+.checkbox-disabled{
 }
 .foodItem1__foodHeading{
         padding-right: 86px;
-    width: 56%;
+    width: 57%;
     padding-left: 61px;
 }
 .foodText{
@@ -8686,4 +8686,7 @@ input[type="checkbox"]:checked+label+.checkbox-disabled{
     .food-bg{
     background-position-y: 0px!important;
 }
+    .form-group input[type="checkbox"]+label{
+        margin-right: 0px;
+    }
 }
