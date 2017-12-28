@@ -8664,19 +8664,23 @@ input[type="checkbox"]:checked+label+.checkbox-disabled{
     }
     .foodHeading h2{
         text-align: center;
-        font-size: 41px;
+        font-size: 28px;
+        line-height: 28px;
     }
+/*
     .foodItem1__foodText{
              padding-left: 6%;
     padding-right: 6%;
     }
+*/
     .foodItem1{
         margin: 0;
     }
     .foodItem1__foodHeading p{
-     padding-left: 3%;
-    padding-right: 3%;
-            font-size: 26px;
+   /* padding-left: 3%; */
+    /* padding-right: 3%; */
+    font-size: 20px;
+    line-height: 26px;
     }
     .food-bg{
     background-position-y: 0px!important;
