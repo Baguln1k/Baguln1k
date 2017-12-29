@@ -11,6 +11,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	if (isset($_POST['location'])) {$loc = trim($_POST['location']);}
     if (isset($_POST['message'])) {$message2 = trim($_POST['message']);}
     if (isset($_POST['fromSite'])) {$fromSite = trim($_POST['fromSite']);}
+      if (isset($_POST['withfood'])) {$withfood = trim($_POST['withfood']);}
+    if (isset($_POST['withchildren'])) {$withchildren = trim($_POST['withchildren']);}
+    if (isset($_POST['howmanychildren'])) {$howmanychildren = trim($_POST['howmanychildren']);}
 
     $to = "konakova@fresco.bz, hasanov153@gmail.com, info@1apart.ru"; /*Укажите адрес, на который должно приходить письмо*/
     $sendfrom = 'info@1apart.ru'; /*Укажите адрес, с которого будет приходить письмо, можно не настоящий, нужно для формирования заголовка письма*/
@@ -30,7 +33,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 	<b>Дата - от:</b>" . $date_before . "
 	<b>Дата - до:</b>" . $date_after . "<br />
 	<b>Кол-во людей:</b>" . $people . "<br />
-	<b>Тип ванной:</b>" . $type . "<br />	
+	<b>Тип ванной:</b>" . $type . "<br />
+    <b>С питанием</b>" . $withfood . "<br />
+    <b>Дети</b>" . $withchildren . "<br />
+    <b>Возраст детей</b>" . $howmanychildren . "<br />
     <b>Комментарий к заявке:</b>" . $message2;
     
     mail ($to, $subject, $message, $headers);

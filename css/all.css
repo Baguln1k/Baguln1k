@@ -8415,9 +8415,47 @@ display: none;
 }
 /*Питание*/
 /*Форма для питания*/
-.fooddropdown{
+.order-modal-form .dropdown-children {
+  border: 1px solid transparent;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 0;
     margin-bottom: 25px;
 }
+
+.order-modal-form .dropdown-children:after {
+  content: "";
+  display: block;
+  clear: both;
+  position: absolute;
+  right: 0;
+  width: 64px;
+  top: 11px;
+  bottom: 11px;
+  border-left: 1px solid #E7DCCE;
+  background: url(../images/order-form-dropdown.png) no-repeat 50% 50%;
+}
+
+.order-modal-form .dropdown-children select {
+  width: 100%;
+  background: none;
+  color: #6e6e6e;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-text-overflow: "";
+  text-overflow: "";
+  padding: 12px 35px 14px 25px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  position: relative;
+  z-index: 3;
+  border: 1px solid #C8C8C8;
+  border-radius: 0;
+}
+
 .form-group input[type="checkbox"]{
     display: none;
 }

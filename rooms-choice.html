@@ -372,22 +372,25 @@ sflakeHeight = 15;
 										</div>
 									</div>
 											<div class="form-group ">
-									        <input type="checkbox"  value="Питание" name="features" id="checkbox-1">
+									        <input type="checkbox"  value="Да" name="withfood" id="checkbox-1">
                         <label class="active-foodModal1" data-target="1" for="checkbox-1">Питание</label>
-                        <input type="checkbox" value="Наличие детей" name="features" id="checkbox-2">
+                        <input type="checkbox" value="С детьми" name="withchildren" id="checkbox-2">
                         <label class="active-foodModal2" data-target="1" for="checkbox-2" tabindex="-1">Наличие детей</label>
 									</div>
 									<span data-target="1" class="hidden-block1 foodModalTExt checkbox-disabled">+ 300 рублей в сутки на человека</span>
-									<div data-target="1" class="dropdown dropdown-spec fooddropdown checkbox-disabled hidden-block2">
-											<select id="" name="type" required>
-												<option selected>
+									<div data-target="1" name="howmanychildren" class="dropdown-children checkbox-disabled hidden-block2">
+											<select id="" name="howmanychildren" required>
+											    <option value="Не выбранно" selected>
+													Возраст детей
+												</option>
+												<option value="До 3-х лет">
 													До 3-х лет
 												</option>
-												<option value="Душевая">
-													До 7-и лет
+												<option value="До 7 лет">
+													До 7 лет
 												</option>
-												<option value="Ванная">
-													До 14-и лет
+												<option value="До 14 лет">
+													До 14 лет
 												</option>
 											</select>
 										</div>
