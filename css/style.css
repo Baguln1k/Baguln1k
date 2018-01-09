@@ -69,14 +69,24 @@
     padding-left: 6%;
     padding-right: 6%;
 }
+.t-title_xs {
+    font-size: 42px;
+    padding-top: 20px;
+    line-height: 1.23;
+}
 .ourDoctors h3{
-    font-size: 33px;
-    line-height: 33px;
+      font-size: 42px;
+    line-height: 40px;
     text-transform: uppercase;
     margin: 0 auto;
-    width: 279px;
+    /* width: 333px; */
+    display: block;
+    text-align: center;
     padding-bottom: 62px;
     padding-top: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    color: #000;
 }
 .ourdoctors__doctor{
     display: flex;
