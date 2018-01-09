@@ -136,3 +136,51 @@
     padding-top: 23px;
 }
 /*наши доктора*/
+@media (max-width: 767px) {
+    .doctor__pictureDoctor{
+        width: auto;
+    }
+    .ourdoctors__doctor{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+    }
+    .doctor__infodoctor{
+        width: 100%;
+    }
+    .doctor2 .doctor__pictureDoctor {
+    display: flex;
+    justify-content: center;
+     padding-bottom: 0px; 
+    order: -1;
+}
+    .t-prefix_1 {
+     padding-left: 0px;
+}
+    .t675__textwrapper{
+            margin-bottom: 59px;
+    padding-left: 2%;
+    padding-right: 0%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    }
+    .t675__text{
+      font-size: 23px!important;
+    padding-left: 1%;
+    padding-right: 2%;
+    text-align: left;
+    }
+    .t228__leftcontainer a span{
+            text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    display: block;
+    }
+}
