@@ -1,57 +1,6 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-<url>
-  <loc>http://1apart.ru/</loc>
-  <lastmod>2017-10-26T09:59:26+00:00</lastmod>
-</url>
-<url>
-  <loc>http://1apart.ru/about.html</loc>
-  <lastmod>2017-10-26T09:57:35+00:00</lastmod>
-</url>
-<url>
-  <loc>http://1apart.ru/rooms-choice.html</loc>
-  <lastmod>2017-10-26T09:59:28+00:00</lastmod>
-</url>
-<url>
-  <loc>http://1apart.ru/photos.html</loc>
-  <lastmod>2017-10-26T09:59:27+00:00</lastmod>
-</url>
-<url>
-  <loc>http://1apart.ru/faq.html</loc>
-  <lastmod>2017-10-26T09:59:27+00:00</lastmod>
-</url>
-<url>
-  <loc>http://1apart.ru/contacts.html</loc>
-  <lastmod>2017-10-26T09:59:29+00:00</lastmod>
-</url>
-<url>
-  <loc>http://1apart.ru/schema.pdf</loc>
-  <lastmod>2017-10-23T04:08:31+00:00</lastmod>
-</url>
-<url>
-  <loc>http://1apart.ru/1room.html</loc>
-  <lastmod>2017-10-26T09:59:27+00:00</lastmod>
-</url>
-<url>
-  <loc>http://1apart.ru/2room.html</loc>
-  <lastmod>2017-10-26T09:59:28+00:00</lastmod>
-</url>
-<url>
-  <loc>http://1apart.ru/3room.html</loc>
-  <lastmod>2017-10-26T09:59:28+00:00</lastmod>
-</url>
-<url>
-  <loc>http://1apart.ru/reviews.html</loc>
-  <lastmod>2017-10-26T09:59:28+00:00</lastmod>
-</url>
-<url>
-  <loc>http://1apart.ru/pitanie.html</loc>
-  <lastmod>2017-12-27T10:32:28+00:00</lastmod>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+	<url>
+		<loc>http://gemotest.tilda.ws/</loc>
+		<lastmod>2017-09-02T05:09:18+00:00</lastmod>
+	</url>
 </urlset>
