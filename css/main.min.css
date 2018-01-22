@@ -7071,8 +7071,11 @@ display: none;
     height: 20px;
 }
 @media(max-width:500px){
+    .main-footer{
+        flex-direction: column;
+    }
     .items-link{
-        width: 480px;
+        width: 440px;
     }
     .items-link-wrapper h3{
         font-size: 33px;
