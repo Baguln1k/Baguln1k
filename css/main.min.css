@@ -7009,7 +7009,31 @@ to {
         font-size: 33px;
     }
     .works h1{
-        width: 40px;
+        font-size: 40px;
         width: 254px;
+    }
+    .works-nav li{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .works-nav {
+        flex-wrap: wrap;
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+    .form-dark input, .form-dark textarea{
+        width: 100%;
+    }
+    .flex-container{
+        width: 100%;
+    }
+    .form-title{
+            font-weight: 600;
+    text-transform: uppercase;
+    line-height: 1.4;
+    color: #1d2021;
+    margin-bottom: 2.4rem;
+    text-align: center;
+        font-size: 3rem;
     }
 }
