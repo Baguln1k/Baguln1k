@@ -6926,7 +6926,7 @@ _:future,
     padding-top: 2px;
     padding-bottom: 3px;
     border: 1px solid white;
-    font-family: montserrat;
+    
     font-size: 16px;
     margin-right:7px;
          position: relative;
@@ -6968,4 +6968,36 @@ to {
 75% {transform: translateX(40px); opacity: 0.2}
 */
 100% {transform: translateX(55px); opacity: 0}
+}
+.form-dark{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 87%;
+    margin: 0 auto;
+}
+.form-dark input, .form-dark textarea{
+    width: 33%;
+}
+.flex-container textarea{
+        width: 100%;
+}
+.flex-container {
+        display: flex;
+    flex-wrap: wrap;
+    width: 69%;
+}
+.form-title{
+    font-size: 48px;
+    font-family: montserrat;
+       display: flex;
+    justify-content: center;
+    border-bottom: none!important;
+    font-weight: normal;
+    color: black;
+    text-transform: none;
+    margin-top: 90px;
+        margin-bottom: 60px;
 }
