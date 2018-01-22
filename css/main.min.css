@@ -6636,19 +6636,20 @@ _:future,
     color: #252525;
     text-transform: uppercase;
     margin-bottom: 60px;
+    cursor: pointer;
 }
-.works-nav li:hover{
+/*
+.works-nav li a{
+    border: 1px solid white;
+}
+*/
+.works-nav li a:hover{
     border: 1px solid #8db5f1;
     transition: 1.5s ease ;
 }
 .active{
  
-     border-bottom: 2px solid #8db5f1;
-    font-size: 16px;
-    font-weight: bold;
-    font-family: montserrat;
-    color: #252525;
-    text-transform: uppercase;
+   border: 1px solid #8db5f1;
     
     
 }
@@ -7050,15 +7051,28 @@ display: none;
     border-bottom: 1px solid white;
     color: white;
 }
+.left-content a:hover{
+    color:#FF7F7F;
+}
+.center-content a:hover{
+    color:#FF7F7F;
+}
+.right-content a:hover{
+    color:#FF7F7F;
+}
 .center-content a:first-child{
     border-bottom: none;
 }
 .right-content a{
     text-decoration: none; 
     color: white;
+    border-bottom: 1px solid white
 }
 .right-content a:first-child{
-    border-bottom: 1px solid white;
+   width: 164px;
+}
+.center-content a:last-child{
+   width: 104px;
 }
 .right-content{
     display: flex;
@@ -7088,6 +7102,7 @@ display: none;
         padding-left: 0;
         padding-right: 0;
     }
+   
     .works-nav {
         flex-wrap: wrap;
         padding-left: 2%;
