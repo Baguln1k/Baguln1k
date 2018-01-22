@@ -1,0 +1,323 @@
+/* ------------------------------------------------
+* Project Name: Axio Coming Soon Template
+* Project Description: Axio - awesome coming soon template to kick-start your project
+* Tags: axio, coming soon, under construction, template, coming soon page, html5, css3
+* Version: 1.0.0
+* Build Date: April-July 2017
+* Last Update: July 2017
+* This product is available exclusively on Themeforest
+* Author: MixDesign
+* Author URI: http://mixdesign.club
+* File name: first-screen-demo.css (uncompressed)
+-------------------------------------------------- */
+
+/* ------------------------------------------------
+Table of Contents
+/* ------------------------------------------------
+/*
+/*  1. Base CSS Styles
+/*  2. Buttons
+/*
+/* ------------------------------------------------
+Table of Contents End
+/* ------------------------------------------------ */
+
+/* ------------------------------------------------*/
+/* Base CSS Styles Start
+/* ------------------------------------------------*/
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+button:active, button:focus {
+    outline: none !important;
+}
+
+button::-moz-focus-inner {
+    border: 0 !important;
+}
+
+input::-moz-focus-inner {
+    border: 0 !important;
+}
+
+html {
+    font-family: sans-serif;
+    font-size: 62.5%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    min-width: 320px;
+    position: relative;
+    overflow-x: hidden;
+    font-size: 1.4rem;
+    line-height: 1.8;
+    background-color: #2f2f2f;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    padding: 2.4rem 0;
+}
+
+section.demo__intro {
+    min-height: 480px;
+    color: #fff;
+    text-align: center;
+    background-image: url("img/demo/background-demo.jpg");
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+
+section.demo__intro .description {
+    position: absolute;
+    bottom: 2.4rem;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0;
+    -webkit-transition: opacity .5s .5s;
+    -o-transition: opacity .5s .5s;
+    -moz-transition: opacity .5s .5s;
+    transition: opacity .5s .5s;
+}
+
+section.demo__intro .welcome {
+    position: absolute;
+    top: 2.4rem;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0;
+    -webkit-transition: opacity .5s .5s;
+    -o-transition: opacity .5s .5s;
+    -moz-transition: opacity .5s .5s;
+    transition: opacity .5s .5s;
+}
+
+section.demo__intro .logo {
+    position: absolute;
+    top: 50%;
+    bottom: auto;
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 100%;
+}
+
+section.demo__intro p {
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    font-weight: 400;
+}
+
+section.demo__intro p.welcome-text {
+    font-size: 1.2rem;
+}
+
+section.demo__intro p.descr {
+    margin-bottom: 1.2rem;
+}
+
+section.demo__content {
+    text-align: center;
+    color: #444;
+}
+
+section.demo__content.first-section {
+    border-top: 1px solid #f2552c;
+}
+
+@media only screen and (min-width: 768px) {
+    section {
+        padding: 32px 0;
+    }
+
+    section.demo__intro {
+        padding: 0 0 4.8rem 0;
+    }
+
+    section.demo__intro .description {
+        bottom: 3.6rem;
+    }
+
+    section.demo__intro .welcome {
+        top: 3.6rem;
+    }
+
+    section.demo__intro p.welcome {
+        margin-top: 2.4rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    section.demo__intro {
+        background-attachment: fixed;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    section {
+        padding: 4.8rem 0;
+    }
+
+    section.demo__intro .description {
+        bottom: 4.8rem;
+    }
+
+    section.demo__intro .welcome {
+        top: 4.8rem;
+    }
+}
+
+.dark-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.demo__logo {
+    max-width: 240px;
+    margin: 0 auto 14rem;
+    -webkit-transform: translateY(5rem);
+    -moz-transform: translateY(5rem);
+    -ms-transform: translateY(5rem);
+    transform: translateY(5rem);
+    opacity: 0;
+    -webkit-transition: opacity .5s ease-in-out, -webkit-transform .5s;
+    transition: opacity .5s ease-in-out, -webkit-transform .5s;
+    -o-transition: transform .5s, opacity .5s ease-in-out;
+    -moz-transition: transform .5s, opacity .5s ease-in-out, -moz-transform .5s;
+    transition: transform .5s, opacity .5s ease-in-out;
+    transition: transform .5s, opacity .5s ease-in-out, -webkit-transform .5s, -moz-transform .5s;
+}
+
+@media only screen and (min-width: 768px) {
+    .demo__logo {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .demo__logo {
+        max-width: 439px;
+    }
+}
+/* ------------------------------------------------*/
+/* Base CSS Styles End
+/* ------------------------------------------------*/
+
+/* ------------------------------------------------*/
+/* Buttons Start
+/* ------------------------------------------------*/
+.btn {
+    position: relative;
+    display: block;
+    width: 160px;
+    height: 50px;
+    line-height: 50px;
+    margin: 0 auto 1.2rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    border-radius: .3rem;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn:last-of-type {
+    margin-bottom: 0;
+}
+
+.btn.btn-solid {
+    background-color: #f2552c;
+    border: 1px solid #f2552c;
+    color: #fff;
+}
+
+.no-touch .btn.btn-solid:hover {
+    border: 1px solid #a93c1f;
+    background-color: #a93c1f;
+}
+
+.btn.btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.no-touch .btn.btn-outline:hover {
+    background-color: #fff;
+    color: #444;
+}
+
+@media only screen and (min-width: 768px) {
+    .btn {
+        display: inline-block;
+        margin: 0;
+    }
+
+    .btn:first-of-type {
+        margin-right: 1.2rem;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .btn {
+        width: 140px;
+        height: 46px;
+        line-height: 46px;
+    }
+}
+/* ------------------------------------------------*/
+/* Buttons End
+/* ------------------------------------------------*/

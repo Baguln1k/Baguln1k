@@ -1,4 +1,0 @@
-User-Agent: *
-Disallow:
-Sitemap: http://gemotest.tilda.ws/sitemap.xml
-Host: gemotest.tilda.ws
