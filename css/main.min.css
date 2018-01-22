@@ -7001,3 +7001,15 @@ to {
     margin-top: 90px;
         margin-bottom: 60px;
 }
+@media(max-width:500px){
+    .items-link{
+        width: 480px;
+    }
+    .items-link-wrapper h3{
+        font-size: 33px;
+    }
+    .works h1{
+        width: 40px;
+        width: 254px;
+    }
+}
