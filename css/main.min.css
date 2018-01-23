@@ -730,8 +730,8 @@ blockquote cite span {
 }
 
 .btn-solid {
-    background-color: #fff;
-    color: #191b1c;
+      background-color: #1969e2;
+    color: white;
     background-image: url(../img/icons/envelop.svg);
     background-repeat: no-repeat;
     background-position: 17px 21px;
@@ -739,7 +739,7 @@ blockquote cite span {
 }
 
 .no-touch .btn-solid:hover {
-    background-color: #fff
+    background-color: #0c58c9;
 }
 
 .btn-outline {
@@ -7136,4 +7136,17 @@ display: none;
     text-align: center;
         font-size: 3rem;
     }
+}
+.main-body{
+    overflow: auto;
+}
+.portfolio-content h1{
+        font-family: montserrat;
+    font-size: 86px;
+    font-weight: bolder;
+    color: #ababab;
+    border-bottom: 3px solid #8db5f1;
+    padding-left: 36px;
+    max-width: 497px;
+    margin-top: 6rem;
 }

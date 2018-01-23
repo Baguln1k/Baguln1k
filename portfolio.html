@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <!-- Page Title-->
+    <title>FRESCO – классическая веб-студия в сердце Сибири</title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Meta Tags-->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="mix_design">
+    <meta name="yandex-verification" content="7f597d561e5d1b30" />
+
+    <!-- Viewport Meta-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Template Favicon & Icons Start -->
+    <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64 96x96" href="img/favicon/color-4/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/color-4/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/color-4/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/color-4/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/color-4/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/color-4/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/color-4/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/color-4/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/color-4/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/color-4/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/color-4/android-chrome-192x192.png">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+    <meta property="og:image" content="img/favicon/color-4/og-image-250x250.jpg">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    
+    <link rel="stylesheet" href="css/colors/color-4.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/fonts.min.css">
+    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <!-- Template Favicon & Icons End-->
+   
+    <meta name="theme-color" content="#51829e">
+    <meta name="msapplication-navbutton-color" content="#51829e">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#51829e">
+    <!-- Custom Browser Color End-->
+     <?php include 'form_recaptcha/config_recaptcha.php'  ?>
+      <style>
+        .loader {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            z-index: 1000;
+            background-color: #1E99FB;
+            opacity: 1;
+            visibility: visible;
+            -webkit-transition: visibility .4s 0s, opacity .4s, background-color .6s ease-in-out;
+            -o-transition: visibility .4s 0s, opacity .4s, background-color .6s ease-in-out;
+            -moz-transition: visibility .4s 0s, opacity .4s, background-color .6s ease-in-out;
+            transition: visibility .4s 0s, opacity .4s, background-color .6s ease-in-out
+        }
+
+        .loader.fade-dark {
+            background-color: #fff
+        }
+
+        .loader .loader-content {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            bottom: auto;
+            right: auto;
+            -webkit-transform: translateX(-50%) translateY(-50%);
+            -moz-transform: translateX(-50%) translateY(-50%);
+            -ms-transform: translateX(-50%) translateY(-50%);
+            transform: translateX(-50%) translateY(-50%)
+        }
+
+        .loader .loader-content .loader-logo {
+            display: block;
+            width: 8rem;
+            height: 8rem;
+            margin: 0 auto 24px
+        }
+
+        .loader .loader-content .loader-logo img {
+            display: block;
+            width: 100%;
+            height: auto
+        }
+
+        .loader .loader-content .loader-caption {
+            margin: 0 auto;
+            text-align: center
+        }
+
+        .loader .loader-content .loader-caption .loading-text {
+            display: block;
+            color: rgba(255, 255, 255, .6);
+            text-transform: uppercase;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.4rem;
+            letter-spacing: .2rem
+        }
+
+        .loader .loader-content .loader-caption .loading-dots {
+            position: relative;
+            display: inline-block;
+            text-align: center
+        }
+
+        .loader .loader-content .loader-caption .loading-dots::after {
+            clear: both;
+            content: "";
+            display: table
+        }
+
+        .loader .loader-content .loader-caption .loading-dots .dot {
+            float: left;
+            width: .6rem;
+            height: .6rem;
+            margin: 0 .3rem;
+            background: #fff;
+            opacity: 0;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            -webkit-animation: fade 1s infinite;
+            -moz-animation: fade 1s infinite;
+            animation: fade 1s infinite
+        }
+
+        .loader .loader-content .loader-caption .loading-dots .dot:nth-of-type(1) {
+            -webkit-animation-delay: 0s;
+            -moz-animation-delay: 0s;
+            animation-delay: 0s
+        }
+
+        .loader .loader-content .loader-caption .loading-dots .dot:nth-of-type(2) {
+            -webkit-animation-delay: .1s;
+            -moz-animation-delay: .1s;
+            animation-delay: .1s
+        }
+
+        .loader .loader-content .loader-caption .loading-dots .dot:nth-of-type(3) {
+            -webkit-animation-delay: .2s;
+            -moz-animation-delay: .2s;
+            animation-delay: .2s
+        }
+
+        .loader.loaded {
+            opacity: 0;
+            visibility: hidden
+        }
+
+        @-webkit-keyframes fade {
+            0% {
+                opacity: 0
+            }
+            50% {
+                opacity: .8
+            }
+            100% {
+                opacity: 0
+            }
+        }
+
+        @-moz-keyframes fade {
+            0% {
+                opacity: 0
+            }
+            50% {
+                opacity: .8
+            }
+            100% {
+                opacity: 0
+            }
+        }
+
+        @keyframes fade {
+            0% {
+                opacity: 0
+            }
+            50% {
+                opacity: .8
+            }
+            100% {
+                opacity: 0
+            }
+        }
+
+        @-webkit-keyframes slideInDown {
+            from {
+                -webkit-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+                opacity: 0;
+                visibility: visible
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0)
+            }
+        }
+
+        @-moz-keyframes slideInDown {
+            from {
+                -moz-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+                opacity: 0;
+                visibility: visible
+            }
+            to {
+                opacity: 1;
+                -moz-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0)
+            }
+        }
+
+        @keyframes slideInDown {
+            from {
+                -webkit-transform: translate3d(0, -100%, 0);
+                -moz-transform: translate3d(0, -100%, 0);
+                transform: translate3d(0, -100%, 0);
+                opacity: 0;
+                visibility: visible
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                -moz-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0)
+            }
+        }
+
+        .slideInDown {
+            -webkit-animation-iteration-count: 1;
+            -moz-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+            -webkit-animation-name: slideInDown;
+            -moz-animation-name: slideInDown;
+            animation-name: slideInDown;
+            -webkit-animation-duration: 1s;
+            -moz-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            -moz-animation-fill-mode: both;
+            animation-fill-mode: both
+        }
+
+        @-webkit-keyframes slideInUp {
+            from {
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+                opacity: 0;
+                visibility: visible
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0)
+            }
+        }
+
+        @-moz-keyframes slideInUp {
+            from {
+                -moz-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+                opacity: 0;
+                visibility: visible
+            }
+            to {
+                opacity: 1;
+                -moz-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0)
+            }
+        }
+
+        @keyframes slideInUp {
+            from {
+                -webkit-transform: translate3d(0, 100%, 0);
+                -moz-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0);
+                opacity: 0;
+                visibility: visible
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translate3d(0, 0, 0);
+                -moz-transform: translate3d(0, 0, 0);
+                transform: translate3d(0, 0, 0)
+            }
+        }
+
+        .slideInUp {
+            -webkit-animation-name: slideInUp;
+            -moz-animation-name: slideInUp;
+            animation-name: slideInUp;
+            -webkit-animation-iteration-count: 1;
+            -moz-animation-iteration-count: 1;
+            animation-iteration-count: 1;
+            -webkit-animation-duration: 1s;
+            -moz-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            -moz-animation-fill-mode: both;
+            animation-fill-mode: both
+        }
+
+        @-webkit-keyframes flipOutY {
+            from {
+                -webkit-transform: perspective(400px);
+                transform: perspective(400px)
+            }
+            to {
+                -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+                transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+                opacity: 0
+            }
+        }
+
+        @-moz-keyframes flipOutY {
+            from {
+                -moz-transform: perspective(400px);
+                transform: perspective(400px)
+            }
+            to {
+                -moz-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+                transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+                opacity: 0
+            }
+        }
+
+        @keyframes flipOutY {
+            from {
+                -webkit-transform: perspective(400px);
+                -moz-transform: perspective(400px);
+                transform: perspective(400px)
+            }
+            to {
+                -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+                -moz-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+                transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+                opacity: 0
+            }
+        }
+
+        .flipOutY {
+            -webkit-backface-visibility: visible;
+            -moz-backface-visibility: visible;
+            backface-visibility: visible;
+            -webkit-animation-name: flipOutY;
+            -moz-animation-name: flipOutY;
+            animation-name: flipOutY;
+            -webkit-animation-duration: 1s;
+            -moz-animation-duration: 1s;
+            animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+            -moz-animation-fill-mode: both;
+            animation-fill-mode: both
+        }
+
+        @-webkit-keyframes fadeOutDown {
+            from {
+                opacity: 1
+            }
+            to {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0)
+            }
+        }
+
+        @-moz-keyframes fadeOutDown {
+            from {
+                opacity: 1
+            }
+            to {
+                opacity: 0;
+                -moz-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0)
+            }
+        }
+
+        @keyframes fadeOutDown {
+            from {
+                opacity: 1
+            }
+            to {
+                opacity: 0;
+                -webkit-transform: translate3d(0, 100%, 0);
+                -moz-transform: translate3d(0, 100%, 0);
+                transform: translate3d(0, 100%, 0)
+            }
+        }
+
+        .fadeOutDown {
+            -webkit-animation: fadeOutDown 1s 1;
+            -moz-animation: fadeOutDown 1s 1;
+            animation: fadeOutDown 1s 1;
+            -webkit-animation-fill-mode: both;
+            -moz-animation-fill-mode: both;
+            animation-fill-mode: both
+        }
+
+    </style>
+</head>
+
+<body class="main-body">
+<div class="loader">
+        <div class="loader-content">
+            <!--<div class="loader-logo slideInDown">
+          <img src="img/logo-loader.png" alt="Axio" width="400px">
+        </div>-->
+            <div class="loader-caption slideInUp">
+                <p class="loading-text">загрузка</p>
+                <span class="loading-dots">
+            <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+                </span>
+            </div>
+        </div>
+    </div>
+ <section  class="portfolio-content">
+        <div>
+
+          
+            <h1>Проекты</h1>
+            <ul class="works-nav">
+                <li><a class="filter" data-filter=".category-all" >Все</a></li>
+                <li><a class="filter" data-filter=".category-sites" >Сайты</a></li>
+                <li><a class="filter" data-filter=".category-internet-advertising" >Интернет-реклама</a></li>
+                <li><a class="filter" data-filter=".category-support" >Поддержка</a></li>
+                <li><a class="filter" data-filter=".category-social-networks" >Социальные сети</a></li>
+            </ul>
+            <div class="our-work" id="our-work">
+                <div class=" our-work__items items item1 ">
+                    <a class="mix category-all category-internet-advertising category-sites category-social-networks items__1apart items-link"  target="_blank" href="http://1apart.ru">
+                        <div class="items-link-wrapper">
+                            <h3>Первый Апарт-отель</h3>
+                            <span class="items-link-wrapper__text">Самые комфортные и гостеприимные<br>апартаменты в Томске</span>
+                            <div class="items-link__topSection topSection">
+                                <span class="topSection__branding">брэндинг</span>
+                                <span class="topSection__naming">нейминг</span>
+                            </div>
+                            <div class="items-link__bottomSection bottomSection">
+                                <span class="bottomSection__internet-advertising">интернет-реклама</span>
+                                <span class="bottomSection__sites">сайт</span>
+                                <span class="bottomSection__social-networks">соцсети</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" our-work__items items item2">
+                    <a class="mix category-sites category-internet-advertising category-all items__bc items-link" data-myorder="2" target="_blank" href="http://bc-kz.ru">
+                        <div class="items-link-wrapper">
+                            <h3>Красное знамя</h3>
+                            <span class="items-link-wrapper__text">Бизнес центр класса "А" в Томске</span>
+                            <div class="items-link__topSection topSection">
+                                <span class="topSection__sites">сайт</span>
+                            </div>
+                            <div class="items-link__bottomSection bottomSection">
+                                <span class="bottomSection__internet-advertising">интернет-реклама</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" our-work__items items item3">
+                    <a class="mix category-all category-sites category-social-networks category-internet-advertising items__skenar items-link" target="_blank" href="http://skenarpride.ru">
+                        <div class="items-link-wrapper">
+                            <h3>Скэнар Прайд</h3>
+                            <span class="items-link-wrapper__text">Комфортное лечение заболеваний<br>без уколов и таблеток</span>
+                            <div class="items-link__topSection topSection">
+                                <span class="topSection__sites">сайт</span>
+                                <span class="topSection__social-networks">соцсети</span>
+                            </div>
+                            <div class="items-link__bottomSection bottomSection">
+                                <span class="bottomSection__internet-advertising">интернет-реклама</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" our-work__items items item4">
+                    <a class="mix category-all category-sites category-internet-advertising items__alyson items-link" target="_blank" href="http://alyson.pro">
+                        <div class="items-link-wrapper">
+                            <h3>Элисон</h3>
+                            <span class="items-link-wrapper__text">Автоматизация инженерных систем</span>
+                            <div class="items-link__topSection topSection">
+                                <span class="topSection__sites">сайт</span>
+                            </div>
+                            <div class="items-link__bottomSection bottomSection">
+                                <span class="bottomSection__internet-advertising">интернет-реклама</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" our-work__items items item5">
+                    <a class="mix category-all category-sites items__elzavod items-link" target="_blank" href="http://elzavod.com/">
+                        <div class="items-link-wrapper">
+                            <h3>Электрозавод</h3>
+                            <span class="items-link-wrapper__text">Ведущий производитель электрооборудования</span>
+                            <div class="items-link__topSection topSection">
+                                <span class="topSection__sites">сайт</span>
+                            </div>
+                            <div class="items-link__bottomSection bottomSection">
+                                <span class="bottomSection__branding">брэндинг</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class=" our-work__items items item6">
+                    <a class="mix category-all category-sites category-social-networks category-internet-advertising items__cdi items-link" target="_blank" href="http://cdistom.ru/">
+                        <div class="items-link-wrapper">
+                            <h3>ЦДИ</h3>
+                            <span class="items-link-wrapper__text">Центр дентальной имплантации</span>
+                            <div class="items-link__topSection topSection">
+                                <span class="topSection__sites">сайт</span>
+                                <span class="topSection__social-networks">соцсети</span>
+                            </div>
+                            <div class="items-link__bottomSection bottomSection">
+                                <span class="bottomSection__internet-advertising">интернет-реклама</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <h3 class="form-title">Давайте обсудим ваш проект</h3>
+        <form class="form form-dark contact-form" id="form_test" metod="POST" action="/form_recaptcha/send_form.php" enctype="multipart/form-data">
+
+            <!-- Hidden Required Fields-->
+<!--
+            <input type="hidden" name="project_name" value="Новая заявка с сайта">
+            <input type="hidden" name="admin_email" value="boykov70@yandex.ru">
+            <input type="hidden" name="form_subject" value="Контакт форм сообщение">
+-->
+            <!-- END Hidden Required Fields-->
+
+            <input class="" type="text" name="Name" placeholder="Ваше имя*" required  rus-text="Имя">
+            <input class="" type="email" name="E-mail" placeholder="E-mail*" required  rus-text="Mail">
+            <input class="" type="text" name="Company" placeholder="Название компании"  rus-text="Название компании">
+            <input class="" type="tel" name="Phone" placeholder="Телефон*" required rus-text="Телефон">
+            <div class="flex-container">
+                <textarea class="col-xs-12" name="Message" placeholder="Сообщение*" required rus-text="Сообщение"></textarea>
+
+
+
+                <span class="inputs-description  flex-start" style="
+    align-self: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display:  flex;
+">*Обязательные поля</span>
+                <button class="btn btn-solid g-recaptcha" data-sitekey="6LddAkAUAAAAACX67JRWDYcl8s9-iuXIhEPGrsi8"
+	data-size="invisible"
+	data-callback="recaptcha_active">
+              
+              <span class="btn-caption" >Отправить</span>
+            </button>
+            </div>
+        </form>
+        <footer class="main-footer">
+            <div class="left-content">
+                <span class="left-content__adress">634041, пр. Фрунзе, д. 103, оф. 801 (БЦ Красное Знамя)</span>
+                <span class="left-content__workingHours">Работаем с 10 до 19</span>
+            </div>
+            <div class="center-content">
+                <a class="center-content__telephone" href="tel:83822505900">+7 (3822) 505-900</a>
+                <a class="center-content__mail" href="mailto:info@fresco.bz">info@fresco.bz</a>
+            </div>
+            <div class="right-content">
+                 <a href="./document/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20FRESCO.pdf" download class="right-content__ presentation">Скачать презентацию
+            </a>
+            <a href="#">Политика конфеденциальности</a>
+            
+            </div>
+            <div class="footer-logo">
+                <img src="./img/icons/logo.svg"alt="Логотип Фреско">
+            </div>
+        </footer>
+    </section>
+
+
+    <script>
+        $("#our-work").mixItUp({
+            selectors: {
+                target: '.mix',
+                filter: '.filter'
+            },
+            load: {
+                filter: '.category-all'
+            },
+
+     "animation": {
+        "duration": 849,
+        "nudge": false,
+        "reverseOut": false,
+        "effects": "fade stagger(26ms)"
+    }
+
+        });
+
+    </script>
+
+    <!-- Load Scripts Start-->
+    <script type="text/javascript" src="js/libs.min.js"></script>
+    <script type="text/javascript" src="js/gallery-init.js"></script>
+    <script type="text/javascript" src="js/axio-custom.js"></script>
+<!--    <script type="text/javascript" src="js/maps/map-color-4.js"></script>-->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNMDtmEsvSevM4ztfsbhLfLNZhKHCvWXk"></script>
+    <script src='https://www.google.com/recaptcha/api.js' defer></script>
+	<script src='/form_recaptcha/send_form.js' defer></script>
+	
+    <!-- Load Scripts End-->
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+        (function(d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter41517969 = new Ya.Metrika({
+                        id: 41517969,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true
+                    });
+                } catch (e) {}
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function() {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks");
+
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/41517969" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+
+
+</body>
+
+</html>
