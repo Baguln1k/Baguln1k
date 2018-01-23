@@ -654,9 +654,9 @@ blockquote cite span {
 }
 
 .btn span.btn-caption {
-    font-family: Raleway, sans-serif;
-    font-size: 1.2rem;
-    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    font-size: 12px;
+    font-weight: bolder;
     letter-spacing: .1rem;
     text-transform: uppercase;
     margin-left: .6rem
@@ -731,7 +731,11 @@ blockquote cite span {
 
 .btn-solid {
     background-color: #fff;
-    color: #191b1c
+    color: #191b1c;
+    background-image: url(../img/icons/envelop.svg);
+    background-repeat: no-repeat;
+    background-position: 17px 21px;
+    
 }
 
 .no-touch .btn-solid:hover {
@@ -6648,7 +6652,7 @@ _:future,
 
 .works-nav li a:hover{
     border: 1px solid #8db5f1;
-    transition: 1.5s ease ;
+    transition: 0.7s ease ;
 }
 .active{
  
@@ -6692,46 +6696,46 @@ _:future,
     
 }
 .our-work__items:hover .items__1apart::before{
-    animation: move  2s infinite ease-in-out;
+    animation: move  1.2s infinite ease-in-out;
 }
 .our-work__items:hover .items__1apart::after{
     opacity: 0.2;
-    transition: 4sec;
+    transition: 2.5sec;
 }
 .our-work__items:hover .items__bc::before{
-    animation: move  2s infinite ease-in-out;
+    animation: move  1.2s infinite ease-in-out;
 }
 .our-work__items:hover .items__bc::after{
     opacity: 0.2;
-    transition: 4sec;
+    transition: 2.5sec;
 }
 .our-work__items:hover .items__skenar::before{
-    animation: move  2s infinite ease-in-out;
+    animation: move  1.2s infinite ease-in-out;
 }
 .our-work__items:hover .items__skenar::after{
     opacity: 0.2;
-    transition: 4sec;
+    transition: 2.5sec;
 }
 .our-work__items:hover .items__alyson::before{
-    animation: move  2s infinite ease-in-out;
+    animation: move  1.2s infinite ease-in-out;
 }
 .our-work__items:hover .items__alyson::after{
     opacity: 0.2;
-    transition: 4sec;
+    transition: 2.5sec;
 }
 .our-work__items:hover .items__elzavod::before{
-    animation: move  2s infinite ease-in-out;
+    animation: move  1.2s infinite ease-in-out;
 }
 .our-work__items:hover .items__elzavod::after{
     opacity: 0.2;
-    transition: 4sec;
+    transition: 2.5sec;
 }
 .our-work__items:hover .items__cdi::before{
-    animation: move  2s infinite ease-in-out;
+    animation: move  1.2s infinite ease-in-out;
 }
 .our-work__items:hover .items__cdi::after{
     opacity: 0.2;
-    transition: 4sec;
+    transition: 2.5sec;
 }
 .items__bc{
     position: relative;
@@ -6977,6 +6981,9 @@ _:future,
     color: black;
     border-color: black;
 }
+.btn-solid {
+    border-radius: 28px;
+}
 @keyframes move {
 from, 
 to {
@@ -7056,12 +7063,15 @@ display: none;
 }
 .left-content a:hover{
     color:#FF7F7F;
+    border-bottom: 1px solid #FF7F7F;
 }
 .center-content a:hover{
     color:#FF7F7F;
+    border-bottom: 1px solid #FF7F7F;
 }
 .right-content a:hover{
     color:#FF7F7F;
+    border-bottom: 1px solid #FF7F7F;
 }
 .center-content a:first-child{
     border-bottom: none;
