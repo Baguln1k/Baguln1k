@@ -440,7 +440,8 @@ section {
     -o-transition: transform .6s 0s, opacity .6s 0s, background-color .3s;
     -moz-transition: transform .6s 0s, opacity .6s 0s, background-color .3s, -moz-transform .6s 0s;
     transition: transform .6s 0s, opacity .6s 0s, background-color .3s;
-    transition: transform .6s 0s, opacity .6s 0s, background-color .3s, -webkit-transform .6s 0s, -moz-transform .6s 0s
+    transition: transform .6s 0s, opacity .6s 0s, background-color .3s, -webkit-transform .6s 0s, -moz-transform .6s 0s;
+        padding-right: 28px;
 }
 
 @media only screen and (min-width:1024px) {
@@ -7153,7 +7154,8 @@ display: none;
     margin-top: 6rem;
 }
 .form-dark input:focus, .form-dark textarea:focus {
-    border-bottom: 1px solid #51829e;
+    border-bottom: 1px solid #1969E2;
+    color: #1969E2;
 }
 .main-header__logo-container img{
     width: 134px;
@@ -7187,33 +7189,69 @@ display: none;
     
 }
 .main-header__nav li{
-    padding-left: 30px;
+    margin-left: 120px;
+    
 }
 .main-header__nav li a{
     color: #252525;
     text-transform: uppercase;
     font-size: 16px;
     font-weight: medium;
+    font-weight: 500;
+    padding-bottom: 5px;
+    position: relative;
 }
-.main-header__nav li a:hover{
-    border-bottom: 1px solid #1969E2;
-    
+.main-header__nav li a::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #252525;
+    transition: width .3s ease-in-out;
+}
+.main-header__nav li a:hover::after{
+    width: 100%;
 }
 .main-header__active{
-    border-bottom: 1px solid #1969E2;
+    border-bottom: 2px solid #252525;
     
 }
 .main-header__nav li:first-child{
-    padding-left: 0;
+    margin-left: 0;
 }
 .main-header__telephone{
     font-size: 20px;
     font-weight: medium;
     border-bottom: 1px solid white;
-}
-.main-header__telephone:hover{
+    margin-top: -5px;
     
-    border-bottom: 1px solid #1969E2;
+    font-weight: 500;
+    position: relative;
+}
+.main-header__telephone::after{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: #252525;
+    transition: width .3s ease-in-out;
+}
+.main-header__telephone:hover::after{
+    width: 100%;
 }
 /*
 11111111111
