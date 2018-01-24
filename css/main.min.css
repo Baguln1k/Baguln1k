@@ -730,11 +730,13 @@ blockquote cite span {
 }
 
 .btn-solid {
-      background-color: #1969e2;
+     background-color: #1969e2;
     color: white;
     background-image: url(../img/icons/envelop.svg);
     background-repeat: no-repeat;
-    background-position: 17px 21px;
+    background-position: 26px 21px;
+    padding-left: 36px;
+    padding-right: 27px;
     
 }
 
@@ -6695,45 +6697,45 @@ _:future,
     z-index: 3;
     
 }
-.our-work__items:hover .items__1apart::before{
+.items__1apart:hover::before{
     animation: move  1.2s infinite ease-in-out;
 }
-.our-work__items:hover .items__1apart::after{
+.items__1apart:hover::after{
     opacity: 0.2;
     transition: 2.5sec;
 }
-.our-work__items:hover .items__bc::before{
+.items__bc:hover::before{
     animation: move  1.2s infinite ease-in-out;
 }
-.our-work__items:hover .items__bc::after{
+.items__bc:hover::after{
     opacity: 0.2;
     transition: 2.5sec;
 }
-.our-work__items:hover .items__skenar::before{
+.items__skenar:hover::before{
     animation: move  1.2s infinite ease-in-out;
 }
-.our-work__items:hover .items__skenar::after{
+.items__skenar:hover::after{
     opacity: 0.2;
     transition: 2.5sec;
 }
-.our-work__items:hover .items__alyson::before{
+.items__alyson:hover::before{
     animation: move  1.2s infinite ease-in-out;
 }
-.our-work__items:hover .items__alyson::after{
+.items__alyson:hover::after{
     opacity: 0.2;
     transition: 2.5sec;
 }
-.our-work__items:hover .items__elzavod::before{
+.items__elzavod:hover::before{
     animation: move  1.2s infinite ease-in-out;
 }
-.our-work__items:hover .items__elzavod::after{
+.items__elzavod:hover::after{
     opacity: 0.2;
     transition: 2.5sec;
 }
-.our-work__items:hover .items__cdi::before{
+.items__cdi:hover::before{
     animation: move  1.2s infinite ease-in-out;
 }
-.our-work__items:hover .items__cdi::after{
+.items__cdi:hover::after{
     opacity: 0.2;
     transition: 2.5sec;
 }
@@ -7154,8 +7156,8 @@ display: none;
     border-bottom: 1px solid #51829e;
 }
 .main-header__logo-container img{
-    width: 89px;
-    height: 20px;
+    width: 134px;
+    height: 30px;
     
 }
 .main-header{
@@ -7213,3 +7215,7 @@ display: none;
     
     border-bottom: 1px solid #1969E2;
 }
+/*
+11111111111
+11111111111
+111111111111*/
