@@ -7187,7 +7187,7 @@ display: none;
 .main-header__logo-container span{
     padding-left: 9px;
     font-size: 16px;
-    
+    padding-top: 2px;
 }
 .main-header__nav li{
     margin-left: 120px;
