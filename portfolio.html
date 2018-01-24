@@ -409,8 +409,26 @@
         }
 
     </style>
+    <style>
+  .grecaptcha-badge {
+    display: none !important;
+  }
+  </style>
 </head>
-
+<header class="main-header">
+   <div class="main-header__logo-container">
+<a href="index.html"><img src="./img/icons/logoblue.svg" alt="Лого студии Фреско" width="89px" height="20px"> 
+    <span>/ веб-студия</span></a>
+    </div>
+    <ul class="main-header__nav">
+        <li><a class="main-header__active" href="#">Портфолио</a></li>
+        <li><a href="#">Услуги</a></li>
+        <li><a href="#">О студии</a></li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+    <a class="main-header__telephone" href="tel:83822505900">+7 (3822) 505-900</a>
+    
+</header>
 <body class="main-body">
 <div class="loader">
         <div class="loader-content">
@@ -441,7 +459,7 @@
             </ul>
             <div class="our-work" id="our-work">
                 <div class=" our-work__items items item1 ">
-                    <a class="mix category-all category-internet-advertising category-sites category-social-networks items__1apart items-link"  target="_blank" href="http://1apart.ru">
+                    <a class="mix category-all category-internet-advertising category-sites category-social-networks items__1apart items-link category-support"  target="_blank" href="http://1apart.ru">
                         <div class="items-link-wrapper">
                             <h3>Первый Апарт-отель</h3>
                             <span class="items-link-wrapper__text">Самые комфортные и гостеприимные<br>апартаменты в Томске</span>
@@ -458,7 +476,7 @@
                     </a>
                 </div>
                 <div class=" our-work__items items item2">
-                    <a class="mix category-sites category-internet-advertising category-all items__bc items-link" data-myorder="2" target="_blank" href="http://bc-kz.ru">
+                    <a class="mix category-sites category-internet-advertising category-all items__bc items-link category-support" data-myorder="2" target="_blank" href="http://bc-kz.ru">
                         <div class="items-link-wrapper">
                             <h3>Красное знамя</h3>
                             <span class="items-link-wrapper__text">Бизнес центр класса "А" в Томске</span>
@@ -472,7 +490,7 @@
                     </a>
                 </div>
                 <div class=" our-work__items items item3">
-                    <a class="mix category-all category-sites category-social-networks category-internet-advertising items__skenar items-link" target="_blank" href="http://skenarpride.ru">
+                    <a class="mix category-all category-sites category-social-networks category-internet-advertising items__skenar items-link category-support" target="_blank" href="http://skenarpride.ru">
                         <div class="items-link-wrapper">
                             <h3>Скэнар Прайд</h3>
                             <span class="items-link-wrapper__text">Комфортное лечение заболеваний<br>без уколов и таблеток</span>
@@ -487,7 +505,7 @@
                     </a>
                 </div>
                 <div class=" our-work__items items item4">
-                    <a class="mix category-all category-sites category-internet-advertising items__alyson items-link" target="_blank" href="http://alyson.pro">
+                    <a class="mix category-all category-sites category-internet-advertising items__alyson items-link category-support" target="_blank" href="http://alyson.pro">
                         <div class="items-link-wrapper">
                             <h3>Элисон</h3>
                             <span class="items-link-wrapper__text">Автоматизация инженерных систем</span>
@@ -515,7 +533,7 @@
                     </a>
                 </div>
                 <div class=" our-work__items items item6">
-                    <a class="mix category-all category-sites category-social-networks category-internet-advertising items__cdi items-link" target="_blank" href="http://cdistom.ru/">
+                    <a class="mix category-all category-sites category-social-networks category-internet-advertising items__cdi items-link category-support" target="_blank" href="http://cdistom.ru/">
                         <div class="items-link-wrapper">
                             <h3>ЦДИ</h3>
                             <span class="items-link-wrapper__text">Центр дентальной имплантации</span>
@@ -597,11 +615,11 @@
                 filter: '.category-all'
             },
 
-     "animation": {
-        "duration": 849,
+    "animation": {
+        "duration": 600,
         "nudge": false,
         "reverseOut": false,
-        "effects": "fade stagger(26ms)"
+        "effects": "fade rotateZ(180deg)"
     }
 
         });

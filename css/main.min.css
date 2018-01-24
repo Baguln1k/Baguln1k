@@ -7150,3 +7150,66 @@ display: none;
     max-width: 497px;
     margin-top: 6rem;
 }
+.form-dark input:focus, .form-dark textarea:focus {
+    border-bottom: 1px solid #51829e;
+}
+.main-header__logo-container img{
+    width: 89px;
+    height: 20px;
+    
+}
+.main-header{
+    padding-left: 6%;
+    padding-right: 6%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 35px;
+    justify-content: space-between;
+    font-family: montserrat;
+}
+.main-header__nav{
+    display: flex;
+    flex-direction: row;
+}
+.main-header__logo-container a{
+    display: flex;
+    flex-direction: row; 
+}
+.main-header__logo-container a:hover span{
+    color: #1969E2;
+}
+.main-header__logo-container span{
+    padding-left: 9px;
+    font-size: 16px;
+    
+}
+.main-header__nav li{
+    padding-left: 30px;
+}
+.main-header__nav li a{
+    color: #252525;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: medium;
+}
+.main-header__nav li a:hover{
+    border-bottom: 1px solid #1969E2;
+    
+}
+.main-header__active{
+    border-bottom: 1px solid #1969E2;
+    
+}
+.main-header__nav li:first-child{
+    padding-left: 0;
+}
+.main-header__telephone{
+    font-size: 20px;
+    font-weight: medium;
+    border-bottom: 1px solid white;
+}
+.main-header__telephone:hover{
+    
+    border-bottom: 1px solid #1969E2;
+}
