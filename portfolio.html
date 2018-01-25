@@ -562,7 +562,7 @@
             </div>
         
         <h3 class="form-title">Давайте обсудим ваш проект</h3>
-        <form class="form form-dark contact-form" id="form_test" metod="POST" action="/form_recaptcha/send_form.php" enctype="multipart/form-data">
+        <form class="form form-dark contact-form"   metod="post" action="/form_recaptcha/send_form.php" enctype="multipart/form-data">
 
             <!-- Hidden Required Fields-->
 <!--
@@ -572,12 +572,13 @@
 -->
             <!-- END Hidden Required Fields-->
 
-            <input class="" type="text" name="Name" placeholder="Ваше имя*" required  rus-text="Имя">
-            <input class="" type="email" name="E-mail" placeholder="E-mail*" required  rus-text="Mail">
-            <input class="" type="text" name="Company" placeholder="Название компании"  rus-text="Название компании">
-            <input class="" type="tel" name="Phone" placeholder="Телефон*" required rus-text="Телефон">
+            <input id="valid"  type="text" name="Name" placeholder="Ваше имя*"   rus-text="Имя" required>
+            <input id="valid" type="email" name="E-mail" placeholder="E-mail*"  rus-text="Mail" required >
+            <input  type="text" name="Company" placeholder="Название компании"  rus-text="Название компании" required>
+            <input id="valid" type="tel" name="Phone" placeholder="Телефон*" pattern="^[ 0-9]+$"  rus-text="Телефон" required>
+            
             <div class="flex-container">
-                <textarea class="col-xs-12" name="Message" placeholder="Сообщение*" required rus-text="Сообщение"></textarea>
+                <textarea id="valid" class="col-xs-12" name="Message" placeholder="Сообщение*" rus-text="Сообщение"required></textarea>
 
 
 
@@ -587,7 +588,7 @@
     align-items: flex-start;
     display:  flex;
 ">*Обязательные поля</span>
-                <button class="btn btn-solid g-recaptcha" data-sitekey="6LddAkAUAAAAACX67JRWDYcl8s9-iuXIhEPGrsi8"
+                <button type="submit" class="btn btn-solid g-recaptcha" data-sitekey="6LddAkAUAAAAACX67JRWDYcl8s9-iuXIhEPGrsi8"
 	data-size="invisible"
 	data-callback="recaptcha_active">
               
@@ -595,6 +596,44 @@
             </button>
             </div>
         </form>
+        <script>
+            var form = document.querySelector("form");
+            var username = form.querySelector("[name=Name]");
+            var email = form.querySelector("[name=E-mail]");
+            var companyname = form.querySelector("[name=Company]");
+            var phone = form.querySelector("[name=Phone]");
+            var message = form.querySelector("[name=Message]");
+            var input = form.querySelectorAll("#valid");
+            
+            
+            form.addEventListener("click", function (evt) {
+                   console.log(this);
+                console.log(evt.target);
+                
+               if (evt.target.closest('.g-recaptcha')) {
+               
+//            if (!username.value || !email.value || !companyname.value || !phone.value || !phone.value || !message.value ) {
+//            evt.preventDefault();
+//            input.classList.add("form-error");
+//            console.log("Нужно заполнить поля");
+//                }
+                   
+                   
+                   input.forEach(function(elem){
+                       if(elem.value == '') {
+                           elem.classList.remove("form-error");
+                           elem.offsetWidth = elem.offsetWidth;
+                           elem.classList.add("form-error");
+                       }
+                       else{
+                          elem.classList.remove("form-error"); 
+                       }
+                           
+                   });
+
+               }
+  });
+     </script>
         <footer class="main-footer">
             <div class="left-content">
                 <span class="left-content__adress">634041, пр. Фрунзе, д. 103, оф. 801 (БЦ Красное Знамя)</span>
