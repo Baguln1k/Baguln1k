@@ -6630,6 +6630,8 @@ _:future,
 }
 .works-nav{
     display: flex;
+        justify-content: center;
+    margin-right: 301px;
 }
 .works-nav li{
    
@@ -7099,10 +7101,19 @@ display: none;
     width: 89px;
     height: 20px;
 }
+@media(max-width:750px){
+    .works-nav{
+        margin-right: 0;
+    }
+    .main-header{
+        margin-bottom: 0!important;
+    }
+}
 @media(max-width:500px){
     .main-footer{
         flex-direction: column;
     }
+   
     .items-link{
         width: 440px;
     }
