@@ -428,6 +428,27 @@
     </ul>
 <a class="main-header__telephone" href="tel:83822505900">+7 (3822) 505-900</a>
     </div>
+    <nav class="head__menu menu menu-mobile">
+
+				<div class="menu-mobile__block">
+                    <div class="menu-mobile__logo"><a href="index.html"><img src="./img/icons/logo.svg" alt="Лого студии Фреско" width="89px" height="20px"></a></div>
+<!--    <span>/ веб-студия</span>-->
+				</div>
+
+				<div class="menu-mobile__buttonClick">
+					<div class="buttonMenu">
+						<div class="buttonMenu__line"></div>
+					</div>
+				</div>
+				<ul class="menu__ul menu-mobile__ul">
+				<li class="menu__li menu-mobile__li"><a id="link-price" class="menu__item menu-mobile__item " href="index.html">На главную</a></li>	
+					<li class="menu__li menu-mobile__li"><a id="link-" class="menu__item  menu-mobile__item " href="portfolio.html">Портфолио</a></li>
+					<li class="menu__li menu-mobile__li"><a id="link-about" class="menu__item menu-mobile__item" href="services.html">Услуги</a></li>
+					<li class="menu__li menu-mobile__li"><a id="link-services" class="menu__item menu-mobile__item menu__item_active" href="/">Контакты</a></li>
+					<li class="menu__li menu-mobile__li"><a class="menu__li__telephone" href="tel:83822505900">+7 (3822) 505-900</a></li>
+				</ul>
+					
+			</nav>
 </header>
 <body class="main-body">
 <div class="loader">
@@ -574,7 +595,18 @@
     <!-- /Yandex.Metrika counter -->
 
 
+<script>
+     var menuMobile = $(document).find('.menu-mobile');
+     
 
+        $('.menu-mobile__buttonClick').click(function(event) {
+
+    
+              menuMobile.toggleClass('menu-mobile_active');
+
+        });
+    
+</script>
 </body>
 
 </html>

@@ -38,13 +38,14 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
     <!-- Template Favicon & Icons End-->
-<?php include 'form_recaptcha/config_recaptcha.php'  ?>
+    <?php include 'form_recaptcha/config_recaptcha.php'  ?>
     <!-- Loader Styles Start-->
     <style>
-  .grecaptcha-badge {
-    display: none !important;
-  }
-  </style>
+        .grecaptcha-badge {
+            display: none !important;
+        }
+
+    </style>
     <style>
         .loader {
             position: fixed;
@@ -1725,7 +1726,7 @@
 
         .btn span {
             font-size: 1.2rem;
-            
+
         }
 
         .btn span.btn-caption {
@@ -2592,7 +2593,7 @@
         <div class="container-fluid fullheight">
 
             <!-- Intro Section with Image Background Start -->
-            <div class="main-intro col-xs-12" style="background-image:url(img/backgrounds/bg-main-color-4.jpg);">
+            <div class="main-intro col-xs-12" style="background-image:url(img/backgrounds/123.png);">
 
                 <!-- Background Effect Start -->
                 <!-- Floating Clouds Background Start-->
@@ -2612,23 +2613,44 @@
 
                 <!-- Color Layer Start -->
                 <div class="layer-black"></div>
-               <header class="index-header">
-                <div class="logo index-header__logo-container">
-                    <img src="img/logo.png" alt="Axio - awesome coming soon template to kick-start your project">
-                    <span>/ веб-студия</span>
-                </div>
-                <div class="menu index-header__menu">
-                    <nav>
-                        <ul>
-                            <li><a href="portfolio.html">Портфолио</a></li>
-                            <li><a href="services.html">Услуги</a></li>
-                            <li><a href="contacts.html">Контакты</a></li>
-                        </ul>
-                    </nav>
-                    <a class="index-header__telephone" href="tel:83822505900">+7 (3822) 505-900</a>
-                </div>
+                <header class="index-header">
+                    <div class="logo index-header__logo-container">
+                        <img src="img/logo.png" alt="Axio - awesome coming soon template to kick-start your project">
+                        <span>/ веб-студия</span>
+                    </div>
+                    <div class="menu index-header__menu">
+                        <nav>
+                            <ul>
+                                <li><a href="portfolio.html">Портфолио</a></li>
+                                <li><a href="services.html">Услуги</a></li>
+                                <li><a href="contacts.html">Контакты</a></li>
+                            </ul>
+                        </nav>
+                        <a class="index-header__telephone" href="tel:83822505900">+7 (3822) 505-900</a>
+                    </div>
+                     <nav class="head__menu menu menu-mobile">
+
+				<div class="menu-mobile__block">
+                    <div class="menu-mobile__logo"><a href="index.html"><img src="./img/icons/logo.svg" alt="Лого студии Фреско" width="89px" height="20px"></a></div>
+<!--    <span>/ веб-студия</span>-->
+				</div>
+
+				<div class="menu-mobile__buttonClick buttonClick">
+					<div class="buttonMenu">
+						<div class="buttonMenu__line"></div>
+					</div>
+				</div>
+				<ul class="menu__ul menu-mobile__ul">
+				<li class="menu__li menu-mobile__li"><a id="link-price" class="menu__item menu-mobile__item menu__item_active" href="/">Главная</a></li>	
+					<li class="menu__li menu-mobile__li"><a id="link-" class="menu__item  menu-mobile__item" href="portfolio.html">Портфолио</a></li>
+					<li class="menu__li menu-mobile__li"><a id="link-about" class="menu__item menu-mobile__item" href="services.html">Услуги</a></li>
+					<li class="menu__li menu-mobile__li"><a id="link-services" class="menu__item menu-mobile__item" href="contacts.html">Контакты</a></li>
+					<li class="menu__li menu-mobile__li"><a class="menu__li__telephone" href="tel:83822505900">+7 (3822) 505-900</a></li>
+				</ul>
+					
+			</nav>
                 </header>
-                
+
                 <div class="headline">
 
                     <p class="additional-text">Классическая веб-студия в сердце Сибири</p>
@@ -2665,503 +2687,86 @@
 
 
         </div>
-    </section>
-    <!-- Main Screen Section End-->
 
-    <!-- About Us Section Start-->
-    <section id="about" class="content-section about">
-        <div class="container-fluid">
+        <script>
+            $("#our-work").mixItUp({
+                selectors: {
+                    target: '.mix',
+                    filter: '.filter'
+                },
+                load: {
+                    filter: '.category-all'
+                },
 
-            <!-- Close Button Start -->
-            <a class="btn-square btn-outline dark section-close" href="#0" id="about-close">
-          <span class="fa fa-arrow-left"></span>
-        </a>
-            <!-- Close Button End -->
+                "animation": {
+                    "duration": 342,
+                    "nudge": false,
+                    "reverseOut": false,
+                    "effects": ""
+                }
 
-            <!-- Section Title Start -->
-            <div class="section-title">
-                <h2 class="second-edit">Услуги</h2>
-                <p>Помогаем пользователям найти качественные продукты и услуги среди информационного мусора и этим обеспечиваем рост компаний наших клиентов.</p>
-            </div>
-            <!-- Section Title End -->
-
-            <!-- Features Start -->
-            <div class="about-features">
-
-                <!-- Features Single Item Start -->
-                <div class="col-xs-12 no-padding">
-                    <div class="col-xs-12 col-sm-6 feature-image feature-image-1" style="background-image:url(img/features/feature-1.jpg);"></div>
-                    <div class="col-xs-12 col-sm-6 feature-description">
-                        <div class="feature-item">
-                            <i class="icon feature-icon feature-icon-5"></i>
-                            <h3>Создание сайтов</h3>
-                            <p>Создаем удобные корпоративные сайты, эффектные промо-сайты и эффективные лэндинги.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Features Single Item End -->
-
-                <!-- Features Single Item Start -->
-                <div class="col-xs-12 no-padding">
-                    <div class="col-xs-12 col-sm-6 feature-image feature-image-right feature-image-2" style="background-image:url(img/features/feature-2.jpg);"></div>
-                    <div class="col-xs-12 col-sm-6 feature-description">
-                        <div class="feature-item">
-                            <i class="icon feature-icon feature-icon-9"></i>
-                            <h3>SMM-продвижение</h3>
-                            <p>Комплексное продвижение компании в социальных сетях. Рекламные кампании в таргетинговой рекламе.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Features Single Item End -->
-
-                <!-- Features Single Item Start -->
-                <div class="col-xs-12 no-padding">
-                    <div class="col-xs-12 col-sm-6 feature-image feature-image-3" style="background-image:url(img/features/feature-3.jpg);"></div>
-                    <div class="col-xs-12 col-sm-6 feature-description">
-                        <div class="feature-item">
-                            <i class="icon feature-icon feature-icon-3"></i>
-                            <h3>Аналитика</h3>
-                            <p>Изучение компании клиента, исследование конкурентов и целевой аудитории с целью выработки предложений по продвижению компании в интернете.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Features Single Item End -->
-
-                <!-- Features Single Item Start -->
-                <div class="col-xs-12 no-padding">
-                    <div class="col-xs-12 col-sm-6 feature-image feature-image-right feature-image-4" style="background-image:url(img/features/feature-4.jpg);"></div>
-                    <div class="col-xs-12 col-sm-6 feature-description">
-                        <div class="feature-item">
-                            <i class="icon feature-icon feature-icon-6"></i>
-                            <h3>Рекламные кампании</h3>
-                            <p>Приведем целевой траффик по оптимальной цене.</p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Features Single Item End -->
-
-            </div>
-            <!-- Features End -->
-
-            <!-- Blockquote Start -
-        <div class="about-blockquote">
-          <div class="col-xs-12">
-            <div class="blockquote-item">
-              <blockquote cite="">
-                <p>My dear, here we must run as fast as we can, just to stay in place. And if you wish to go anywhere you must run twice as fast as that.</p>
-                <cite>
-                  <span>Lewis Carroll</span>
-                  <span>Alice in Wonderland</span>
-                </cite>
-              </blockquote>
-            </div>
-          </div>
-        </div>
-        <!-- Blockquote End -->
-
-        </div>
-    </section>
-    <!-- About Us Section End-->
-
-    <!-- Our Works Section Start-->
-    <section id="works" class="content-section works">
-        <div class="container-fluid">
-
-            <!-- Close Button Start -->
-            <a class="btn-square btn-outline dark section-close" href="#0" id="works-close">
-          <span class="fa fa-arrow-left"></span>
-        </a>
-            <h1>Проекты</h1>
-           <ul class="works-nav">
-                <li><a class="filter"  data-filter=".category-all" >Все</a></li>
-                <li><a class="filter"  data-filter=".category-sites" >Сайты</a></li>
-                <li><a class="filter"  data-filter=".category-internet-advertising" >Интернет-реклама</a></li>
-                <li><a class="filter"  data-filter=".category-support" >Поддержка</a></li>
-                <li><a class="filter"  data-filter=".category-social-networks" >Социальные сети</a></li>
-            </ul>
-            <div class="our-work" id="our-work">
-<!--                111111111111111111111111111111111-->
-                   
-                    <a class="mix category-all category-internet-advertising category-sites category-social-networks items__1apart items-link category-support"  target="_blank" href="http://1apart.ru" data-myorder="1">
-                       <div class=" our-work__items items item1">
-                        <div class="items-link-wrapper">
-                            <h3>Первый Апарт-отель</h3>
-                            <span class="items-link-wrapper__text">Самые комфортные и гостеприимные<br>апартаменты в Томске</span>
-                            <div class="items-link__topSection topSection">
-                                <span class="topSection__branding">брэндинг</span>
-                                <span class="topSection__naming">нейминг</span>
-                            </div>
-                            <div class="items-link__bottomSection bottomSection">
-                                <span class="bottomSection__internet-advertising">интернет-реклама</span>
-                                <span class="bottomSection__sites">сайт</span>
-                                <span class="bottomSection__social-networks">соцсети</span>
-                            </div>
-                        </div>
-                        </div>
-                    </a>
-                
-                
-                    <a class="mix category-sites category-internet-advertising category-all items__bc items-link category-support" data-myorder="2" target="_blank" href="http://bc-kz.ru" data-myorder="2">
-                       <div class=" our-work__items items item2">
-                        <div class="items-link-wrapper">
-                            <h3>Красное знамя</h3>
-                            <span class="items-link-wrapper__text">Бизнес центр класса "А" в Томске</span>
-                            <div class="items-link__topSection topSection">
-                                <span class="topSection__sites">сайт</span>
-                            </div>
-                            <div class="items-link__bottomSection bottomSection">
-                                <span class="bottomSection__internet-advertising">интернет-реклама</span>
-                            </div>
-                        </div>
-                        </div>
-                    </a>
-                
-                
-                    <a class="mix category-all category-sites category-social-networks category-internet-advertising items__skenar items-link category-support" target="_blank" href="http://skenarpride.ru" data-myorder="3">
-                       <div class=" our-work__items items item3">
-                        <div class="items-link-wrapper">
-                            <h3>Скэнар Прайд</h3>
-                            <span class="items-link-wrapper__text">Комфортное лечение заболеваний<br>без уколов и таблеток</span>
-                            <div class="items-link__topSection topSection">
-                                <span class="topSection__sites">сайт</span>
-                                <span class="topSection__social-networks">соцсети</span>
-                            </div>
-                            <div class="items-link__bottomSection bottomSection">
-                                <span class="bottomSection__internet-advertising">интернет-реклама</span>
-                            </div>
-                        </div>
-                        </div>
-                    </a>
-                
-                
-                    <a class="mix category-all category-sites category-internet-advertising items__alyson items-link category-support" target="_blank" href="http://alyson.pro" data-myorder="4">
-                       <div class=" our-work__items items item4">
-                        <div class="items-link-wrapper">
-                            <h3>Элисон</h3>
-                            <span class="items-link-wrapper__text">Автоматизация инженерных систем</span>
-                            <div class="items-link__topSection topSection">
-                                <span class="topSection__sites">сайт</span>
-                            </div>
-                            <div class="items-link__bottomSection bottomSection">
-                                <span class="bottomSection__internet-advertising">интернет-реклама</span>
-                            </div>
-                        </div>
-                        </div>
-                    </a>
-                
-                
-                    <a class="mix category-all category-sites items__elzavod items-link" target="_blank" href="http://elzavod.com/" data-myorder="5">
-                       <div class=" our-work__items items item5">
-                        <div class="items-link-wrapper">
-                            <h3>Электрозавод</h3>
-                            <span class="items-link-wrapper__text">Ведущий производитель электрооборудования</span>
-                            <div class="items-link__topSection topSection">
-                                <span class="topSection__sites">сайт</span>
-                            </div>
-                            <div class="items-link__bottomSection bottomSection">
-                                <span class="bottomSection__branding">брэндинг</span>
-                            </div>
-                        </div>
-                        </div>
-                    </a>
-                
-                
-                    <a class="mix category-all category-sites category-social-networks category-internet-advertising items__cdi items-link category-support" target="_blank" href="http://cdistom.ru/" data-myorder="6">
-                       <div class=" our-work__items items item6">
-                        <div class="items-link-wrapper">
-                            <h3>ЦДИ</h3>
-                            <span class="items-link-wrapper__text">Центр дентальной имплантации</span>
-                            <div class="items-link__topSection topSection">
-                                <span class="topSection__sites">сайт</span>
-                                <span class="topSection__social-networks">соцсети</span>
-                            </div>
-                            <div class="items-link__bottomSection bottomSection">
-                                <span class="bottomSection__internet-advertising">интернет-реклама</span>
-                            </div>
-                        </div>
-                        </div>
-                    </a>
-                
-            </div>
-        <h3 class="form-title">Давайте обсудим ваш проект</h3>
-        <form class="form form-dark contact-form" id="form_test" metod="POST" action="/form_recaptcha/send_form.php" enctype="multipart/form-data">
-
-            <!-- Hidden Required Fields-->
-<!--
-            <input type="hidden" name="project_name" value="Новая заявка с сайта">
-            <input type="hidden" name="admin_email" value="boykov70@yandex.ru">
-            <input type="hidden" name="form_subject" value="Контакт форм сообщение">
--->
-            <!-- END Hidden Required Fields-->
-
-            <input class="" type="text" name="Name" placeholder="Ваше имя*" required  rus-text="Имя">
-            <input class="" type="email" name="E-mail" placeholder="E-mail*" required  rus-text="Mail">
-            <input class="" type="text" name="Company" placeholder="Название компании"  rus-text="Название компании">
-            <input class="" type="tel" name="Phone" placeholder="Телефон*" required rus-text="Телефон">
-            <div class="flex-container">
-                <textarea class="col-xs-12" name="Message" placeholder="Сообщение*" required rus-text="Сообщение"></textarea>
-
-
-
-                <span class="inputs-description  flex-start" style="
-    align-self: flex-start;
-    justify-content: flex-start;
-    align-items: flex-start;
-    display:  flex;
-">*Обязательные поля</span>
-                <button class="btn btn-solid g-recaptcha" data-sitekey="6LddAkAUAAAAACX67JRWDYcl8s9-iuXIhEPGrsi8"
-	data-size="invisible"
-	data-callback="recaptcha_active">
-              
-              <span class="btn-caption" >Отправить</span>
-            </button>
-            </div>
-        </form>
-        </div>
-    </section>
-
-    <!-- Our Works Section End-->
-
-    <!-- Contact Section Start-->
-    <section id="contact" class="content-section contact">
-        <div class="container-fluid">
-
-            <!-- Close Button Start -->
-            <a class="btn-square btn-outline dark section-close" href="#0" id="contact-close">
-          <span class="fa fa-arrow-left"></span>
-        </a>
-            <!-- Close Button End -->
-
-            <!-- Section Title Start -->
-            <div class="section-title">
-                <h2 class="second-edit">Контакты</h2>
-                <p>
-                    Россия, Томск, пр. Фрунзе, 103, оф. 801<br> Телефон: 8 (3822) 505-900<br> E-mail: info@fresco.bz<br>
-
-                    <br> Или оставьте ваше сообщение и наш менеджер ответит вам в рабочее время.
-                </p>
-            </div>
-            <!-- Section Title End -->
-
-            <!-- Contact Form Container Start -->
-           
-                <!-- Contact Form End -->
-        </div>
-          <footer class="main-footer">
-            <div class="left-content">
-                <span class="left-content__adress">634041, пр. Фрунзе, д. 103, оф. 801 (БЦ Красное Знамя)</span>
-                <span class="left-content__workingHours">Работаем с 10 до 19</span>
-            </div>
-            <div class="center-content">
-                <a class="center-content__telephone" href="tel:83822505900">+7 (3822) 505-900</a>
-                <a class="center-content__mail" href="mailto:info@fresco.bz">info@fresco.bz</a>
-            </div>
-            <div class="right-content">
-                 <a href="./document/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20FRESCO.pdf" download class="right-content__ presentation">Скачать презентацию
-            </a>
-            <a href="#">Политика конфеденциальности</a>
-            
-            </div>
-            <div class="footer-logo">
-                <img src="./img/icons/logo.svg"alt="Логотип Фреско">
-            </div>
-        </footer>
-    </section>
-    <!-- Contact Section End-->
-
-
-
-    <!-- Notify Section Start-->
-    <!--
-    <div class="notify">
-
-      <a class="btn-square btn-outline dark" href="#0" id="notify-close">
-        <span class="fa fa-times light"></span>
-      </a>
-
-
-      
-      <div class="notify-content">
-
-        <div class="notify-title">
-          <p class="title">Получить презентацию</p>
-          <p class="subtitle">---</p>
-        </div>
-
-        
-        <div class="form-container">
-
-          
-            <div class="reply-group subscription-ok">
-              <i>
-                <span class="fa fa-check"></span>
-              </i>
-              <span class="reply-group__title light">Готово!</span>
-              <span class="reply-group__text light">Спасибо за ваш ящик!</span>
-            </div>
-            <div class="reply-group subscription-error">
-              <i>
-                <span class="fa fa-times"></span>
-              </i>
-              <span class="reply-group__title light">Ooops!</span>
-              <span class="reply-group__text light">Something went wrong. Please try again later.</span>
-            </div>
-          
-          <form class="notify-form form form-dark no-padding">
-            <input class="col-xs-12" type="email" placeholder="Email Adress*" required>
-            <button class="btn btn-solid" type="submit">
-              
-              <span class="btn-caption">Send</span>
-            </button>
-          </form>
-          
-
-        </div>
-        
-
-      </div>
-      
-
-    </div>
--->
-    <!-- Notify Section End-->
-
-    <!-- Custom HTML End-->
-
-    <!-- Root element of PhotoSwipe. Must have class pswp. -->
-    <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-        <!-- Background of PhotoSwipe.
-      It's a separate element, as animating opacity is faster than rgba(). -->
-        <div class="pswp__bg"></div>
-
-        <!-- Slides wrapper with overflow:hidden. -->
-        <div class="pswp__scroll-wrap">
-
-            <!-- Container that holds slides. PhotoSwipe keeps only 3 slides in DOM to save memory. -->
-            <!-- don't modify these 3 pswp__item elements, data is added later on. -->
-            <div class="pswp__container">
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-                <div class="pswp__item"></div>
-            </div>
-
-            <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
-            <div class="pswp__ui pswp__ui--hidden">
-
-                <div class="pswp__top-bar">
-
-                    <!--  Controls are self-explanatory. Order can be changed. -->
-
-                    <div class="pswp__counter"></div>
-
-                    <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-
-                    <button class="pswp__button pswp__button--share" title="Share"></button>
-
-                    <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-
-                    <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-
-                    <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
-                    <!-- element will get class pswp__preloader--active when preloader is running -->
-                    <div class="pswp__preloader">
-                        <div class="pswp__preloader__icn">
-                            <div class="pswp__preloader__cut">
-                                <div class="pswp__preloader__donut"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-                    <div class="pswp__share-tooltip"></div>
-                </div>
-
-                <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-            </button>
-
-                <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-            </button>
-
-                <div class="pswp__caption">
-                    <div class="pswp__caption__center"></div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-    <script>
-        $("#our-work").mixItUp({
-            selectors: {
-                target: '.mix',
-                filter: '.filter'
-            },
-            load: {
-                filter: '.category-all'
-            },
-
-     "animation": {
-        "duration": 342,
-        "nudge": false,
-        "reverseOut": false,
-        "effects": ""
-    }
-
-        });
-
-    </script>
-
-    <!-- Load Scripts Start-->
-    <script type="text/javascript" src="js/libs.min.js"></script>
-    <script type="text/javascript" src="js/gallery-init.js"></script>
-    <script type="text/javascript" src="js/axio-custom.js"></script>
-    <script type="text/javascript" src="js/maps/map-color-4.js"></script>
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNMDtmEsvSevM4ztfsbhLfLNZhKHCvWXk"></script>
-    <script src='https://www.google.com/recaptcha/api.js' defer></script>
-	<script src='/form_recaptcha/send_form.js' defer></script>
-    <!-- Load Scripts End-->
-
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-        (function(d, w, c) {
-            (w[c] = w[c] || []).push(function() {
-                try {
-                    w.yaCounter41517969 = new Ya.Metrika({
-                        id: 41517969,
-                        clickmap: true,
-                        trackLinks: true,
-                        accurateTrackBounce: true,
-                        webvisor: true
-                    });
-                } catch (e) {}
             });
 
-            var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function() {
-                    n.parentNode.insertBefore(s, n);
-                };
-            s.type = "text/javascript";
-            s.async = true;
-            s.src = "https://mc.yandex.ru/metrika/watch.js";
+        </script>
 
-            if (w.opera == "[object Opera]") {
-                d.addEventListener("DOMContentLoaded", f, false);
-            } else {
-                f();
-            }
-        })(document, window, "yandex_metrika_callbacks");
+        <!-- Load Scripts Start-->
+        <script type="text/javascript" src="js/libs.min.js"></script>
+        <script type="text/javascript" src="js/gallery-init.js"></script>
+        <script type="text/javascript" src="js/axio-custom.js"></script>
+        <script type="text/javascript" src="js/maps/map-color-4.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNMDtmEsvSevM4ztfsbhLfLNZhKHCvWXk"></script>
+        <script src='https://www.google.com/recaptcha/api.js' defer></script>
+        <script src='/form_recaptcha/send_form.js' defer></script>
+        <!-- Load Scripts End-->
 
-    </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/41517969" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-    <!-- /Yandex.Metrika counter -->
+        <!-- Yandex.Metrika counter -->
+        <script type="text/javascript">
+            (function(d, w, c) {
+                (w[c] = w[c] || []).push(function() {
+                    try {
+                        w.yaCounter41517969 = new Ya.Metrika({
+                            id: 41517969,
+                            clickmap: true,
+                            trackLinks: true,
+                            accurateTrackBounce: true,
+                            webvisor: true
+                        });
+                    } catch (e) {}
+                });
+
+                var n = d.getElementsByTagName("script")[0],
+                    s = d.createElement("script"),
+                    f = function() {
+                        n.parentNode.insertBefore(s, n);
+                    };
+                s.type = "text/javascript";
+                s.async = true;
+                s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+                if (w.opera == "[object Opera]") {
+                    d.addEventListener("DOMContentLoaded", f, false);
+                } else {
+                    f();
+                }
+            })(document, window, "yandex_metrika_callbacks");
+
+        </script>
+        <noscript><div><img src="https://mc.yandex.ru/watch/41517969" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+        <!-- /Yandex.Metrika counter -->
 
 
+        <script>
+            var menuMobile = $(document).find('.menu-mobile');
 
+
+            $('.menu-mobile__buttonClick').click(function(event) {
+
+
+                menuMobile.toggleClass('menu-mobile_active');
+
+            });
+
+        </script>
 </body>
 
 </html>
