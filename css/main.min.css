@@ -6628,6 +6628,9 @@ _:future,
     max-width: 497px;
     margin-top: 6rem;
 }
+header .head__menu{
+    display: none;
+}
 .works-nav{
     display: flex;
         justify-content: center;
@@ -7149,6 +7152,9 @@ display: none;
     height: 20px;
 }
 @media(max-width:750px){
+    header .head__menu{
+    display: block;
+}
     .works-nav{
         margin-right: 0;
     }
