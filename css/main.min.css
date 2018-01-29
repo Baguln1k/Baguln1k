@@ -275,11 +275,7 @@ body {
     color: #313637
 }
 
-@media only screen and (min-width:1024px) {
-    body {
-        overflow: hidden
-    }
-}
+
 
 a {
     text-decoration: none;
@@ -6654,17 +6650,18 @@ header .head__menu{
     border: 1px solid white;
      padding-left: 20px;
     padding-right: 20px;
-    padding-top: 3px;
-    padding-bottom: 3px;
+        padding-top: 7px;
+    padding-bottom: 7px;
 }
 
 .works-nav li a:hover{
-    border: 1px solid #8db5f1;
+       border: 1px solid #1969e2;
+    color: #1969e2;
     transition: 0.4s cubic-bezier(0.35, 0, 1, 0.09);
 }
 .active{
- 
-  border: 1px solid #8db5f1!important;
+     border: 1px solid #1969e2!important;
+    color: #1969e2;
     
     
 }
@@ -7269,9 +7266,10 @@ display: none;
     height: 30px;
 }
 .main-header__logo-container{
-    width: 49%;
+/*    width: 49%;*/
 }
 .main-header{
+/*
     padding-left: 2%;
     padding-right: 2%;
     display: flex;
@@ -7279,6 +7277,16 @@ display: none;
     width: 100%;
     padding-top: 35px;
     justify-content: space-between;
+    font-family: montserrat;
+    margin-bottom: 120px;
+*/
+        padding-left: 2%;
+    padding-right: 2%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-top: 35px;
+    justify-content: space-around;
     font-family: montserrat;
     margin-bottom: 120px;
 }
