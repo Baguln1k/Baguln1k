@@ -6657,6 +6657,7 @@ header .head__menu{
 .works-nav li a:hover{
           border: 1px solid #1969e2;
     color: #1969e2;
+    
     transition: 0.8s ease;
 }
 .active{
