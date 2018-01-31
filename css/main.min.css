@@ -7233,6 +7233,12 @@ header .head__menu {
     width: 89px;
     height: 20px;
 }
+.main-header__logo-container{
+    margin-top: -3px;
+}
+.index-header__logo-container{
+    margin-top: -3px;
+}
 
 @media(max-width:750px) {
       .main.loaded .main-intro .headline .main-headline {
