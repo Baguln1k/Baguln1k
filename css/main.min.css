@@ -7337,7 +7337,13 @@ header .head__menu {
         height: 36px;
     }
     .items-link {
-        width: 449px;
+        width: 428px;
+    }
+    .items-link__bottomSection span{
+        margin-right: 2px;
+    }
+    .items-link__topSection span{
+        margin-right: 2px;
     }
     .items-link-wrapper h3 {
         font-size: 29px;
