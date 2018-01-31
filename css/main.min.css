@@ -7247,6 +7247,7 @@ header .head__menu {
     }
     .index-header {
         margin-bottom: 0!important;
+        
     }
     .mobile-title h3 {
         display: block;
@@ -7259,9 +7260,11 @@ header .head__menu {
 @media(max-width:500px) {
     .index-header__logo-container {
         width: 100%;
+        display: none;
     }
     .index-header .index-header__logo-container {
         width: 100%;
+        display: none;
     }
     .index-header .index-header__menu {
         display: none;
