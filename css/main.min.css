@@ -7339,6 +7339,27 @@ header .head__menu {
     .items-link {
         width: 428px;
     }
+    .items-link-wrapper {
+        width: 428px;
+    }
+    .items__1apart::after{
+        width: 428px;
+    }
+     .items__bc::after{
+        width: 428px;
+    }
+     .items__skenar::after{
+        width: 428px;
+    }
+     .items__alyson::after{
+        width: 428px;
+    }
+     .items__elzavod::after{
+        width: 428px;
+    }
+     .items__cdi::after{
+        width: 428px;
+    }
     .items-link__bottomSection span{
         margin-right: 2px;
     }
