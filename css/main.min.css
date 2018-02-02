@@ -7399,11 +7399,24 @@ header .head__menu {
     .items-link__topSection span:first-child {
         margin-left: 0;
     }
+    .items-link__topSection span{
+        font-size: 13px;
+    }
+    .items-link__bottomSection span{
+        font-size: 13px;
+    }
+    .items-link__topSection{
+        margin-left: 10px;
+    }
+    .items-link__bottomSection{
+        margin-left: 10px;
+    }
     .items-link-wrapper h3 {
-        font-size: 29px;
+        font-size: 24px;
+            padding-left: 11px;
     }
     .items-link-wrapper__text {
-        font-size: 13px;
+        font-size: 12px;
     }
     .works h1 {
         font-size: 40px;
