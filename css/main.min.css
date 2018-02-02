@@ -7310,6 +7310,7 @@ header .head__menu {
     background-position: 21px 21px!important;
     padding-left: 36px;
     padding-right: 27px;
+        margin-top: 20px;
 }
     .index-header__logo-container {
         width: 100%;
@@ -7417,6 +7418,7 @@ header .head__menu {
     }
     .items-link-wrapper__text {
         font-size: 12px;
+        padding-left: 11px;
     }
     .works h1 {
         font-size: 40px;
