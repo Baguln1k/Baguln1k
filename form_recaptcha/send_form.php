@@ -11,9 +11,9 @@ $send_form = array(); // все формы ссайта
 
 // определяем стандартные параметры для формы (указываем id)
 $send_form['form_test'] = [
-'to' => 'fresco.konovalov@gmail.com', // получатель
+'to' => 'boykov70@yandex.ru', // получатель
 'title' => 'Заявка с Фреско!', // аголовок
-'headers' => 'cdi257033@yandex.ru' // отпровитель
+'headers' => 'info@fresco.bz' // отпровитель
 ];
 
 
