@@ -584,27 +584,25 @@
                         </div>
                         </div>
                     </a>
-                
             </div>
         
         <h3 class="form-title">Давайте обсудим ваш проект</h3>
-        <form class="form form-dark contact-form"   metod="post" action="/form_recaptcha/send_form.php" enctype="multipart/form-data">
+       <form id="form" class="form form-dark contact-form">
 
             <!-- Hidden Required Fields-->
-<!--
+
             <input type="hidden" name="project_name" value="Новая заявка с сайта">
             <input type="hidden" name="admin_email" value="boykov70@yandex.ru">
             <input type="hidden" name="form_subject" value="Контакт форм сообщение">
--->
             <!-- END Hidden Required Fields-->
 
-            <input id="valid"  type="text" name="Name" placeholder="Ваше имя*"   rus-text="Имя" required>
-            <input id="valid" type="email" name="E-mail" placeholder="E-mail*"  rus-text="Mail" required >
-            <input  type="text" name="Company" placeholder="Название компании"  rus-text="Название компании" required>
-            <input id="valid" type="tel" name="Phone" placeholder="Телефон*" pattern="^[ 0-9]+$"  rus-text="Телефон" required>
+            <input id="valid"  type="text" name="Name" placeholder="Ваше имя*"    required>
+            <input id="valid" type="email" name="E-mail" placeholder="E-mail*"   required >
+            <input  type="text" name="Company" placeholder="Название компании">
+            <input id="valid" type="tel" name="Phone" placeholder="Телефон*" pattern="^[ 0-9]+$"   required>
             
             <div class="flex-container">
-                <textarea id="valid" class="col-xs-12" name="Message" placeholder="Сообщение*" rus-text="Сообщение"required></textarea>
+                <textarea id="valid" class="col-xs-12" name="Message" placeholder="Сообщение*" required></textarea>
 
 
 
@@ -614,7 +612,7 @@
     align-items: flex-start;
     display:  flex;
 ">*Обязательные поля</span>
-                <button id="feedback2" type="submit" class="btn btn-solid g-recaptcha" data-sitekey="6LddAkAUAAAAACX67JRWDYcl8s9-iuXIhEPGrsi8"
+                    <button id="feedback2" type="submit" class="btn btn-solid g-recaptcha" data-sitekey="6LddAkAUAAAAACX67JRWDYcl8s9-iuXIhEPGrsi8"
 	data-size="invisible"
 	data-callback="recaptcha_active">
               
@@ -622,6 +620,13 @@
             </button>
             </div>
         </form>
+        <div class="feedback-modal">
+            <h4 class="feedback-modal__title">Ваше сообщение успешно отправлено!</h4>
+            <p class="feedback-modal__text">Наш менеджер свяжется с вами в ближайшее время.</p>
+            <button class="btn btn-solid feedback-modal__btn">
+                  <span class="btn-caption">Ok</span>
+                </button>
+        </div>
         <script>
             var form = document.querySelector("form");
             var username = form.querySelector("[name=Name]");
@@ -630,7 +635,14 @@
             var phone = form.querySelector("[name=Phone]");
             var message = form.querySelector("[name=Message]");
             var input = form.querySelectorAll("#valid");
+            var modal = document.querySelector(".feedback-modal");
+            var close = modal.querySelector(".feedback-modal__btn");
             
+            close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modal.classList.remove("feedback-modal-opened");
+    login.focus();
+  });
             
             form.addEventListener("click", function (evt) {
                    console.log(this);
@@ -700,13 +712,13 @@
     </script>
 
     <!-- Load Scripts Start-->
+    <script src='/form_recaptcha/send_form.js' defer></script>
     <script type="text/javascript" src="js/libs.min.js"></script>
     <script type="text/javascript" src="js/gallery-init.js"></script>
     <script type="text/javascript" src="js/axio-custom.js"></script>
 <!--    <script type="text/javascript" src="js/maps/map-color-4.js"></script>-->
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNMDtmEsvSevM4ztfsbhLfLNZhKHCvWXk"></script>
-    <script src='https://www.google.com/recaptcha/api.js' defer></script>
-	<script src='/form_recaptcha/send_form.js' defer></script>
+	
 	
     <!-- Load Scripts End-->
 

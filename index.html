@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" lang="en">
+<html lang="en">
 
 <head>
 
@@ -8,8 +8,8 @@
     <!-- Page Title-->
     <title>FRESCO – классическая веб-студия в сердце Сибири</title>
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="img/favicon/color-4/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon/color-4/favicon.ico" type="image/x-icon" />
 
 
     <!-- Meta Tags-->
@@ -24,15 +24,13 @@
 
     <!-- Template Favicon & Icons Start -->
     <link rel="shortcut icon" sizes="16x16 24x24 32x32 48x48 64x64 96x96" href="img/favicon/color-4/favicon.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/color-4/apple-touch-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/color-4/apple-touch-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/color-4/apple-touch-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/color-4/apple-touch-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/color-4/apple-touch-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/color-4/apple-touch-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/color-4/apple-touch-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/color-4/apple-touch-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/color-4/apple-touch-icon-180x180.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/color-4/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="60x60" href="img/favicon/color-4/android-chrome-256x256.png">
+    <link rel="icon" type="image/png" sizes="72x72" href="img/favicon/color-4/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="76x76" href="img/favicon/color-4/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="114x114" href="img/favicon/color-4/mstile-150x150.png">
+    <link rel="icon" type="image/png" sizes="120x120" href="img/favicon/color-4/safari-pinned-tab.svg">
+    <link rel="icon" type="image/png" sizes="144x144" href="img/favicon/color-4/site.webmanifest">
     <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/color-4/android-chrome-192x192.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.min.css">
@@ -41,7 +39,7 @@
     <link rel="stylesheet" href="./slick/slick.css">
 
     <link rel="stylesheet" href="./slick/slick-theme.css">
-    <meta property="og:image" content="img/favicon/color-4/og-image-250x250.jpg">
+
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="./slick/slick.min.js"></script>
     <script type="text/javascript" src="./slick/master.js"></script>
@@ -53,7 +51,6 @@
         .grecaptcha-badge {
             display: none !important;
         }
-
     </style>
     <style>
         .loader {
@@ -414,7 +411,6 @@
             -moz-animation-fill-mode: both;
             animation-fill-mode: both
         }
-
     </style>
     <!-- Loader Styles End-->
 
@@ -1300,7 +1296,6 @@
         .affix {
             position: fixed
         }
-
     </style>
     <!-- Bootstrap Grid System End-->
 
@@ -1491,15 +1486,12 @@
         body {
             min-width: 320px;
             position: relative;
-          
             font-family: Raleway, sans-serif;
             font-size: 1.4rem;
             line-height: 1.8;
             background-color: #fff;
             color: #313637
         }
-        
-       
         
         a {
             text-decoration: none;
@@ -1521,7 +1513,6 @@
             padding: 0
         }
         
-      
         .fullheight {
             height: auto
         }
@@ -2460,7 +2451,6 @@
                 width: 75%
             }
         }
-
     </style>
     <!-- First Visible Screen CSS End-->
 
@@ -2522,14 +2512,12 @@
                 })
             }
         }(this);
-
     </script>
     <!-- Load CSS, CSS Localstorage & WebFonts Main Function End-->
 
     <!-- Load Fonts CSS Start-->
     <script>
         loadCSS("css/fonts.min.css?ver=1.0.0", false, "all"); // Loading fonts, if the site is located in a subfolder
-
     </script>
     <!-- Load Fonts CSS End-->
 
@@ -2539,7 +2527,6 @@
         loadCSS("css/colors/color-4.min.css?ver=1.0.0", false, "all");
         loadCSS("./slick/slick.css", false, "all");
         loadCSS("./slick/slick-theme.css", false, "all");
-
     </script>
     <!-- Load Custom CSS End-->
 
@@ -2598,10 +2585,16 @@
         <div class="container-fluid fullheight">
 
             <!-- Intro Section with Image Background Start -->
-            <div class="main-intro col-xs-12" style="background-image:url(img/backgrounds/123.png);">
+            <div class="main-intro col-xs-12">
+                <div id="trailer" class="is_overlay">
+	<video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto" src="img/backgrounds/bg.webm" type="video/webm">
+		
+	</video>
+</div>
 
                 <!-- Background Effect Start -->
                 <!-- Floating Clouds Background Start-->
+<!--
                 <div id="clouds">
                     <div class="clouds__layer clouds__layer1">
                         <img src="img/backgrounds/clouds-layers/layer-1.png">
@@ -2613,6 +2606,7 @@
                         <img src="img/backgrounds/clouds-layers/layer-3.png">
                     </div>
                 </div>
+-->
                 <!-- Floating Clouds Background Start End-->
                 <!-- Background Effect End -->
 
@@ -2689,7 +2683,7 @@
                         </div>
                     </div>
                     <div class="feedback">
-                        <a href="#" class="btn btn-solid">
+                        <a href="#index-feedback" class="btn btn-solid">
 
                             <span class="btn-caption">Оставить заявку</span>
                         </a>
@@ -2698,121 +2692,330 @@
 how-we-do-it-link" href="#">смотреть как мы это делаем</a>
                     </div>
                 </div>
-                <!-- Main Headline End -->
-
-                <!-- Countdown Start-->
                 <div class="countdown">
-                    <!--<div id="countdown"></div>-->
-                    <span class="help-text"><a id="prezent" href="#" target="blank" style="border-bottom: 1px solid #222;border-color: #fff;color: #fff;">Скачать презентацию</a></span>
+
+                    <span class="help-text"><a href="./document/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20FRESCO.pdf" download  id="prezent" href="#" target="blank" style="border-bottom: 1px solid #222;border-color: #fff;color: #fff;">Скачать презентацию</a></span>
                 </div>
-                <!-- Countdown End-->
-
-
-                <!-- Intro with Image Background End -->
-
-
             </div>
         </div>
     </section>
-<!--
     <section class="about-the-studio">
-       <div class="container-fluid fullheight about-the-studio__content">
-       <div class="about-the-studio__content--left-bg">
-      <div class="about-the-studio__content--left">
-          <h1 class="about-the-studio__content--left-title">O студии</h1>
-          <p class="about-the-studio__content--left-text">Можно стать воздушным асом. Можно стать воздушной планетой. И будешь уверен, что эту планету примут по учебнику. Значит, на пользу физики пойдет одна планета.</p>
-          <p class="about-the-studio__content--left-text">Величина, оторванная в область дипломатии, дает свои колебания на всю дипломатию. А Илья Муромец дает колебания только на семью на свою. Спичка в библиотеке работает. В кинохронику ходят и зажигают в кинохронике большой лист. В библиотеке маленький лист разжигают</p>
-          <p class="about-the-studio__content--left-text">Можно стать воздушным асом. Можно стать воздушной планетой. И будешь уверен, что эту планету примут по учебнику. Значит, на пользу физики пойдет одна планета.</p>
-          <div class="about-the-studio__content--left-numbers">
-              <div class="about-the-studio__content--left-numbersL">
-                  <b>11</b>
-                  <span>человек<br>в команде</span>
-              </div>
-               <div class="about-the-studio__content--left-numbersC">
-                  <b>30+</b>
-                  <span>проектов за<br>последние 2 года</span>
-              </div>
-               <div class="about-the-studio__content--left-numbersR">
-                  <b>2015</b>
-                  <span>год основания<br>студии</span>
-              </div>
-          </div>
-          <a class="about-the-studio__content--left-moreLink" href="#">Подробнее о студии</a>
-      </div>
-      </div>
-      <div class="about-the-studio__content--right-bg">
-       <div class="about-the-studio__content--right">
-          <h3 class="about-the-studio__content--right-title">Наши компетенции</h3>
-          <div class="about-the-studio__content--right-tegs">
-              <div class="about-the-studio__content--right-tegs-1">
-                  <span>сайты</span>
-                  <span>поддержка</span>
-                  <span>стратегии</span>
-              </div>
-              <div class="about-the-studio__content--right-tegs-2">
-                  <span>интернет-реклама</span>
-                  <span>аналитика</span>
-              </div>
-              <div class="about-the-studio__content--right-tegs-3">
-                  <span>вэб-дизайн</span>
-                  <span>соцсети</span>
-              </div>
-              <div class="about-the-studio__content--right-tegs-4">
-                  <span class="tegs-with-line">e-commerce</span>
-                  <span class="tegs-with-line">seo</span>
-                  <span class="tegs-with-line">нейминг</span>
-                  <span class="tegs-with-line">брендинг</span>
-              </div>
-          </div>
-          <h3 class="about-the-studio__content--right-title2">Профильный опыт</h3>
-          <p class="about-the-studio__content--right-text">Мед. клиники и стоматологии</p>
-          <p class="about-the-studio__content--right-text">Коммерческая недвижимость</p>
-          <p class="about-the-studio__content--right-text">Связь и телеком</p>
-           </div>
-           </div>
+        <div class="fullheight container-fluid about-the-studio__content">
+            <div class="about-the-studio__content--left-bg">
+                <div class="about-the-studio__content--left">
+                    <h1 class="about-the-studio__content--left-title">O студии</h1>
+                    <p class="about-the-studio__content--left-text">Можно стать воздушным асом. Можно стать воздушной планетой. И будешь уверен, что эту планету примут по учебнику. Значит, на пользу физики пойдет одна планета.</p>
+                    <p class="about-the-studio__content--left-text">Величина, оторванная в область дипломатии, дает свои колебания на всю дипломатию. А Илья Муромец дает колебания только на семью на свою. Спичка в библиотеке работает. В кинохронику ходят и зажигают в кинохронике большой лист. В библиотеке маленький лист разжигают</p>
+                    <p class="about-the-studio__content--left-text">Можно стать воздушным асом. Можно стать воздушной планетой. И будешь уверен, что эту планету примут по учебнику. Значит, на пользу физики пойдет одна планета.</p>
+                    <div class="about-the-studio__content--left-numbers">
+                        <div class="about-the-studio__content--left-numbersL">
+                            <b>11</b>
+                            <span>человек<br>в команде</span>
+                        </div>
+                        <div class="about-the-studio__content--left-numbersC">
+                            <b>30+</b>
+                            <span>проектов за<br>последние 2 года</span>
+                        </div>
+                        <div class="about-the-studio__content--left-numbersR">
+                            <b>2015</b>
+                            <span>год основания<br>студии</span>
+                        </div>
+                    </div>
+                    <a class="about-the-studio__content--left-moreLink" href="#">Подробнее о студии</a>
+                </div>
+            </div>
+            <div class="about-the-studio__content--right-bg">
+                <div class="about-the-studio__content--right">
+                    <h3 class="about-the-studio__content--right-title">Наши компетенции</h3>
+                    <div class="about-the-studio__content--right-tegs">
+                        <div class="about-the-studio__content--right-tegs-1">
+                            <span>сайты</span>
+                            <span>поддержка</span>
+                            <span>стратегии</span>
+                        </div>
+                        <div class="about-the-studio__content--right-tegs-2">
+                            <span>интернет-реклама</span>
+                            <span>аналитика</span>
+                        </div>
+                        <div class="about-the-studio__content--right-tegs-3">
+                            <span>вэб-дизайн</span>
+                            <span>соцсети</span>
+                        </div>
+                        <div class="about-the-studio__content--right-tegs-4">
+                            <span class="tegs-with-line">e-commerce</span>
+                            <span class="tegs-with-line">seo</span>
+                            <span class="tegs-with-line">нейминг</span>
+                            <span class="tegs-with-line">брендинг</span>
+                        </div>
+                    </div>
+                    <h3 class="about-the-studio__content--right-title2">Профильный опыт</h3>
+                    <p class="about-the-studio__content--right-text">Мед. клиники и стоматологии</p>
+                    <p class="about-the-studio__content--right-text">Коммерческая недвижимость</p>
+                    <p class="about-the-studio__content--right-text">Связь и телеком</p>
+                </div>
+            </div>
         </div>
     </section>
--->
-    <!-- Load Scripts Start-->
+    <section class="portfolio-content portfolio-content portfolio-content-index ">
+        <div class="fullheight">
+            <div class="portfolio-content-index__title">
+                <h3>Проекты</h3>
+                <div>
+                    <span>/</span>
+                    <span>Наши последние проекты</span>
+                </div>
+            </div>
+            <div class="our-work">
+                <a class="mix category-all category-internet-advertising category-sites category-social-networks items__1apart items-link category-support" target="_blank" href="http://1apart.ru" data-myorder="1">
+                    <div class=" our-work__items items item1">
+                        <div class="items-link-wrapper">
+                            <h3>Первый Апарт-отель</h3>
+                            <span class="items-link-wrapper__text">Самые комфортные и гостеприимные<br>апартаменты в Томске</span>
+                            <div class="items-link__topSection topSection">
+                                <span class="topSection__branding">брэндинг</span>
+                                <span class="topSection__naming">нейминг</span>
+                            </div>
+                            <div class="items-link__bottomSection bottomSection">
+                                <span class="bottomSection__internet-advertising">интернет-реклама</span>
+                                <span class="bottomSection__sites">сайт</span>
+                                <span class="bottomSection__social-networks">соцсети</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="mix category-sites category-internet-advertising category-all items__bc items-link category-support" data-myorder="2" target="_blank" href="http://bc-kz.ru" data-myorder="2">
+                    <div class=" our-work__items items item2">
+                        <div class="items-link-wrapper">
+                            <h3>Красное знамя</h3>
+                            <span class="items-link-wrapper__text">Бизнес центр класса "А" в Томске</span>
+                            <div class="items-link__topSection topSection">
+                                <span class="topSection__sites">сайт</span>
+                            </div>
+                            <div class="items-link__bottomSection bottomSection">
+                                <span class="bottomSection__internet-advertising">интернет-реклама</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="mix category-all category-sites category-social-networks category-internet-advertising items__skenar items-link category-support" target="_blank" href="http://skenarpride.ru" data-myorder="3">
+                    <div class=" our-work__items items item3">
+                        <div class="items-link-wrapper">
+                            <h3>Скэнар Прайд</h3>
+                            <span class="items-link-wrapper__text">Комфортное лечение заболеваний<br>без уколов и таблеток</span>
+                            <div class="items-link__topSection topSection">
+                                <span class="topSection__sites">сайт</span>
+                                <span class="topSection__social-networks">соцсети</span>
+                            </div>
+                            <div class="items-link__bottomSection bottomSection">
+                                <span class="bottomSection__internet-advertising">интернет-реклама</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+                <a class="mix category-all category-sites category-internet-advertising items__alyson items-link category-support" target="_blank" href="http://alyson.pro" data-myorder="4">
+                    <div class=" our-work__items items item4">
+                        <div class="items-link-wrapper">
+                            <h3>Элисон</h3>
+                            <span class="items-link-wrapper__text">Автоматизация инженерных систем</span>
+                            <div class="items-link__topSection topSection">
+                                <span class="topSection__sites">сайт</span>
+                            </div>
+                            <div class="items-link__bottomSection bottomSection">
+                                <span class="bottomSection__internet-advertising">интернет-реклама</span>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+<a class="all-projects-link" href="#">Все проекты</a>
+            </div>
+        </div>
+    </section>
+    <section class="servise-content">
+        <div class="fullheight">
+            <div class="portfolio-content-index__title servise-content-index__title">
+                <h3>Услуги</h3>
+                <div>
+                    <span>/</span>
+                    <span>Оказываем услуги по направлениям</span>
+                </div>
+            </div>
+            <div class="our-services">
+                <div class="our-services__items our-services__item-1">
+                   <div class="our-services__items-wrapper">
+                    <h4 class="our-services__items--title">Cтратегия</h4>
+                    <p class="our-services__items--text">Помогаем клиентам понять что делать.</p>
+                    </div>
+                </div>
+                <div class="our-services__items our-services__item-2">
+                   <div class="our-services__items-wrapper">
+                    <h4 class="our-services__items--title">Cайты и поддержка</h4>
+                    <p class="our-services__items--text">Создаем и развиваем сайты.</p>
+                    </div>
+                </div>
+                <div class="our-services__items our-services__item-3">
+                   <div class="our-services__items-wrapper">
+                    <h4 class="our-services__items--title">Социальные сети</h4>
+                    <p class="our-services__items--text">Делаем бренд узнаваемым.</p>
+                    
+                    </div>
+                </div>
+                <div class="our-services__items our-services__item-4">
+                   <div class="our-services__items-wrapper">
+                    <h4 class="our-services__items--title">Интернет-реклама</h4>
+                    <p class="our-services__items--text">Делаем рекламу измеримой.</p>
+                    
+                    </div>
+                </div>
+            </div>
+            <a class="all-projects-link all-service-link" href="#">Подробнее об услугах</a>
+        </div>
+    </section>
+ <section id="index-feedback" class="index-feedback">
+     <div class="fullheight">
+      <h3 class="form-title">Давайте обсудим ваш проект</h3>
+       <form id="form" class="form form-dark contact-form">
+
+            <!-- Hidden Required Fields-->
+
+            <input type="hidden" name="project_name" value="Новая заявка с сайта">
+            <input type="hidden" name="admin_email" value="boykov70@yandex.ru">
+            <input type="hidden" name="form_subject" value="Контакт форм сообщение">
+            <!-- END Hidden Required Fields-->
+
+            <input id="valid"  type="text" name="Name" placeholder="Ваше имя*"    required>
+            <input id="valid" type="email" name="E-mail" placeholder="E-mail*"   required >
+            <input  type="text" name="Company" placeholder="Название компании">
+            <input id="valid" type="tel" name="Phone" placeholder="Телефон*" pattern="^[ 0-9]+$"   required>
+            
+            <div class="flex-container">
+                <textarea id="valid" class="col-xs-12" name="Message" placeholder="Сообщение*" required></textarea>
 
 
+
+                <span class="inputs-description  flex-start" style="
+    align-self: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display:  flex;
+">*Обязательные поля</span>
+                    <button id="feedback2" type="submit" class="btn btn-solid g-recaptcha" data-sitekey="6LddAkAUAAAAACX67JRWDYcl8s9-iuXIhEPGrsi8"
+	data-size="invisible"
+	data-callback="recaptcha_active">
+              
+              <span class="btn-caption" >Отправить</span>
+            </button>
+            </div>
+        </form>
+        <div class="feedback-modal">
+            <h4 class="feedback-modal__title">Ваше сообщение успешно отправлено!</h4>
+            <p class="feedback-modal__text">Наш менеджер свяжется с вами в ближайшее время.</p>
+            <button class="btn btn-solid feedback-modal__btn">
+                  <span class="btn-caption">Ok</span>
+                </button>
+        </div>
+        <script>
+            var form = document.querySelector("form");
+            var username = form.querySelector("[name=Name]");
+            var email = form.querySelector("[name=E-mail]");
+            var companyname = form.querySelector("[name=Company]");
+            var phone = form.querySelector("[name=Phone]");
+            var message = form.querySelector("[name=Message]");
+            var input = form.querySelectorAll("#valid");
+            var modal = document.querySelector(".feedback-modal");
+            var close = modal.querySelector(".feedback-modal__btn");
+            
+            close.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    modal.classList.remove("feedback-modal-opened");
+    login.focus();
+  });
+            
+            form.addEventListener("click", function (evt) {
+                   console.log(this);
+                console.log(evt.target);
+                
+               if (evt.target.closest('.g-recaptcha')) {
+               
+        
+                   
+                   input.forEach(function(elem){
+                       if(elem.value == '') {
+                           elem.classList.remove("form-error");
+                           elem.offsetWidth = elem.offsetWidth;
+                           elem.classList.add("form-error");
+                       }
+                       else{
+                          elem.classList.remove("form-error"); 
+                       }
+                           
+                   });
+
+               }
+  });
+     </script>
+        <footer class="main-footer index-footer">
+            <div class="left-content">
+                <span class="left-content__adress">634041, пр. Фрунзе, д. 103, оф. 801 (БЦ Красное Знамя)</span>
+                <span class="left-content__workingHours">Работаем с 10 до 19</span>
+            </div>
+            <div class="center-content">
+                <a class="center-content__telephone" href="tel:83822505900">+7 (3822) 505-900</a>
+                <a class="center-content__mail" href="mailto:info@fresco.bz">info@fresco.bz</a>
+            </div>
+            <div class="right-content">
+                 <a href="./document/%D0%9F%D1%80%D0%B5%D0%B7%D0%B5%D0%BD%D1%82%D0%B0%D1%86%D0%B8%D1%8F%20%D1%81%D1%82%D1%83%D0%B4%D0%B8%D0%B8%20FRESCO.pdf" download class="right-content__ presentation">Скачать презентацию
+            </a>
+            <a href="#">Политика конфеденциальности</a>
+            
+            </div>
+            <div class="footer-logo">
+                <img src="./img/icons/logo.svg"alt="Логотип Фреско">
+            </div>
+        </footer>
+     </div>
+ </section>
+
+    <script src='./form_recaptcha/send_form.js' defer></script>
     <script type="text/javascript" src="js/gallery-init.js"></script>
     <script type="text/javascript" src="js/axio-custom.js"></script>
     <script type="text/javascript" src="js/maps/map-color-4.js"></script>
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNMDtmEsvSevM4ztfsbhLfLNZhKHCvWXk"></script>
-    <script src='https://www.google.com/recaptcha/api.js' defer></script>
-    <script src='./form_recaptcha/send_form.js' defer></script>
+    
     <!-- Load Scripts End-->
 
     <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter41517969 = new Ya.Metrika2({
-                    id:41517969,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true,
-                    webvisor:true
-                });
-            } catch(e) { }
-        });
+    <script type="text/javascript">
+        (function(d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter41517969 = new Ya.Metrika2({
+                        id: 41517969,
+                        clickmap: true,
+                        trackLinks: true,
+                        accurateTrackBounce: true,
+                        webvisor: true
+                    });
+                } catch (e) {}
+            });
 
-        var n = d.getElementsByTagName("script")[0],
-            s = d.createElement("script"),
-            f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = "https://mc.yandex.ru/metrika/tag.js";
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function() {
+                    n.parentNode.insertBefore(s, n);
+                };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/tag.js";
 
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks2");
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/41517969" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else {
+                f();
+            }
+        })(document, window, "yandex_metrika_callbacks2");
+    </script>
+    <noscript><div><img src="https://mc.yandex.ru/watch/41517969" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <!-- /Yandex.Metrika counter -->
 
 
     <script>
@@ -2825,7 +3028,6 @@ how-we-do-it-link" href="#">смотреть как мы это делаем</a>
             menuMobile.toggleClass('menu-mobile_active');
 
         });
-
     </script>
 
 </body>
