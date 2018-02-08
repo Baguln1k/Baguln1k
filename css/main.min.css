@@ -6361,6 +6361,88 @@ _:future,
 .stayintouch.animate-out {
     opacity: 1
 }
+.flamp-btn:hover{
+    right: 0px;
+    transition: 0.8s ease;
+}
+.headh-btn:hover{
+    right: 0px;
+    transition: 0.8s ease;
+}
+.flamp-btn{
+    background-color: #4582de;
+        border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: montserrat;
+    line-height: 37px;
+    width: 172px;
+    position: absolute;
+    top: -49px;
+    right: -15px;
+        padding-right: 30px;
+}
+a.flamp-btn{
+        display: block;
+    padding-left: 9px;
+}
+.headh-btn{
+    background-color: #e58c8c;
+        border: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 100;
+    font-family: montserrat;
+    line-height: 37px;
+    width: 172px;
+    position: absolute;
+    top: 4px;
+    right: -15px;
+        padding-right: 30px;
+}
+.headh-btn:after{
+ content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 18.8px 22px 18.5px 0;
+    border-color: transparent #e58c8c transparent transparent;
+    position: absolute;
+    left: -20.1px;
+    top: 0px;
+}
+.flamp-btn:after{
+    content: "";
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 18.8px 22px 18.5px 0;
+    border-color: transparent #4582de transparent transparent;
+    position: absolute;
+    left: -20.1px;
+    top: 0px;
+}
+.flamp-btn:before{
+        content: "";
+    width: 60px;
+    height: 16px;
+    background-image: url(../img/icons/flamp.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 101px;
+    top: 13px;
+}
+.headh-btn:before{
+        content: "";
+    width: 60px;
+    height: 16px;
+    background-image: url(../img/icons/hh.ru.svg);
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 112px;
+    top: 13px;
+}
 
 @media only screen and (min-width:768px) {
     .stayintouch {
@@ -7715,6 +7797,13 @@ header .head__menu {
     }
 }
 @media(max-width:750px) {
+    
+    .flamp-btn{
+        display: none!important;
+    }
+        .headh-btn{
+        display: none;
+    }
       .main.loaded .main-intro .headline .main-headline {
         font-size: 26px;
     }
@@ -8592,6 +8681,7 @@ width: auto; height: auto;
 11111111111
 111111111111*/
 @media(max-width:500px) {
+    
     .main-slider__slide h3{
         font-size: 32px;
         line-height: 45px;
@@ -9050,4 +9140,95 @@ width: auto; height: auto;
         font-size: 3rem;
     }
 }
-   
+   @media(max-width:1182px){
+    .index-header__nav li {
+    margin-left: 5%;
+}
+    .index-header__logo-container{
+        width: 35%;
+    }
+   .index-header__rightcontent .index-header__nav{
+        margin-right: 36px;
+    }
+   .index-header__rightcontent .index-header__telephone {
+    padding-left: 2%;
+    width: 170px;
+}
+    .index-header__nav{
+        margin-right: 0px;
+    }
+        .slick-prev:before{
+        display: none!important;
+    }
+     .slick-next:before{
+        display: none!important;
+    }
+       .main-slider__slide h3 {
+    font-size: 48px;
+    padding-left: 0px;
+               font-size: 44px;
+    line-height: 48px;
+}
+       .main-slider__slide span{
+           padding-left: 0;
+       }
+       .main.loaded .main-intro .headline .feedback .btn{
+           margin-left: 0;
+       }
+       .or{
+           margin-left: 10px;
+       }
+       .how-we-do-it-link{
+           margin-left: 10px;
+       }
+       .about-the-studio__content{
+           flex-direction: column;
+           height: auto;
+       }
+       .about-the-studio__content--left-bg{
+           width: 100%;
+       }
+       .about-the-studio__content--left-moreLink{
+          margin-bottom: 50px;
+    display: block;
+    width: 178px; 
+       }
+        .about-the-studio__content--right-bg{
+           width: 100%;
+       }
+       .about-the-studio__content--left {
+    padding-left: 6%;
+    padding-right: 6%;
+}
+       .about-the-studio__content--left-title {
+  
+    margin-top: 50px;
+}
+       .about-the-studio__content--right-title{
+           margin-top: 50px;
+       }
+       .about-the-studio__content--right{
+           width: 100%;
+              padding-left: 2%;
+    padding-right: 2%;
+       }
+       .about-the-studio__content--right-text:last-child {
+    margin-bottom: 50px;
+}
+       .portfolio-content-index__title{
+           justify-content: center;
+       }
+       .portfolio-content-index__title h3 {
+    font-size: 41px;
+    color: #252525;
+}
+       .portfolio-content-index__title span:first-child{
+           padding: 0;
+       }
+       .portfolio-content-index__title span{
+           padding: 0;
+       }
+       .index-form{
+           margin-bottom: 97px;
+       }
+}
