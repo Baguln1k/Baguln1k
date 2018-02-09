@@ -7442,7 +7442,7 @@ header .head__menu {
     align-items: center;
 }
 .about-the-studio{
-    height: 100%;
+/*    height: 100%;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -7463,7 +7463,7 @@ header .head__menu {
     margin: 0;
     margin-bottom: 32px;
     text-transform: none;
-    padding-top: 42px;
+    padding-top: 100px;
 }
 .about-the-studio__content--right-bg{
           background-color: #0062db;
@@ -7494,13 +7494,17 @@ header .head__menu {
         font-size: 16px;
     line-height: 24px;
     margin-bottom: 12px;
+    font-weight: 400;
     color: #fff;
 }
 .about-the-studio__content--left-moreLink{
-        font-size: 16px;
+           font-size: 16px;
     color: #fff;
     border-bottom: 1px solid white;
-    padding-bottom: 6px;
+   width: 173px;
+    
+    margin-bottom: 50px;
+    display: block;
 }
 .about-the-studio__content--right-title{
    font-size: 24px;
@@ -7509,7 +7513,7 @@ header .head__menu {
     margin: 0;
     padding: 0;
     margin-bottom: 50px;
-    padding-top: 71px;
+    padding-top: 0px;
 }
 .about-the-studio__content--right-tegs span{
         font-size: 16px;
@@ -7525,7 +7529,7 @@ header .head__menu {
     font-weight: normal;
   font-style: normal;
   font-stretch: normal;
-  line-height: normal;
+  line-height: 26px;
   letter-spacing: normal;
 }
 .about-the-studio__content--right-title2{
@@ -7649,7 +7653,7 @@ header .head__menu {
     transform: rotate(-14deg);
 }
 .portfolio-content-index{
-           min-height: 100vh;
+           
     
     display: flex;
     width: 100%;
@@ -7820,14 +7824,12 @@ header .head__menu {
 .index-feedback{
         display: flex;
     flex-direction: column;
-    height: 100vh;
+    
 }
 .index-form-title{
-    margin-top: 38px;
+    margin-top: 100px;
 }
 .index-footer{
-    position: absolute;
-    bottom: 0;
     width: 100%;
 }
 .feedback-modal-opened{
@@ -9160,7 +9162,7 @@ width: auto; height: auto;
   letter-spacing: normal;
     }
     .index-form{
-            margin-bottom: 304px!important;
+            margin-bottom: 30px!important;
     }
      .our-services__items-wrapper h4{
         font-size: 24px;
