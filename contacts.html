@@ -33,7 +33,7 @@
     <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/color-4/apple-touch-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/color-4/apple-touch-icon-180x180.png">
     <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/color-4/android-chrome-192x192.png">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&amp;subset=cyrillic" rel="stylesheet">
     <meta property="og:image" content="img/favicon/color-4/og-image-250x250.jpg">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     
@@ -488,19 +488,20 @@
             <input id="valid"  type="text" name="Name" placeholder="Ваше имя*"    required>
             <input id="valid" type="email" name="E-mail" placeholder="E-mail*"   required >
             <input  type="text" name="Company" placeholder="Название компании">
-            <input id="valid" type="tel" name="Phone" placeholder="Телефон*" pattern="^[ 0-9]+$"   required>
+            <input class="phone-form" id="valid" type="tel" name="Phone" placeholder="Телефон*"    required>
             
-            <div class="flex-container">
-                <textarea id="valid" class="col-xs-12" name="Message" placeholder="Сообщение*" required></textarea>
+           <div class="flex-container">
+                <textarea id="valid" class="col-xs-12" name="Message" placeholder="Сообщение*" required style="margin-bottom: 20px"></textarea>
 
 
 
                 <span class="inputs-description  flex-start" style="
-    align-self: flex-start;
+    align-self: flex-center;
     justify-content: flex-start;
     align-items: flex-start;
     display:  flex;
-">*Обязательные поля</span>
+">Нажимая на кнопку «Отправить», вы соглашаетесь
+наобработку персональных данных</span>
                     <button id="feedback2" type="submit" class="btn btn-solid g-recaptcha" data-sitekey="6LddAkAUAAAAACX67JRWDYcl8s9-iuXIhEPGrsi8"
 	data-size="invisible"
 	data-callback="recaptcha_active">
@@ -516,6 +517,11 @@
                   <span class="btn-caption">Ok</span>
                 </button>
         </div>
+        <script>
+    jQuery(function($){
+   $(".phone-form").mask("+7(999) 999-99-99");
+});
+     </script>
        <script>
             var form = document.querySelector("form");
             var username = form.querySelector("[name=Name]");
@@ -593,8 +599,8 @@
     </section>
 
     <!-- Load Scripts Start-->
-    <script src='/form_recaptcha/send_form.js' defer></script>
-    
+    <script src='./form_recaptcha/send_form.js' defer></script>
+    <script src='./form_recaptcha/jquery.maskedinput.min.js'></script>
     <script type="text/javascript" src="js/libs.min.js"></script>
     <script type="text/javascript" src="js/gallery-init.js"></script>
     <script type="text/javascript" src="js/axio-custom.js"></script>
@@ -603,7 +609,7 @@
 	
 	
     <!-- Load Scripts End-->
-
+ 
     <!-- Yandex.Metrika counter -->
     <script type="text/javascript">
         (function(d, w, c) {
@@ -636,6 +642,7 @@
         })(document, window, "yandex_metrika_callbacks");
 
     </script>
+  
     <noscript><div><img src="https://mc.yandex.ru/watch/41517969" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
     <!-- /Yandex.Metrika counter -->
 
