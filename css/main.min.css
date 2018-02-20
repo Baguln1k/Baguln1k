@@ -9771,11 +9771,9 @@ width: auto;
 }
 /*!!!!!!!!!!!!!!!!!!!!Apart-start!!!!!!!!!!!!!!!!*/
 .apart-main{
-    
     width: 100%;
     background-image: url(../img/apart/bg.png);
     background-repeat: no-repeat;
-   margin-bottom: 100px;
 }
 .apart-main__center-contact{
     display: flex;
@@ -9977,8 +9975,8 @@ font-size: 48px;
     height: 300px;
 }
 .gif-wrapper img{
-    padding-top: 55px;
-    padding-bottom: 55px;
+    padding-top: 68px;
+    padding-bottom: 68px;
     padding-left: 43px;
     padding-right: 43px;
 }
@@ -10078,6 +10076,22 @@ font-size: 48px;
     padding-bottom: 637px;
       position: relative;
 }
+.leaf-1{
+    position: absolute;
+    left: 111px;
+    width: 77px;
+    height: 100px;
+    top: 475px;
+    z-index: 3;
+}
+.leaf-2{
+    position: absolute;
+        top: 705px;
+    left: -46px;
+    width: 185px;
+    height: 87px;
+    z-index: 3;
+}
 .apart-main-themes{
    width: 100%;
     height: 100%;
@@ -10122,18 +10136,51 @@ font-size: 48px;
     display: block;
     background-color: #efe6cf;
    height: 833px;
-   
+   position: relative;
 }
 
 .bg-fff{
     display: block;
     background-color: #fff;
     height: 373px;
+    position: relative;
 }
-
+.leaf-3{
+    position: absolute;
+       right: -2px;
+    width: 108px;
+    height: 59px;
+    top: 310px;
+    z-index: 3;
+}
+.plant-1{
+    position: absolute;
+    top: 7px;
+    right: 144px;
+    width: 177px;
+    height: 234px;
+    z-index: 3;
+}
 .bg-with-faces{
     background-color: #fff;
         height: 336px;
+    position: relative;
+}
+.leaf-5{
+    position: absolute;
+       right: 2px;
+    width: 104px;
+    height: 80px;
+        top: 139.411px;
+    z-index: 3;
+}
+.plant-3{
+    position: absolute;
+    top: 233.462px;
+    right: 41px;
+    width: 154px;
+    height: 192px;
+    z-index: 3;
 }
 .bg-with-faces__layer{
    max-width: 1400px;
@@ -10147,8 +10194,48 @@ font-size: 48px;
     display: block;
     background-color: #efe6cf;
     height: 700px;
+    position: relative;
 }
-
+.leaf-6{
+    position: absolute;
+       left: 2px;
+    width: 119px;
+    height: 113px;
+    top: 168.36px;
+    z-index: 3;
+}
+.leaf-7{
+    position: absolute;
+       left: 20px;
+    width: 217px;
+    height: 138px;
+    top: 347.531px;
+    z-index: 3;
+}
+.leaf-8{
+    position: absolute;
+       left: 100px;
+    width: 255px;
+    height: 120px;
+    top: 492.24px;
+    z-index: 3;
+}
+.leaf-4{
+    position: absolute;
+       right: -2px;
+    width: 255px;
+    height: 140px;
+    top: 168.36px;
+    z-index: 3;
+}
+.plant-2{
+    position: absolute;
+    top: 434.75px;
+    left: 41px;
+    width: 180px;
+    height: 223px;
+    z-index: 3;
+}
 .web-work-text{
     max-width: 1400px;
     margin: 0 auto;
