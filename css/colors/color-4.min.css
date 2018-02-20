@@ -167,6 +167,10 @@ blockquote cite {
 .btn-solid {
     background-color: #1969e2;
     color: white;
+    background-position-y: 23px;
+    /* padding-top: 5px; */
+    width: 158px;
+    height: 57px;
 }
 
 .no-touch .btn-solid:hover {

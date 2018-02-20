@@ -37,9 +37,9 @@
     <meta property="og:image" content="img/favicon/color-4/og-image-250x250.jpg">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     
-    <link rel="stylesheet" href="css/colors/color-4.min.css">
-    <link rel="stylesheet" href="css/main.min.css">
-    <link rel="stylesheet" href="css/fonts.min.css">
+    <link rel="stylesheet" href="css/colors/color-4.min.css?v=1.8">
+    <link rel="stylesheet" href="css/main.min.css?v=1.8">
+    <link rel="stylesheet" href="css/fonts.min.css?v=1.8">
     
     <!-- Template Favicon & Icons End-->
    
@@ -501,7 +501,7 @@
     align-items: flex-start;
     display:  flex;
 ">Нажимая на кнопку «Отправить», вы соглашаетесь
-наобработку персональных данных</span>
+на обработку персональных данных</span>
                     <button id="feedback2" type="submit" class="btn btn-solid g-recaptcha" data-sitekey="6LddAkAUAAAAACX67JRWDYcl8s9-iuXIhEPGrsi8"
 	data-size="invisible"
 	data-callback="recaptcha_active">
@@ -661,6 +661,22 @@
         });
     
 </script>
+ <script>
+    $(document).ready(function() {
+			$('[name=E-mail]').blur(function() {
+				if($(this).val() != '') {
+					var pattern = /^([a-z0-9_\.-])+@[a-z0-9-]+\.([a-z]{2,4}\.)?[a-z]{2,4}$/i;
+					if(pattern.test($(this).val())){
+						$(this).css({'border-bottom' : '1px solid #0000ff'});
+					} else {
+						$(this).css({'border-bottom' : '1px solid #ff0000'});
+					}
+				} else {
+					$(this).css({'border-bottom' : '1px solid #ff0000'});
+				}
+			});
+		});
+    </script>
 </body>
 
 </html>
