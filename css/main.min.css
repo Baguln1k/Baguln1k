@@ -9811,6 +9811,11 @@ font-size: 48px;
         width: 800px;
     z-index: 1;
 }
+
+.apart-main__center-contact img:last-child{
+    width: 157px;
+    display: none;
+}
 .story-text{
         max-width: 1400px;
     margin: 0 auto;
@@ -9853,14 +9858,19 @@ font-size: 48px;
     flex-direction: row;
     justify-content: space-around;
 }
-.apart-gallery img{
-    width: 460px;
-    height: 300px;
+
+.apart-gallery .apart-img-wrapper{
+    max-width: 460px;
     margin-right: 10px;
 }
-
-.apart-gallery img:last-child{
+.apart-gallery .apart-img-wrapper:last-child{
     margin-right: 0;
+}
+.apart-gallery img{
+    width: 100%;
+}
+.apart-gallery .apart-gif-wrapper{
+    max-width: 640px;
 }
 .task-text-bgwrapper{
     background-color: #cac4bc;
@@ -10016,11 +10026,18 @@ font-size: 48px;
     max-width: 800px;
 }
 .prototype-bg{
-    max-width: 1400px;
-    height: 1200px;
+     max-width: 1400px;
+    max-height: 1200px;
+}  
+.prototype-bg img{
+   width: 100%;
+    height: 100%;
+/*
     background-image: url(../img/apart/prototype.png);
     background-repeat: no-repeat;
+*/
 }
+ 
 .photosession-text-bgwrapper{
     background-color: #cac4bc;
 }
@@ -10276,9 +10293,8 @@ font-size: 48px;
     padding-bottom: 100px;
 }
 .apart-gallery4 img{
-    width: 640px;
-    height: 410px;
-    margin: 0;
+    width: 100%;
+    
 }
 
 
@@ -10327,6 +10343,7 @@ font-size: 48px;
     background-repeat: no-repeat;
     width: 100%;
     height: 320px;
+        background-position: center;
 }
 
 .result-text{
@@ -10379,11 +10396,15 @@ font-size: 48px;
     background-color: #efe6cf;
 }
 .mackbook-block{
-    max-width: 1400px;
+     max-width: 1400px;
     height: 640px;
     background-image: url(../img/apart/result.png);
     background-repeat: no-repeat;
     position: relative;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    margin: 0 auto;
 }
 .mackbook-block__phone{
     max-width: 257.7px;
@@ -10406,5 +10427,310 @@ font-size: 48px;
         background-image: url(../img/apart/gif/anim_phone.gif);
     background-repeat: no-repeat;
     z-index: 34;
+}
+
+
+@media(max-width:500px){
+    .apart-main__center-contact img:last-child{
+    display: block;
+        transform: translateY(20px);
+}
+    .tob-mackbook{
+        display: none;
+    }
+    .apart-main__center-contact h1 {
+    font-size: 32px;
+    margin-top: 100px;
+    text-transform: none;
+    padding-left: 6%;
+    padding-right: 6%;
+        text-align: center;
+}
+    .story-text h3 {
+     margin-right: 0; 
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 6%;
+    padding-right: 6%;
+        margin-top: 75px;
+}
+    .story-text {
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    flex-direction: column;
+}
+    .story-text p {
+    font-size: 16px;
+    padding-left: 5.6%;
+    padding-right: 5.6%;
+}
+    .mobile-hidden{
+        display: none;
+    }
+    .apart-gallery .apart-img-wrapper{
+        margin-right: 0;
+    }
+ 
+    .task-text h3 {
+     margin-right: 0; 
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 6%;
+    padding-right: 6%;
+            margin: 0;
+    margin-bottom: 50px;
+    margin-top: 75px;
+}
+    .task-text {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    .task-text p {
+    font-size: 16px;
+    padding-left: 5.6%;
+    padding-right: 5.6%;
+        padding-top: 0;
+        padding-bottom: 75px;
+}
+    
+    .naming-text h3 {
+     margin-right: 0; 
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 6%;
+    padding-right: 6%;
+            margin: 0;
+    margin-bottom: 50px;
+    margin-top: 75px;
+}
+    .naming-text {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    .naming-text p {
+    font-size: 16px;
+    padding-left: 5.6%;
+    padding-right: 5.6%;
+        padding-top: 0;
+}
+    .naming-text__flexcontainer ul {
+    padding-bottom: 75px;
+    padding-top: 10px;
+    margin-left: 0; 
+    padding-left: 10.6%;
+}
+    .naming-text__flexcontainer ul li {
+    margin-bottom: 10px;
+}
+    .naming-text__flexcontainer ul li:last-child{
+        margin-bottom: 0;
+    }
+    .apart-gallery2{
+        margin-bottom: 0;
+    }
+    .prototype-text h3 {
+     margin-right: 0; 
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 6%;
+    padding-right: 6%;
+            margin: 0;
+    margin-bottom: 50px;
+    margin-top: 75px;
+        text-align: center;
+}
+    .prototype-text {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        margin-bottom: 0;
+}
+    .prototype-text p {
+    font-size: 16px;
+    padding-left: 5.6%;
+    padding-right: 5.6%;
+        padding-top: 0;
+        padding-bottom: 75px;
+}
+     .photosession-text h3 {
+     margin-right: 0; 
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 6%;
+    padding-right: 6%;
+            margin: 0;
+    margin-bottom: 50px;
+    margin-top: 75px;
+}
+    .photosession-text {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+    .photosession-text p {
+    font-size: 16px;
+    padding-left: 5.6%;
+    padding-right: 5.6%;
+        padding-top: 0;
+        padding-bottom: 75px;
+}
+         .design-text h3 {
+     margin-right: 0; 
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 6%;
+    padding-right: 6%;
+            margin: 0;
+    margin-bottom: 50px;
+    margin-top: 75px;
+}
+    .design-text {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 205px;
+}
+    .design-text p {
+    font-size: 16px;
+    padding-left: 5.6%;
+    padding-right: 5.6%;
+        padding-top: 0;
+        padding-bottom: 75px;
+}
+    .apart-main-themeswrapper {
+   position: absolute;
+    top: 410px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-height: 1085px;
+    z-index: 2;
+    padding-left: 5.6%;
+    padding-right: 5.6%;
+}
+    .parallax{
+        display: none;
+    }
+    .bg-fff {
+    height: 148px;
+}
+    .bg-efe6cf {
+    height: 334px;
+}
+    .bg-with-faces {
+    height: 132px;
+}
+    .bg-efe6cf-2 {
+    height: 335px;
+}
+    
+    
+            .web-work-text h3 {
+     margin-right: 0; 
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 6%;
+    padding-right: 6%;
+            margin: 0;
+    margin-bottom: 50px;
+    margin-top: 75px;
+}
+    .web-work-text {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 75px;
+        margin-top: 0;
+        margin-bottom: 0;
+}
+    .web-work-text p {
+    font-size: 16px;
+    padding-left: 5.6%;
+    padding-right: 5.6%;
+        padding-top: 0;
+        
+        
+}
+    .apart-gallery4 {
+     padding-bottom: 0; 
+}
+    
+    
+             .advertising-text h3 {
+     margin-right: 0; 
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 5.6%;
+    padding-right: 5.6%;
+            margin: 0;
+    margin-bottom: 50px;
+    margin-top: 75px;
+                 text-align: center;
+}
+    .advertising-text {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 75px;
+        margin-top: 0;
+        margin-bottom: 0;
+}
+    .advertising-text p {
+    font-size: 16px;
+    padding-left: 5.6%;
+    padding-right: 5.6%;
+        padding-top: 0;
+        padding-bottom: 0;
+        
+}
+    
+    
+     .result-text h3 {
+     margin-right: 0; 
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 5.6%;
+    padding-right: 5.6%;
+            margin: 0;
+    margin-bottom: 50px;
+    margin-top: 75px;
+         text-align: center;
+}
+    .result-text {
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        padding-top: 0;
+        padding-bottom: 75px;
+        margin-top: 0;
+        margin-bottom: 0;
+}
+    .result-text p {
+    font-size: 16px;
+    padding-left: 5.6%;
+    padding-right: 5.6%;
+        padding-top: 0;
+        padding-bottom: 0;
+        
+}
+    .apart-gallery4 img {
+    padding-left: 5.6%;
+    padding-right: 5.6%;
+    padding-bottom: 75px;
+}
+    .mackbook-block__phone {
+   width: 245.7px;
+   
+    position: absolute;
+    top: 68px;
+    left: 50%;
+    transform: translateX(-50%);
+}
 }
 /*!!!!!!!!!!!!!!!!!!!!Apart-end!!!!!!!!!!!!!!!!*/
