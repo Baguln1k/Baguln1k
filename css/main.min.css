@@ -279,7 +279,7 @@ html {
         -webkit-overflow-x: hidden;
     overflow-x: hidden;
 */
-    max-width: 1600px;
+   
     margin: 0 auto;
 }
 .slick-prev{
@@ -9770,8 +9770,14 @@ width: auto;
 }
 }
 /*!!!!!!!!!!!!!!!!!!!!Apart-start!!!!!!!!!!!!!!!!*/
+.bgsize{
+    max-width: 1400px;
+    margin: 0 auto;
+}
 .apart-main{
     width: 100%;
+        max-width: 1400px;
+    margin: 0 auto;
     background-image: url(../img/apart/bg.png);
     background-repeat: no-repeat;
 }
@@ -10028,6 +10034,7 @@ font-size: 48px;
 .prototype-bg{
      max-width: 1400px;
     max-height: 1200px;
+    margin: 0 auto;
 }  
 .prototype-bg img{
    width: 100%;
@@ -10715,8 +10722,8 @@ font-size: 48px;
     font-size: 16px;
     padding-left: 5.6%;
     padding-right: 5.6%;
-        padding-top: 0;
-        padding-bottom: 0;
+    padding-top: 0;
+    padding-bottom: 0;
         
 }
     .apart-gallery4 img {
@@ -10725,8 +10732,7 @@ font-size: 48px;
     padding-bottom: 75px;
 }
     .mackbook-block__phone {
-   width: 245.7px;
-   
+    width: 245.7px;
     position: absolute;
     top: 68px;
     left: 50%;
