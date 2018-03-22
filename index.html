@@ -34,11 +34,11 @@
     <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/color-4/android-chrome-192x192.png">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/fonts.min.css?v=1.3">
-    <link rel="stylesheet" href="css/main.min.css?v=1.3">
+    <link rel="stylesheet" href="css/main.min.css?v=1.8">
     <link rel="stylesheet" href="css/colors/color-4.min.css?v=1.3">
     <link rel="stylesheet" href="./slick/slick.css?v=1.3">
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="./slick/slick-theme.css?v=1.3">
+    <link rel="stylesheet" href="./slick/slick-theme.css?v=1.4">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="./slick/slick.min.js"></script>
@@ -412,105 +412,7 @@
             animation-fill-mode: both
         }
     </style>
-    <!-- Loader Styles End-->
-
-   
-    <!-- First Visible Screen CSS End-->
-
-    <!-- Load CSS, CSS Localstorage & WebFonts Main Function Start-->
-    <script>
-        ! function(e) {
-            "use strict";
-
-            function t(e, t, n) {
-                e.addEventListener ? e.addEventListener(t, n, !1) : e.attachEvent && e.attachEvent("on" + t, n)
-            };
-
-            function n(t, n) {
-                return e.localStorage && localStorage[t + "_content"] && localStorage[t + "_file"] === n
-            };
-
-            function a(t, a) {
-                if (e.localStorage && e.XMLHttpRequest) n(t, a) ? o(localStorage[t + "_content"]) : l(t, a);
-                else {
-                    var s = r.createElement("link");
-                    s.href = a, s.id = t, s.rel = "stylesheet", s.type = "text/css", r.getElementsByTagName("head")[0].appendChild(s), r.cookie = t
-                }
-            }
-
-            function l(e, t) {
-                var n = new XMLHttpRequest;
-                n.open("GET", t, !0), n.onreadystatechange = function() {
-                    4 === n.readyState && 200 === n.status && (o(n.responseText), localStorage[e + "_content"] = n.responseText, localStorage[e + "_file"] = t)
-                }, n.send()
-            }
-
-            function o(e) {
-                var t = r.createElement("style");
-                t.setAttribute("type", "text/css"), r.getElementsByTagName("head")[0].appendChild(t), t.styleSheet ? t.styleSheet.cssText = e : t.innerHTML = e
-            }
-            var r = e.document;
-            e.loadCSS = function(e, t, n) {
-                var a, l = r.createElement("link");
-                if (t) a = t;
-                else {
-                    var o;
-                    o = r.querySelectorAll ? r.querySelectorAll("style,link[rel=stylesheet],script") : (r.body || r.getElementsByTagName("head")[0]).childNodes, a = o[o.length - 1]
-                }
-                var s = r.styleSheets;
-                l.rel = "stylesheet", l.href = e, l.media = "only x", a.parentNode.insertBefore(l, t ? a : a.nextSibling);
-                var c = function(e) {
-                    for (var t = l.href, n = s.length; n--;)
-                        if (s[n].href === t) return e();
-                    setTimeout(function() {
-                        c(e)
-                    })
-                };
-                return l.onloadcssdefined = c, c(function() {
-                    l.media = n || "all"
-                }), l
-            }, e.loadLocalStorageCSS = function(l, o) {
-                n(l, o) || r.cookie.indexOf(l) > -1 ? a(l, o) : t(e, "load", function() {
-                    a(l, o)
-                })
-            }
-        }(this);
-    </script>
-    <!-- Load CSS, CSS Localstorage & WebFonts Main Function End-->
-
-    <!-- Load Fonts CSS Start-->
-    <script>
-        loadCSS("css/fonts.min.css?ver=1.3", false, "all"); // Loading fonts, if the site is located in a subfolder
-    </script>
-    <!-- Load Fonts CSS End-->
-
-    <!-- Load Custom CSS Start-->
-    <script>
-        loadCSS("css/main.min.css?ver=1.3", false, "all");
-        loadCSS("css/colors/color-4.min.css?ver=1.3", false, "all");
-        loadCSS("./slick/slick.css", false, "all");
-        loadCSS("./slick/slick-theme.css", false, "all");
-    </script>
-    <!-- Load Custom CSS End-->
-
-    <!-- Load Custom CSS Compiled without JS Start-->
-    <noscript>
-      <link rel="stylesheet" href="css/fonts.min.css?v=1.3">
-      <link rel="stylesheet" href="css/main.min.css?v=1.3">
-      <link rel="stylesheet" href="css/colors/color-4.min.css?v=1.3">
-      <link rel="stylesheet" href="./slick/slick.css">
-    <link rel="stylesheet" href="./slick/slick-theme.css">
-    </noscript>
-    <!-- Load Custom CSS Compiled without JS End-->
-
-    <!-- Custom Browser Color Start-->
-    <meta name="theme-color" content="#51829e">
-    <meta name="msapplication-navbutton-color" content="#51829e">
-    <meta name="apple-mobile-web-app-status-bar-style" content="#51829e">
-    <!-- Custom Browser Color End-->
-
 </head>
-
 <body>
 
     <!-- Old Browsers Support Start-->
@@ -571,7 +473,7 @@
 
                 <!-- Color Layer Start -->
                                                           <div id="trailer" class="is_overlay">
-	<video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto" src="img/backgrounds/bg.webm" type="video/webm">
+	<video id="video" width="100%" height="auto" autoplay="autoplay" loop="loop" preload="auto" src="img/backgrounds/bg.mp4" type="video/mp4">
 		
 	</video>
 </div>
@@ -632,12 +534,8 @@
                     <p class="description-text">
                        
                     </p>
--->
+-->                  <div class="main-sliderWrapper">
                     <div class="main-slider">
-                        <div class="main-slider__firstSlide main-slider__slide">
-                            <h3>Создадим сайт,<br>который полюбят ваши клиенты</h3>
-                            <span class="main-slider__firstSlide--text">Понятный дизайн ради конверсии и продаж</span>
-                        </div>
                         <div class="main-slider__secondSlide main-slider__slide">
                             <h3>Предостережем от принятия<br>неправильных решений</h3>
                             <span class="main-slider__secondSlide--text">Бескомпромиссное отношение к качеству продуктов</span>
@@ -645,6 +543,14 @@
                         <div class="main-slider__thirdSlide main-slider__slide">
                             <h3>Принесем уверенность<br>в завтрашнем дне</h3>
                             <span class="main-slider__thirdSlide--text">Год гарантийного обслуживания в подарок</span>
+                        </div>
+                          <div class="main-slider__firstSlide main-slider__slide">
+                            <h3>Создадим сайт,<br>который полюбят ваши клиенты</h3>
+                            <span class="main-slider__firstSlide--text">Понятный дизайн ради конверсии и продаж</span>
+                        </div>
+                         <div class="main-slider__firstSlide main-slider__slide">
+                            <h3>Создадим сайт,<br>который полюбят ваши клиенты</h3>
+                            <span class="main-slider__firstSlide--text">Понятный дизайн ради конверсии и продаж</span>
                         </div>
                     </div>
                     <div class="feedback">
@@ -658,7 +564,7 @@
 how-we-do-it-link" href="#">смотреть как мы это делаем</a>
 -->
                     </div>
-                
+                </div>
                 <div class="countdown">
 
                     <span class="help-text"><a href="./document/FRESCO.pdf" download  id="prezent" target="blank" style="border-bottom: 1px solid #222;border-color: #fff;color: #fff;">Скачать презентацию</a></span>
@@ -671,62 +577,62 @@ how-we-do-it-link" href="#">смотреть как мы это делаем</a>
         <div class="fullheight about-the-studio__content">
             <div class="about-the-studio__content--left-bg">
                 <div class="about-the-studio__content--left">
-                    <h1 class="about-the-studio__content--left-title" data-aos="fade-right" data-aos-duration="1200">O студии</h1>
-                    <p class="about-the-studio__content--left-text" data-aos="fade-right" data-aos-duration="1200">Мы специализируемся на комплексном продвижении компаний в интернете и эффективном решении коммерческих задач наших клиентов.</p>
-                    <p class="about-the-studio__content--left-text" data-aos="fade-right" data-aos-duration="1200">Стараясь идти в ногу со временем, в работе мы используем наиболее эффективные технологии и методики, а также проверенные инструменты, в результате чего каждое направление нашей работы – это всегда больше, чем просто высококачественная услуга.</p>
-                    <p class="about-the-studio__content--left-text" data-aos="fade-right" data-aos-duration="1200">Каждый продукт проектируется и реализуется в соответствии с особенностями бизнеса компании-клиента, а решения принимаются исключительно на основании реальных данных – чтобы выбранные инструменты «попали» точно в цель!</p>
+                    <h1 class="about-the-studio__content--left-title" data-aos="fade-right" data-aos-duration="600">O студии</h1>
+                    <p class="about-the-studio__content--left-text" data-aos="fade-right" data-aos-duration="600">Мы специализируемся на комплексном продвижении компаний в интернете и эффективном решении коммерческих задач наших клиентов.</p>
+                    <p class="about-the-studio__content--left-text" data-aos="fade-right" data-aos-duration="600">Стараясь идти в ногу со временем, в работе мы используем наиболее эффективные технологии и методики, а также проверенные инструменты, в результате чего каждое направление нашей работы – это всегда больше, чем просто высококачественная услуга.</p>
+                    <p class="about-the-studio__content--left-text" data-aos="fade-right" data-aos-duration="600">Каждый продукт проектируется и реализуется в соответствии с особенностями бизнеса компании-клиента, а решения принимаются исключительно на основании реальных данных – чтобы выбранные инструменты «попали» точно в цель!</p>
                     <div class="about-the-studio__content--left-numbers">
                         <div class="about-the-studio__content--left-numbersL">
-                            <b data-aos="zoom-in" data-aos-duration="1400">11</b>
-                            <span data-aos="fade-up" data-aos-duration="1400">человек<br>в команде</span>
+                            <b data-aos="zoom-in" data-aos-duration="600">11</b>
+                            <span data-aos="fade-up" data-aos-duration="600">человек<br>в команде</span>
                         </div>
                         <div class="about-the-studio__content--left-numbersC">
-                            <b data-aos="zoom-in" data-aos-duration="1400">30+</b>
-                            <span data-aos="fade-up" data-aos-duration="1400">проектов за<br>последние 2 года</span>
+                            <b data-aos="zoom-in" data-aos-duration="600">30+</b>
+                            <span data-aos="fade-up" data-aos-duration="600">проектов за<br>последние 2 года</span>
                         </div>
                         <div class="about-the-studio__content--left-numbersR">
-                            <b data-aos="zoom-in" data-aos-duration="1400">2015</b>
-                            <span data-aos="fade-up" data-aos-duration="1400">год основания<br>студии</span>
+                            <b data-aos="zoom-in" data-aos-duration="600">2015</b>
+                            <span data-aos="fade-up" data-aos-duration="600">год основания<br>студии</span>
                         </div>
                     </div>
 <!--                    <a class="about-the-studio__content--left-moreLink" href="#" data-aos="fade-up" data-aos-duration="1400">Подробнее о студии</a>-->
                 </div>
             </div>
             <div class="about-the-studio__content--right-bg" >
-                <div class="about-the-studio__content--right" data-aos="fade-left" data-aos-duration="1400">
-                    <h3 class="about-the-studio__content--right-title" data-aos="fade-left" data-aos-duration="1200">Наши компетенции</h3>
+                <div class="about-the-studio__content--right" data-aos="fade-left" data-aos-duration="600">
+                    <h3 class="about-the-studio__content--right-title" data-aos="fade-left" data-aos-duration="600">Наши компетенции</h3>
                     <div class="about-the-studio__content--right-tegs">
-                        <div class="about-the-studio__content--right-tegs-1" data-aos="fade-left" data-aos-duration="1200">
+                        <div class="about-the-studio__content--right-tegs-1" data-aos="fade-left" data-aos-duration="600">
                             <span>сайты</span>
                             <span>поддержка</span>
                             <span>стратегии</span>
                         </div>
-                        <div class="about-the-studio__content--right-tegs-2" data-aos="fade-left" data-aos-duration="1200">
+                        <div class="about-the-studio__content--right-tegs-2" data-aos="fade-left" data-aos-duration="600">
                             <span>интернет-реклама</span>
                             <span>аналитика</span>
                         </div>
-                        <div class="about-the-studio__content--right-tegs-3" data-aos="fade-left" data-aos-duration="1200">
+                        <div class="about-the-studio__content--right-tegs-3" data-aos="fade-left" data-aos-duration="600">
                             <span>web-дизайн</span>
                             <span>соцсети</span>
                         </div>
-                        <div class="about-the-studio__content--right-tegs-4" data-aos="fade-left" data-aos-duration="1200">
+                        <div class="about-the-studio__content--right-tegs-4" data-aos="fade-left" data-aos-duration="600">
                             <span class="tegs-with-line">e-commerce</span>
                             <span class="tegs-with-line">seo</span>
                             <span class="tegs-with-line">нейминг</span>
                             <span class="tegs-with-line">брендинг</span>
                         </div>
                     </div>
-                    <h3 class="about-the-studio__content--right-title2" data-aos="fade-left" data-aos-duration="1200">Профильный опыт</h3>
-                    <p class="about-the-studio__content--right-text" data-aos="fade-left" data-aos-duration="1200">Мед. клиники и стоматологии</p>
-                    <p class="about-the-studio__content--right-text" data-aos="fade-left" data-aos-duration="1200">Коммерческая недвижимость</p>
-                    <p class="about-the-studio__content--right-text" data-aos="fade-left" data-aos-duration="1200">Связь и телеком</p>
+                    <h3 class="about-the-studio__content--right-title2" data-aos="fade-left" data-aos-duration="600">Профильный опыт</h3>
+                    <p class="about-the-studio__content--right-text" data-aos="fade-left" data-aos-duration="600">Мед. клиники и стоматологии</p>
+                    <p class="about-the-studio__content--right-text" data-aos="fade-left" data-aos-duration="600">Коммерческая недвижимость</p>
+                    <p class="about-the-studio__content--right-text" data-aos="fade-left" data-aos-duration="600">Связь и телеком</p>
                 </div>
             </div>
         </div>
     </section>
     <section class="portfolio-content portfolio-content portfolio-content-index ">
         <div class="fullheight">
-            <div class="portfolio-content-index__title" data-aos="fade-down" data-aos-duration="1400" >
+            <div class="portfolio-content-index__title" data-aos="fade-down" data-aos-duration="600" >
                 <h3>Портфолио</h3>
                 <div>
                     <span>/</span>
@@ -734,7 +640,7 @@ how-we-do-it-link" href="#">смотреть как мы это делаем</a>
                 </div>
             </div>
             <div class="our-work">
-                <a class="mix category-all category-internet-advertising category-sites category-social-networks items__1apart items-link category-support" href="1apart.html" data-myorder="1" data-aos="fade-up" data-aos-duration="1200">
+                <a class="mix category-all category-internet-advertising category-sites category-social-networks items__1apart items-link category-support" href="1apart.html" data-myorder="1" data-aos="fade-up" data-aos-duration="600">
                     <div class=" our-work__items items item1">
                         <div class="items-link-wrapper">
                             <h3>Первый Апарт-отель</h3>
@@ -751,11 +657,11 @@ how-we-do-it-link" href="#">смотреть как мы это делаем</a>
                         </div>
                     </div>
                 </a>
-                <a class="mix category-sites category-internet-advertising category-all items__bc items-link category-support" data-myorder="2" target="_blank" href="http://bc-kz.ru" data-aos="fade-up" data-aos-duration="1200">
+                <a class="mix category-sites category-internet-advertising category-all items__bc items-link category-support" data-myorder="2" href="bc-kz.html" data-aos="fade-up" data-aos-duration="600">
                     <div class=" our-work__items items item2">
                         <div class="items-link-wrapper">
                             <h3>Красное знамя</h3>
-                            <span class="items-link-wrapper__text">Бизнес центр класса "А" в Томске</span>
+                            <span class="items-link-wrapper__text">Бизнес-центр класса "А" в Томске</span>
                             <div class="items-link__topSection topSection">
                                 <span class="topSection__sites">сайт</span>
                             </div>
@@ -765,7 +671,7 @@ how-we-do-it-link" href="#">смотреть как мы это делаем</a>
                         </div>
                     </div>
                 </a>
-                <a class="mix category-all category-sites category-social-networks category-internet-advertising items__skenar items-link category-support" target="_blank" href="http://skenarpride.ru" data-myorder="3" data-aos="fade-up" data-aos-duration="1200">
+                <a class="mix category-all category-sites category-social-networks category-internet-advertising items__skenar items-link category-support" target="_blank" href="http://skenarpride.ru" data-myorder="3" data-aos="fade-up" data-aos-duration="600">
                     <div class=" our-work__items items item3">
                         <div class="items-link-wrapper">
                             <h3>Скэнар Прайд</h3>
@@ -780,7 +686,7 @@ how-we-do-it-link" href="#">смотреть как мы это делаем</a>
                         </div>
                     </div>
                 </a>
-                <a class="mix category-all category-sites category-internet-advertising items__alyson items-link category-support" target="_blank" href="http://alyson.pro" data-myorder="4" data-aos="fade-up" data-aos-duration="1200">
+                <a class="mix category-all category-sites category-internet-advertising items__alyson items-link category-support" target="_blank" href="http://alyson.pro" data-myorder="4" data-aos="fade-up" data-aos-duration="600">
                     <div class=" our-work__items items item4">
                         <div class="items-link-wrapper">
                             <h3>Элисон</h3>
@@ -796,39 +702,39 @@ how-we-do-it-link" href="#">смотреть как мы это делаем</a>
                 </a>
 
             </div>
-            <a class="all-projects-link" href="portfolio.html" data-aos="fade-up" data-aos-duration="1200">Все проекты</a>
+            <a class="all-projects-link" href="portfolio.html" data-aos="fade-up" data-aos-duration="600">Все проекты</a>
         </div>
     </section>
     <section class="servise-content">
         <div class="fullheight">
-            <div class="portfolio-content-index__title servise-content-index__title" data-aos="fade-right" data-aos-duration="1200">
+            <div class="portfolio-content-index__title servise-content-index__title" data-aos="fade-right" data-aos-duration="600">
                 <h3>Услуги</h3>
                 <div>
                     <span>/</span>
                     <span>Оказываем услуги по направлениям</span>
                 </div>
             </div>
-            <div class="our-services" data-aos="fade-up" data-aos-duration="1200">
+            <div class="our-services" data-aos="fade-up" data-aos-duration="600">
                 <div class="our-services__items our-services__item-1">
                    <div class="our-services__items-wrapper">
                     <h4 class="our-services__items--title">Cтратегия</h4>
                     <p class="our-services__items--text">Помогаем клиентам понять что делать.</p>
                     </div>
                 </div>
-                <div class="our-services__items our-services__item-2" data-aos="fade-up" data-aos-duration="1200">
+                <div class="our-services__items our-services__item-2" data-aos="fade-up" data-aos-duration="600">
                    <div class="our-services__items-wrapper">
                     <h4 class="our-services__items--title">Cайты и поддержка</h4>
                     <p class="our-services__items--text">Создаем и развиваем сайты.</p>
                     </div>
                 </div>
-                <div class="our-services__items our-services__item-3" data-aos="fade-up" data-aos-duration="1200">
+                <div class="our-services__items our-services__item-3" data-aos="fade-up" data-aos-duration="600">
                    <div class="our-services__items-wrapper">
                     <h4 class="our-services__items--title">Социальные сети</h4>
                     <p class="our-services__items--text">Делаем бренд узнаваемым.</p>
                     
                     </div>
                 </div>
-                <div class="our-services__items our-services__item-4" data-aos="fade-up" data-aos-duration="1200">
+                <div class="our-services__items our-services__item-4" data-aos="fade-up" data-aos-duration="600">
                    <div class="our-services__items-wrapper">
                     <h4 class="our-services__items--title">Интернет-реклама</h4>
                     <p class="our-services__items--text">Делаем рекламу измеримой.</p>
@@ -836,24 +742,26 @@ how-we-do-it-link" href="#">смотреть как мы это делаем</a>
                     </div>
                 </div>
             </div>
-            <a class="all-projects-link all-service-link" href="services.html" data-aos="fade-up" data-aos-duration="1200">Подробнее об услугах</a>
+            <a class="all-projects-link all-service-link" href="services.html" data-aos="fade-up" data-aos-duration="600">Подробнее об услугах</a>
         </div>
     </section>
  <section id="index-feedback" class="index-feedback">
      <div class="">
-      <h3 class="form-title index-form-title" data-aos="fade-down" data-aos-duration="1200">Давайте обсудим ваш проект</h3>
-       <form id="form" class="form form-dark contact-form index-form" data-aos="fade-right" data-aos-duration="1200">
+      <h3 class="form-title index-form-title" data-aos="fade-down" data-aos-duration="600">Давайте обсудим ваш проект</h3>
+       <form id="form" class="form form-dark contact-form index-form" data-aos="fade-right" data-aos-duration="600">
 
             <!-- Hidden Required Fields-->
 
             <input type="hidden" name="project_name" value="Новая заявка с сайта" >
-            <input type="hidden" name="admin_email" value="info@fresco.bz">
+            <input type="hidden" name="admin_email" value="info@fresco.bz,fresco.konovalov@gmail.com,boykov70@yandex.ru,fresco.serdyuk@gmail.com">
             <input type="hidden" name="form_subject" value="Контакт форм сообщение">
             <!-- END Hidden Required Fields-->
 
             <input id="valid" required  type="text" name="Name" placeholder="Ваше имя*"     >
+<!--
             <input id="valid" required type="email" name="E-mail" placeholder="E-mail*">
             <input  type="text" name="Company" placeholder="Название компании" >
+-->
             <input id="valid" required type="tel" name="Phone" placeholder="Телефон*"  >
             
             <div class="flex-container">
@@ -861,11 +769,10 @@ how-we-do-it-link" href="#">смотреть как мы это делаем</a>
 
 
 
-                <span data-aos="fade-right" data-aos-duration="1200" class="inputs-description  flex-start" style="
+                <span data-aos="fade-right" data-aos-duration="600" class="inputs-description  flex-start" style="
     justify-content: flex-start;
     align-items: flex-start;
-    display:  flex;
-">Нажимая на кнопку «Отправить», вы соглашаетесь
+    display:  flex; margin-top: 20px;">Нажимая на кнопку «Отправить», вы соглашаетесь
 на обработку персональных данных</span>
                     <button id="feedback2" type="submit" class="btn btn-solid g-recaptcha" data-sitekey="6LddAkAUAAAAACX67JRWDYcl8s9-iuXIhEPGrsi8"
 	data-size="invisible"

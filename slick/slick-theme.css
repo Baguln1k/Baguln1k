@@ -84,10 +84,8 @@ height: 100px;
     content: "";
     font-size: 80px;
     line-height: 1;
-
     opacity: .75;
     color: white;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-image: url(../img/icons/arrow_white.svg);
@@ -95,6 +93,7 @@ height: 100px;
     width: 100px;
         height: 52px;
     display:block;
+    padding-right: 5.6%;
 }
 
 .slick-prev
@@ -119,7 +118,7 @@ height: 100px;
 
 .slick-next
 {
-    right: -25px;
+       right: 5.6%;
 }
 [dir='rtl'] .slick-next
 {
