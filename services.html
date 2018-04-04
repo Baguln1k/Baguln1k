@@ -447,41 +447,7 @@
         });
 
     </script>
-    <script>
-        $('.parallax').scrolly();
 
-    </script>
-    <script>
-        $(document).ready(function() {
-    var scrollorama = $.scrollorama({
-        blocks:'.scrollblock'
-    });
-});
-    </script>
-    <script>
-        scrollorama.animate('#example1',{
-    duration:400, property:'opacity'
-})
-    </script>
-    <script>
-   jQuery(document).ready(function() {
-
-         var demountedEngine = $('.demounted-engine');
-         var top_demountedEngine = demountedEngine.offset().top;
-         var screenHeight = window.screen.height / 2; // высота экрана деленая на 2
-
-         window.onscroll = function() {
-
-            if( ( this.pageYOffset + screenHeight) >  top_demountedEngine  ) {
-              if(!demountedEngine.hasClass('active'))  demountedEngine.addClass('active');
-            } else if(demountedEngine.hasClass('active')) {
-                demountedEngine.removeClass('active');
-            }
-
-        }
-
-    });
-    </script>
          <script>
   var doc, pageY, timeSec = new Date;
 document.addEventListener("DOMContentLoaded", function () {
@@ -531,21 +497,24 @@ status();
         
   e.preventDefault();
   $(".services-page__thirdBlock").toggleClass('services-page__active');
-         $(this).parent().find(".services-page__block--wrapper").toggle('fast','swing');
+         $(this).parent().find(".services-page__block--wrapper").fadeToggle(950);
 });
         
           $(".services-page__secondBlock .services-page__block--btn").click(function(e) {
         
   e.preventDefault();
   $(".services-page__secondBlock").toggleClass('services-page__active');
-         $(this).parent().find(".services-page__block--wrapper").toggle('fast','swing');
+         $(this).parent().find(".services-page__block--wrapper").fadeToggle(950);
 });
           $(".services-page__firstBlock .services-page__block--btn").click(function(e) {
         
   e.preventDefault();
   $(".services-page__firstBlock").toggleClass('services-page__active');
-         $(this).parent().find(".services-page__block--wrapper").toggle('fast','swing');
+         $(this).parent().find(".services-page__block--wrapper").fadeToggle(950);
+             
 });
+        
+        
 //          $(".services-page__secondBlock .services-page__block--btn").click(function(e) {
 //  e.preventDefault();
 //  $(".services-page__secondBlock").toggleClass('services-page__active');
