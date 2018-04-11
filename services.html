@@ -57,7 +57,7 @@
 </head>
 <header class="main-header">
     <div class="main-header__logo-container">
-        <a href="index.html"><img src="./img/icons/logoblue.svg" alt="Лого студии Фреско" width="89px" height="20px">
+        <a href="index.html"><img src="./img/icons/logoblack.svg" alt="Лого студии Фреско" width="89px" height="20px">
             <span>/ веб-студия</span></a>
     </div>
     <div class="main-header__rightcontent">
@@ -497,20 +497,21 @@ status();
         
   e.preventDefault();
   $(".services-page__thirdBlock").toggleClass('services-page__active');
-         $(this).parent().find(".services-page__block--wrapper").fadeToggle(950);
+         $(this).parent().find(".services-page__block--wrapper").slideToggle('fast');
 });
         
           $(".services-page__secondBlock .services-page__block--btn").click(function(e) {
         
   e.preventDefault();
   $(".services-page__secondBlock").toggleClass('services-page__active');
-         $(this).parent().find(".services-page__block--wrapper").fadeToggle(950);
+         $(this).parent().find(".services-page__block--wrapper").slideToggle('fast');
 });
           $(".services-page__firstBlock .services-page__block--btn").click(function(e) {
         
   e.preventDefault();
   $(".services-page__firstBlock").toggleClass('services-page__active');
-         $(this).parent().find(".services-page__block--wrapper").fadeToggle(950);
+              console.log(123);
+               $(this).parent().find(".services-page__block--wrapper").slideToggle('fast');
              
 });
         
