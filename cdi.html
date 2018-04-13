@@ -41,7 +41,7 @@
     <link rel="stylesheet" href="./slick/slick-theme.css?v=1.3">
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
+<script src="js/jquery.paroller.min.js"></script>
 
     <!-- Template Favicon & Icons End-->
 
@@ -94,7 +94,7 @@
 </div>
 </div>
 
-    <section class="elzavod-main cdi-main">
+    <section class="elzavod-main cdi-main my-paroller" data-paroller-factor="0.4">
 
         <header class="index-header">
 
@@ -135,7 +135,7 @@
         </header>
         <div class="elzavod-main__center-contact cdi-main__center-contact">
             <h1>Центр дентальной имплантации</h1>
-            <a href="http://cdistom.ru/" target="_blank">cdistom.ru</a>
+            <a href="http://cdistom.ru/" target="_blank" rel="nofollow">cdistom.ru</a>
             <img class="top-mackbook" src="./img/cdi/macbook.png" alt="Macbook" width="800" height="483">
             <img class="top-tablett" src="./img/cdi/ipad.png" alt="ipad" width="800px" height="483px">
             <img class="top-iphone" src="./img/cdi/iphone.png" alt="iphone" width="157px" height="320px">
@@ -265,7 +265,7 @@
               </div>
     </div>
 <!--    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
-       <section class="workElz-text">
+       <section class="workElz-text workCdi-text">
                     <h3 data-aos="fade-right" data-aos-duration="600">Итоги</h3>
                     <div class="workElz-text__paragraph">
                     <p data-aos="fade-left" data-aos-duration="600">Новый сайт Центра дентальной имплантации соответствует всем современным требованиям, позволяет с легкостью найти нужную услугу и подробно ознакомиться с ней, быстро оставить заявку или воспользоваться любым удобным для пользователя каналом связи с клиникой.</p><br>
@@ -382,7 +382,7 @@
                     <a class="center-content__mail" href="mailto:info@fresco.bz">info@fresco.bz</a>
                 </div>
                 <div class="right-content">
-                    <a href="./document/FRESCO.pdf" download class="right-content__ presentation">Скачать презентацию
+                    <a href="./document/Презентация студии FRESCO.pdf" download class="right-content__ presentation">Скачать презентацию
             </a>
                     <!--            <a href="#">Политика конфиденциальности</a>-->
 
@@ -533,6 +533,9 @@
         }
 
     });
+    </script>
+         <script>
+       $('.my-paroller').paroller();
     </script>
          <script>
   var doc, pageY, timeSec = new Date;

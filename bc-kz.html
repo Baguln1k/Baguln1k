@@ -43,10 +43,11 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
-<script src="js/jquery.paroller.min.js"></script>
+
    <script src="js/script.js"></script>
     <script src="js/app.js"></script>
     <script src="js/commonw.js"></script>
+    <script src="js/jquery.paroller.min.js"></script>
     <!-- Template Favicon & Icons End-->
 
     <!-- Loader Styles Start-->
@@ -96,7 +97,7 @@
 </div>
 </div>
 
-    <section class="bc-main">
+    <section class="bc-main my-paroller" data-paroller-factor="0.4">
 
         <header class="index-header">
 
@@ -137,7 +138,7 @@
         </header>
         <div class="bc-main__center-contact">
             <h1>Бизнес-центр Красное Знамя</h1>
-            <a href="http://bc-kz.ru" target="_blank">bc-kz.ru</a>
+            <a href="http://bc-kz.ru" target="_blank" rel="nofollow">bc-kz.ru</a>
             <img class="top-mackbook" src="./img/bc/macbook@2.png" alt="Macbook" width="800" height="483">
             <img class="top-tablett" src="./img/bc/ipad.png" alt="ipad" width="800px" height="483px">
             <img class="top-iphone" src="./img/bc/phone.png" alt="iphone" width="157px" height="320px">
@@ -707,54 +708,10 @@
             </div>
         </div>
     </div>
-<!--
-    <div class="ct road-bc">
-        <div class="road-top">
-            <span>просп. Фрунзе</span>
-            <span>просп. Фрунзе</span>
-            <span>просп. Фрунзе</span>
-        </div>
-        <div class="directions">
-            <div class="left-dir">Академгородок</div>
-            <div class="name-dir">просп. Фрунзе, 103 – «БЦ» Красное Знамя</div>
-            <div class="right-dir">просп. Ленина</div>
-        </div>
-    </div>
--->
+
 </div>
    
-   <style>
-
-         rect {
-                        fill-opacity: 0;
-                    }
-
-/*
-                    path {
-                        fill-opacity: 0;
-                    }
-*/
-
-                    .svg2 {
-                        position: absolute;
-                        z-index: 3;
-
-                    }
-
-                    .svg2 a {
-                        opacity: 0.6;
-                    }
-
-                    .svg2 a:hover {
-                        cursor: pointer;
-                        opacity: 1;
-                    }
-
-                    .svg2 #foo {
-                        stroke-width: 2px;
-                    }
-
-    </style>
+  
    
    
 <!--   !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!-->
@@ -904,7 +861,7 @@
                     <a class="center-content__mail" href="mailto:info@fresco.bz">info@fresco.bz</a>
                 </div>
                 <div class="right-content">
-                    <a href="./document/FRESCO.pdf" download class="right-content__ presentation">Скачать презентацию
+                    <a href="./document/Презентация студии FRESCO.pdf" download class="right-content__ presentation">Скачать презентацию
             </a>
                     <!--            <a href="#">Политика конфиденциальности</a>-->
 
@@ -1023,7 +980,6 @@
     </script>
     <script>
        $('.my-paroller').paroller();
-
     </script>
       <script>
   var doc, pageY, timeSec = new Date;
